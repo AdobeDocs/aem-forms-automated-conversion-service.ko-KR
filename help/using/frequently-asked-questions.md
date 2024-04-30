@@ -8,21 +8,21 @@ topic-tags: introduction
 role: Admin, Developer
 level: Beginner, Intermediate
 exl-id: 3a29f8d4-8ea0-49eb-bfe0-0eab5f0c52c7
-source-git-commit: e95b4ed35f27f920b26c05f3398529f825948f1f
+source-git-commit: c2392932d1e29876f7a11bd856e770b8f7ce3181
 workflow-type: tm+mt
-source-wordcount: '1799'
-ht-degree: 4%
+source-wordcount: '1777'
+ht-degree: 3%
 
 ---
 
 # 자주 묻는 질문{#frequently-asked-questions}
 
-1. **automated forms conversion 서비스는 어떤 버전의 AEM Forms을 지원합니까?**
-   <p>Automated forms conversion 서비스는 AEM 6.4 Forms 및 AEM 6.5 Forms을 지원합니다. OSGi의 AEM Forms과 JEE의 AEM Forms에서 모두 작동합니다. 서비스를 사용하려면 AEM 작성자 인스턴스 위에 최신 AEM Forms 추가 기능 패키지가 필요합니다. 자세한 지침은 <a href="configure-service.md">automated forms conversion 구성</a> 서비스.</p> 
+1. **AFCS(Automated forms conversion 서비스)가 지원하는 AEM Forms 버전은 무엇입니까?**
+   <p>AFCS(automated forms conversion 서비스)는 AEM 6.4 Forms 및 AEM 6.5 Forms을 지원합니다. OSGi의 AEM Forms과 JEE의 AEM Forms에서 모두 작동합니다. 서비스를 사용하려면 AEM 작성자 인스턴스 위에 최신 AEM Forms 추가 기능 패키지가 필요합니다. 자세한 지침은 <a href="configure-service.md">automated forms conversion 구성</a> 서비스.</p> 
     <br>
 
 1. **서비스를 온프레미스에 설치할 수 있습니까?**
-   <p>Adobe은 변환 정확도를 개선하기 위해 새로운 데이터 세트를 사용하여 Automated forms conversion 서비스의 AI 및 ML 알고리즘을 정기적으로 교육합니다. 업데이트된 알고리즘은 주기적으로 Adobe 클라우드에서 실행되는 전환 서비스에 배포됩니다. 서비스의 모든 고객은 업데이트된 알고리즘에서 혜택을 받을 수 있습니다. 따라서 클라우드 호스팅 중앙 배포는 모든 고객에게 지속적으로 배우고 향상된 기능을 제공하는 Automated forms conversion 서비스에 가장 적합합니다.</p> 
+   <p>Adobe은 변환 정확도를 개선하기 위해 새로운 데이터 세트를 사용하여 정기적으로 Automated forms conversion 서비스(AFCS)의 AI 및 ML 알고리즘을 교육합니다. 업데이트된 알고리즘은 주기적으로 Adobe 클라우드에서 실행되는 전환 서비스에 배포됩니다. 서비스의 모든 고객은 업데이트된 알고리즘에서 혜택을 받을 수 있습니다. 따라서 클라우드 호스팅 중앙 배포는 모든 고객에게 지속적으로 향상된 기능을 배우고 제공할 수 있는 Automated forms conversion 서비스(AFCS)에 가장 적합합니다.</p> 
     <p>이 서비스는 빈 양식을 적응형 양식으로 전환합니다. 이 서비스는 채워진 양식 및 채워진 양식에서 데이터 추출을 지원하지 않습니다. 양식에 채워진 데이터를 제거하고 양식의 독점 정보를 전환용으로 양식에서 전송하기 전에 제거하거나 허용 목록에 추가하다합니다.</p> <br>
 
 1. **이 서비스는 모든 형식의 PDF forms을 지원합니까? 지원되는 모든 언어는 무엇입니까?**
@@ -68,7 +68,7 @@ ht-degree: 4%
    * 소스 PDF에 실제 양식 대신 양식 이미지가 있습니다.
    * 서비스가 잘못 구성되었거나 서비스 URL이 제공되지 않았거나 제공된 서비스 URL이 잘못되었습니다. 다음 확인: [서비스 구성](configure-service.md#configure-the-cloud-service) 위치: **[!UICONTROL AEM]** > **[!UICONTROL Tools]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL Automated Forms Conversion configuration]**.
    * IMS 구성이 제대로 구성되지 않았습니다. IMS 구성이 제대로 작동하는지 확인하려면 상태 검사를 수행하십시오. IMS 구성이 올바른지 확인하려면:
-      1. 다음으로 이동:`http://[servername]:[port]/libs/cq/adobeims-configuration/content/configurations.html`
+      1. 다음으로 이동 `http://[servername]:[port]/libs/cq/adobeims-configuration/content/configurations.html`
       2. 구성을 선택합니다. 다음을 클릭합니다. **[!UICONTROL Check Health]** 헤더에서 를 클릭하고 **[!UICONTROL Check]**. 성공하면 다음을 얻을 수 있습니다 **[!UICONTROL Token retrieved successfully!]** 메시지. <br> <br>
 
 1. **사용자 정의 글꼴을 사용하는 것이 전환에 영향을 줍니까?**
@@ -83,7 +83,7 @@ ht-degree: 4%
    <p>이 서비스는 XFA 기반 양식 또는 Acro Forms의 스크립트를 해당 적응형 양식 규칙으로 자동 전환하지 않습니다. 사용자(양식 작성자)는 <a href="https://helpx.adobe.com/experience-manager/6-5/forms/using/rule-editor.html">규칙 편집기</a> 를 클릭하여 적응형 양식에 대화형 활동을 추가할 수 있습니다.</p> <br>
 
 1. **일부 양식 오브젝트가 적응형 양식 구성 요소로 올바르게 변환되지 않습니다. 문제를 해결하는 방법**
-   <p>Automated forms conversion 서비스는 다양한 양식 세트에서 교육됩니다. 그러나 AI/ML 기반 애플리케이션은 교육 데이터와 패턴에 따라 제한됩니다. 인간의 인식에는 식별이 가능하지만 자동화된 인식에는 어려운 필드 유형, 레이아웃, 패턴 및 컨텍스트가 여러 개 존재할 수 있다. 서비스는 이러한 객체를 식별하지 못하거나 잘못 인식할 수 있습니다. 다음을 사용할 수 있습니다. <a href="review-correct-ui-edited.md" target="_blank">검토 및 수정</a> 편집기 : 입력 양식의 친숙한 용지 양식 기반 레이아웃에서 필요한 수정을 수행합니다.</p> <br/>
+   <p>Automated forms conversion 서비스(AFCS)는 다양한 양식 세트에서 교육됩니다. 그러나 AI/ML 기반 애플리케이션은 교육 데이터와 패턴에 따라 제한됩니다. 인간의 인식에는 식별이 가능하지만 자동화된 인식에는 어려운 필드 유형, 레이아웃, 패턴 및 컨텍스트가 여러 개 존재할 수 있다. 서비스는 이러한 객체를 식별하지 못하거나 잘못 인식할 수 있습니다. 다음을 사용할 수 있습니다. <a href="review-correct-ui-edited.md" target="_blank">검토 및 수정</a> 편집기 : 입력 양식의 친숙한 용지 양식 기반 레이아웃에서 필요한 수정을 수행합니다.</p> <br/>
 
 1. **일부 수정 사항은 양식에서 반복됩니다. 서비스가 향후 전환에서 이러한 모든 인스턴스를 식별하고 수정할 수 있습니까?**
 
@@ -114,8 +114,8 @@ ht-degree: 4%
 1. **적응형 양식 텍스트의 대/소문자를 자동으로 변경하는 방법**
    <p>테마 또는 스타일 편집기에서 적응형 을 사용하여 적응형 양식 필드의 대/소문자를 변경할 수 있습니다. 예를 들어 테마 편집기를 열고 모든 양식 텍스트의 Case 속성 값을 대문자, 소문자 또는 카멜 대/소문자로 설정할 수 있습니다. 테마 편집기의 CSS 오버라이드 옵션을 사용하여 다양한 유형의 스타일을 만들 수도 있습니다.</p>
 
-1. **automated forms conversion 서비스에 Adobe Sign 텍스트 태그를 사용할 수 있습니까?**
-   <p> automated forms conversion 서비스를 사용하여 PDF 양식을 적응형 양식으로 전환하고 PDF 양식에 Adobe Sign 텍스트 태그가 포함되어 있는 경우, 해당 태그가 해당 적응형 양식 필드로 전환되고 서명자 세부 정보가 자동으로 채워집니다.  이 기능은 Acro Forms에 대해서만 사용할 수 있으며 적응형 양식은 제한된 수의 Adobe Sign 필드를 지원합니다.</p>  </br>
+1. **AFCS(Automated forms conversion 서비스)에서 Adobe Sign 텍스트 태그를 사용할 수 있습니까?**
+   <p> AFCS(Automated forms conversion 서비스)를 사용하여 PDF 양식을 적응형 양식으로 전환하는 경우 PDF 양식에 Adobe Sign 텍스트 태그가 포함되어 있으면 해당 태그가 적응형 양식 필드로 전환되고 서명자 세부 정보가 자동으로 채워집니다.  이 기능은 Acro Forms에 대해서만 사용할 수 있으며 적응형 양식은 제한된 수의 Adobe Sign 필드를 지원합니다.</p>  </br>
 
 1. **Adobe Sign 활성화 PDF 양식을 만드는 방법**
    </p>Adobe Sign이 활성화된 PDF 양식을 만들려면 다음을 수행하십시오.</p>

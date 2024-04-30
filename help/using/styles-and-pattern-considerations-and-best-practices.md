@@ -1,6 +1,6 @@
 ---
 title: 모범 사례 및 고려 사항
-description: automated forms conversion 서비스에 대한 모범 사례 및 고려 사항
+description: automated forms conversion 서비스(AFCS)에 대한 우수 사례 및 고려 사항
 solution: Experience Manager Forms
 feature: Adaptive Forms
 topic: Administration
@@ -8,18 +8,18 @@ topic-tags: forms
 role: Admin, Developer
 level: Beginner, Intermediate
 exl-id: 9ada091a-e7c6-40e9-8196-c568f598fc2a
-source-git-commit: e95b4ed35f27f920b26c05f3398529f825948f1f
+source-git-commit: 4b227a2cd0253b8ab471007b41787de60c2a1851
 workflow-type: tm+mt
-source-wordcount: '1247'
-ht-degree: 3%
+source-wordcount: '1229'
+ht-degree: 2%
 
 ---
 
 # 모범 사례 및 알려진 복잡한 패턴 {#Best-practices-and-considerations2}
 
-이 문서에서는 을 사용하여 작업할 때 양식 관리자, 작성자 및 개발자가 활용할 수 있는 지침과 권장 사항을 제공합니다 [!DNL Automated Forms Conversion service]. 이 비디오에서는 소스 양식 준비에서 자동 전환을 위한 추가 작업이 필요한 복잡한 패턴 수정까지의 모범 사례에 대해 설명합니다. 이러한 모범 사례는 의 전반적인 성능과 출력에 전체적으로 기여합니다. [!DNL Automated Forms Conversion service].
+이 문서에서는 을 사용하여 작업할 때 양식 관리자, 작성자 및 개발자가 활용할 수 있는 지침과 권장 사항을 제공합니다 [!DNL Automated Forms Conversion service] (AFCS). 이 비디오에서는 소스 양식 준비에서 자동 전환을 위한 추가 작업이 필요한 복잡한 패턴 수정까지의 모범 사례에 대해 설명합니다. 이러한 모범 사례는 의 전반적인 성능과 출력에 전체적으로 기여합니다. [!DNL Automated Forms Conversion service] (AFCS).
 
-## 우수 사례
+## 모범 사례
 
 전환 서비스는 AEM에서 사용할 수 있는 PDF forms을 전환합니다 [!DNL Forms] 인스턴스를 적응형 양식에 매핑합니다. 아래 나열된 모범 사례는 전환 속도 및 정확도를 향상시키는 데 도움이 됩니다. 또한 이러한 모범 사례는 전환 활동 후에 소요되는 시간을 절약하는 데 도움이 됩니다.
 
@@ -78,13 +78,13 @@ AEM [!DNL Forms Automated Conversion service] 는 인공 지능과 머신 러닝
 
 ### 선택 그룹  {#choice-group}
 
-| 패턴 | 해결 |
+| 패턴 | 해결 방법 |
 |--- |--- |
 | **패턴** <br> 상자 또는 원 이외의 도형이 있는 선택 그룹 옵션은 해당 적응형 양식 구성 요소로 변환되지 않습니다. <br><br>**해결 방법** <br> 선택 옵션 모양을 상자 또는 원으로 변경하거나 검토 및 수정 편집기를 사용하여 모양을 식별합니다. | ![선택 필드 ](assets/best-practice-choice-group-options.png) |
 
 ### 양식 필드 {#form-fields}
 
-| 패턴 | 해결 |
+| 패턴 | 해결 방법 |
 |--- |--- |
 | **패턴** <br> 서비스는 명확한 테두리가 없는 필드를 식별하지 않습니다. <br><br>**해결 방법** <br> 검토 및 수정 편집기를 사용하여 이러한 필드를 식별합니다. | ![경계가 명확하지 않은 필드](assets/best-practice-fields-without-clear-borders.png) |
 | **패턴** <br> 서비스는 양식 하단 또는 오른쪽에 캡션이 있는 일부 선택 그룹 양식 필드를 식별하지 못할 수 있습니다. <br><br>**해결 방법** <br> 검토 및 수정 편집기를 사용하여 이러한 필드를 식별합니다 | ![선택 필드](assets/best-practice-caption-bottom-right.png) |
@@ -93,7 +93,7 @@ AEM [!DNL Forms Automated Conversion service] 는 인공 지능과 머신 러닝
 
 ### 목록 {#lists}
 
-| 패턴 | 해결 |
+| 패턴 | 해결 방법 |
 |--- |--- |
 | **패턴** <br>양식 필드가 포함된 목록은 해당 적응형 양식 구성 요소로 병합되거나 변환되지 않습니다. <br><br>**해결 방법** <br>경계가 명확한 양식 필드를 사용하거나 검토 및 수정 편집기를 사용하여 이러한 문제를 수정하십시오. | ![선택 그룹이 포함된 목록](assets/best-practice-lists-containing-form-fields.png) |
 | **패턴** <br>서비스는 몇 개의 중첩된 목록을 미식별 상태로 둘 수 있습니다. <br><br>**해결 방법** <br> 검토 및 수정 편집기를 사용하여 이러한 문제를 해결합니다. | ![선택 그룹이 포함된 목록](assets/best-practice-nested-lists.png) |

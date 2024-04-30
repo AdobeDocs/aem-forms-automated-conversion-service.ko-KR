@@ -1,12 +1,12 @@
 ---
 title: Forms 포털을 사용하여 적응형 양식을 데이터베이스에 제출
-description: 기본 메타 모델을 확장하여 조직 고유의 패턴, 유효성 검사 및 엔티티를 추가하고, Automated forms conversion 서비스를 실행하는 동안 구성을 적응형 양식 필드에 적용합니다.
+description: 기본 메타 모델을 확장하여 조직 고유의 패턴, 유효성 검사 및 엔티티를 추가하고, Automated forms conversion 서비스(AFCS)를 실행하는 동안 구성을 적응형 양식 필드에 적용합니다.
 uuid: f98b4cca-f0a3-4db8-aef2-39b8ae462628
 topic-tags: forms
 discoiquuid: cad72699-4a4b-4c52-88a5-217298490a7c
-source-git-commit: 298d6c0641d7b416edb5b2bcd5fec0232f01f4c7
+source-git-commit: c2392932d1e29876f7a11bd856e770b8f7ce3181
 workflow-type: tm+mt
-source-wordcount: '1152'
+source-wordcount: '1159'
 ht-degree: 1%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 1%
 
 # Forms 포털을 사용하여 적응형 양식과 데이터베이스 통합 {#submit-forms-to-database-using-forms-portal}
 
-Automated forms conversion 서비스를 사용하면 비대화형 PDF 양식, Acro 양식 또는 XFA 기반 PDF 양식을 적응형 양식으로 변환할 수 있습니다. 변환 프로세스를 시작하는 동안 데이터 바인딩을 사용하거나 사용하지 않고 적응형 양식을 생성할 수 있습니다.
+AFCS(automated forms conversion 서비스)를 사용하면 비대화형 PDF 양식, Acro 양식 또는 XFA 기반 PDF 양식을 적응형 양식으로 변환할 수 있습니다. 변환 프로세스를 시작하는 동안 데이터 바인딩을 사용하거나 사용하지 않고 적응형 양식을 생성할 수 있습니다.
 
 데이터 바인딩 없이 적응형 양식을 생성하도록 선택한 경우, 변환된 적응형 양식을 변환 후 양식 데이터 모델, XML 스키마 또는 JSON 스키마와 통합할 수 있습니다. 그러나 데이터 바인딩이 있는 적응형 양식을 생성하는 경우 전환 서비스는 적응형 양식을 JSON 스키마와 자동으로 연결하고 적응형 양식에서 사용할 수 있는 필드와 JSON 스키마 사이에 데이터 바인딩을 만듭니다. 그런 다음 적응형 양식을 선택한 데이터베이스와 통합하고 양식에 데이터를 입력한 다음 Forms 포털을 사용하여 데이터베이스에 제출할 수 있습니다.
 
@@ -31,7 +31,7 @@ Automated forms conversion 서비스를 사용하면 비대화형 PDF 양식, Ac
 * AEM 6.4 또는 6.5 작성자 인스턴스 설정
 * 설치 [최신 서비스 팩](https://helpx.adobe.com/kr/experience-manager/aem-releases-updates.html) AEM 인스턴스용
 * 최신 버전의 AEM Forms 추가 기능 패키지
-* 구성 [Automated forms conversion 서비스](configure-service.md)
+* 구성 [Automated forms conversion 서비스(AFCS)](configure-service.md)
 * 데이터베이스를 설정합니다. 샘플 구현에 사용되는 데이터베이스는 MySQL 5.6.24입니다. 그러나 변환된 적응형 양식을 원하는 데이터베이스와 통합할 수 있습니다.
 
 ## AEM 인스턴스와 데이터베이스 간의 연결 설정 {#set-up-connection-aem-instance-database}
@@ -133,7 +133,7 @@ AEM 인스턴스와 MYSQL 데이터베이스 간의 연결 설정은 다음과 �
        ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
    ```
 
-1. 만들기 **칭찬할 만해** 다음 SQL 문을 사용하는 데이터베이스 스키마의 테이블:
+1. 만들기 **칭찬할 만하** 다음 SQL 문을 사용하는 데이터베이스 스키마의 테이블:
 
    ```sql
    CREATE TABLE `commenttable` (
@@ -226,7 +226,7 @@ AEM 인스턴스와 MYSQL 데이터베이스 간에 연결을 만들려면 다�
     </tr>
     <tr> 
     <td><p>최대 활성 연결</p></td> 
-    <td><p>1000</p></td>
+    <td><p>1000년</p></td>
     </tr>
     <tr> 
     <td><p>최대 유휴 연결</p></td> 
@@ -272,7 +272,7 @@ AEM 인스턴스와 MYSQL 데이터베이스 간에 연결을 만들려면 다�
 [파일 가져오기](assets/aem-fp-db-integration-sample-pkg-6.1.2.zip)
 
 1. 다음 AEM 패키지 관리자로 이동: *http://[호스트]:[포트]/crx/packmgr/*.
-1. 클릭 **[!UICONTROL Upload Package]**.
+1. **[!UICONTROL Upload Package]**&#x200B;를 클릭합니다.
 1. 이동하여 선택 **aem-fp-db-integration-sample-pkg-6.1.2.zip** 패키지 및 클릭 **[!UICONTROL OK]**.
 1. 클릭 **[!UICONTROL Install]** 패키지를 설치할 패키지 옆에 있습니다.
 

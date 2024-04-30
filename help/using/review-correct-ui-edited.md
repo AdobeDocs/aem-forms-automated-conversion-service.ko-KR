@@ -1,6 +1,6 @@
 ---
 title: 전환된 양식 검토 및 수정
-description: automated forms conversion 서비스에서 변환된 적응형 양식을 검토하고 수정합니다.
+description: AFCS(Automated forms conversion 서비스)에서 변환된 적응형 양식을 검토하고 수정합니다.
 solution: Experience Manager Forms
 feature: Adaptive Forms, Foundation Components
 topic: Administration
@@ -8,16 +8,16 @@ topic-tags: forms
 role: Admin, Developer
 level: Beginner, Intermediate
 exl-id: 64330fa2-aa9d-4ba4-96df-b75deed3e693
-source-git-commit: 919886cda2ec50ddb9b403cbb0e92fec2821c10e
+source-git-commit: c2392932d1e29876f7a11bd856e770b8f7ce3181
 workflow-type: tm+mt
-source-wordcount: '2510'
+source-wordcount: '2512'
 ht-degree: 0%
 
 ---
 
 # 전환된 양식 검토 및 수정{#review-and-correct-converted-forms}
 
-AEM Forms Automated forms conversion 서비스는 입력 PDF 문서의 필드, 컨텐츠 및 레이아웃을 식별하고 PDF 문서를 적응형 양식으로 변환합니다. 출력 적응형 양식에 누락되거나 잘못 변환된 필드가 있을 수 있습니다. 검토 및 수정 편집기를 사용하여 식별된 필드를 개선하고 적응형 양식을 재생성하여 원하는 경험에 가까운 출력을 얻을 수 있습니다. 첫 번째 변환 후 편집기에서 입력 PDF 문서를 열어 다음과 같은 작업을 수행할 수 있습니다.
+AFCS(AEM Forms Automated forms conversion 서비스)는 입력 PDF 문서의 필드, 컨텐츠 및 레이아웃을 식별하고 PDF 문서를 적응형 양식으로 변환합니다. 출력 적응형 양식에 누락되거나 잘못 변환된 필드가 있을 수 있습니다. 검토 및 수정 편집기를 사용하여 식별된 필드를 개선하고 적응형 양식을 재생성하여 원하는 경험에 가까운 출력을 얻을 수 있습니다. 첫 번째 변환 후 편집기에서 입력 PDF 문서를 열어 다음과 같은 작업을 수행할 수 있습니다.
 
 * 전환 중에 식별된 모든 필드 및 콘텐츠 보기
 * 전환 중 누락된 필드 및 콘텐츠 식별

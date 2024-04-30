@@ -1,6 +1,6 @@
 ---
 title: 알려진 문제
-description: automated forms conversion 서비스에 대한 알려진 문제 및 제한 사항
+description: automated forms conversion 서비스(AFCS)의 알려진 문제 및 제한 사항
 solution: Experience Manager Forms
 feature: Adaptive Forms
 topic: Administration
@@ -8,16 +8,16 @@ topic-tags: introduction
 role: Admin, Developer
 level: Beginner, Intermediate
 exl-id: 35f59e02-e38e-473a-94c8-123e0a85ac8e
-source-git-commit: 43616abd46a17a8eeda30a116f09b88780ce9a77
+source-git-commit: c2392932d1e29876f7a11bd856e770b8f7ce3181
 workflow-type: tm+mt
-source-wordcount: '794'
+source-wordcount: '789'
 ht-degree: 1%
 
 ---
 
 # 알려진 문제 및 제한 사항 {#known-issues-limitations}
 
-AEM Forms Automated forms conversion 서비스를 사용하기 전에 다음의 알려진 문제 및 제한 사항을 검토하십시오.
+AFCS(AEM Forms Automated forms conversion 서비스)를 사용하기 전에 다음과 같은 알려진 문제 및 제한 사항을 검토하십시오.
 
 ## 알려진 문제 {#known-issues}
 
@@ -28,7 +28,7 @@ AEM Forms Automated forms conversion 서비스를 사용하기 전에 다음의 
    * 실행 취소 작업이 없습니다. 저장 버튼을 누르면 변경 사항이 영구적으로 저장됩니다.
    * XFA 기반 양식에 대해 반복 가능한 패널을 지원하지 않습니다.
    * 검토 및 수정 편집기를 사용하여 테이블의 목록을 수정하는 경우 행 너비가 자동으로 조정되지 않고 텍스트가 테이블의 다음 행으로 넘칠 수 있습니다.
-   * 다음 **[!UICONTROL Auto-detect multi-column layout from input forms]** 이 기능은 검토 및 수정 편집기 및 양식 조각에서 작동하지 않습니다.
+   * 다음 **[!UICONTROL Auto-detect multi-column layout from input forms]** 검토 및 수정 편집기 및 양식 조각에서 기능이 작동하지 않습니다.
    * 검토 및 수정 편집기로 만든 스크리블 서명이 게시된 적응형 양식에 대해 로드되지 않습니다.
 
 

@@ -1,6 +1,6 @@
 ---
 title: 기본 메타 모델 확장
-description: 기본 메타 모델을 확장하여 조직 고유의 패턴, 유효성 검사 및 엔티티를 추가하고, Automated forms conversion 서비스를 실행하는 동안 구성을 적응형 양식 필드에 적용합니다.
+description: 기본 메타 모델을 확장하여 조직 고유의 패턴, 유효성 검사 및 엔티티를 추가하고, Automated forms conversion 서비스(AFCS)를 실행하는 동안 구성을 적응형 양식 필드에 적용합니다.
 solution: Experience Manager Forms
 feature: Adaptive Forms
 topic: Administration
@@ -8,16 +8,16 @@ topic-tags: forms
 role: Admin, Developer
 level: Beginner, Intermediate
 exl-id: f679059c-18aa-4cb5-8368-ed27e96c20de
-source-git-commit: e95b4ed35f27f920b26c05f3398529f825948f1f
+source-git-commit: c2392932d1e29876f7a11bd856e770b8f7ce3181
 workflow-type: tm+mt
-source-wordcount: '2565'
+source-wordcount: '2569'
 ht-degree: 1%
 
 ---
 
 # 기본 메타 모델 확장 {#extend-the-default-meta-model}
 
-Automated forms conversion 서비스는 소스 양식에서 양식 개체를 식별하고 추출합니다. 시맨틱 매퍼는 추출된 객체가 적응형 양식으로 표현되는 방식을 서비스가 결정할 수 있도록 도와줍니다. 예를 들어 소스 양식에는 날짜에 대한 다양한 표현 유형이 있을 수 있습니다. 시맨틱 매퍼는 소스 양식의 모든 날짜 양식 개체 표현을 적응형 양식의 날짜 구성 요소와 매핑하는 데 도움이 됩니다. 또한 Semantic Mapper를 사용하여 변환 중에 서비스가 유효성 검사, 규칙, 데이터 패턴, 도움말 텍스트 및 접근성 속성을 미리 구성하고 적응형 양식 구성 요소에 적용할 수 있습니다.
+AFCS(automated forms conversion 서비스)는 소스 양식에서 양식 개체를 식별하고 추출합니다. 시맨틱 매퍼는 추출된 객체가 적응형 양식으로 표현되는 방식을 서비스가 결정할 수 있도록 도와줍니다. 예를 들어 소스 양식에는 날짜에 대한 다양한 표현 유형이 있을 수 있습니다. 시맨틱 매퍼는 소스 양식의 모든 날짜 양식 개체 표현을 적응형 양식의 날짜 구성 요소와 매핑하는 데 도움이 됩니다. 또한 Semantic Mapper를 사용하여 변환 중에 서비스가 유효성 검사, 규칙, 데이터 패턴, 도움말 텍스트 및 접근성 속성을 미리 구성하고 적응형 양식 구성 요소에 적용할 수 있습니다.
 
 ![](assets/meta-model.gif)
 
@@ -25,7 +25,7 @@ Automated forms conversion 서비스는 소스 양식에서 양식 개체를 식
 
 ## 기본 메타 모델 {#default-meta-model}
 
-Automated forms conversion 서비스에는 기본 메타 모델이 있습니다. JSON 스키마이며 Automated forms conversion 서비스의 다른 구성 요소와 함께 Adobe 클라우드에 있습니다. 로컬 AEM 서버에서 http://으로 메타 모델의 복사본을 찾을 수 있습니다.&lt;server>:&lt;port>/aem/forms.html/content/dam/formsanddocuments/metamodel/`global.schema.json`. 다음을 수행할 수도 있습니다. [여기를 클릭하십시오](assets/en.globalschema.json) 를 클릭하여 영어 스키마에 액세스하거나 다운로드합니다. 의 메타 모델 [프랑스어](assets/fr.globalschema.json), [독일어](assets/de.globalschema.json) [스페인어](assets/es.globalschema.json), [이탈리아어](assets/it.globalschema.json), 및 [포르투갈어](assets/pt_br.globalschema.json) 언어를 다운로드할 수도 있습니다.
+AFCS(automated forms conversion 서비스)에는 기본 메타 모델이 있습니다. JSON 스키마이며 AFCS(Automated forms conversion 서비스)의 다른 구성 요소와 함께 Adobe 클라우드에 있습니다. 로컬 AEM 서버에서 http://으로 메타 모델의 복사본을 찾을 수 있습니다.&lt;server>:&lt;port>/aem/forms.html/content/dam/formsanddocuments/metamodel/`global.schema.json`. 다음을 수행할 수도 있습니다. [여기를 클릭하십시오](assets/en.globalschema.json) 를 클릭하여 영어 스키마에 액세스하거나 다운로드합니다. 의 메타 모델 [프랑스어](assets/fr.globalschema.json), [독일어](assets/de.globalschema.json) [스페인어](assets/es.globalschema.json), [이탈리아어](assets/it.globalschema.json), 및 [포르투갈어](assets/pt_br.globalschema.json) 언어를 다운로드할 수도 있습니다.
 
 메타 모델의 스키마는 https://schema.org/docs/schemas.html의 스키마 엔티티에서 파생됩니다. 여기에는 Person, PostalAddress, LocalBusiness 및 https://schema.org에 정의된 더 많은 엔티티가 있습니다. 메타 모델의 모든 엔티티는 JSON 스키마 오브젝트 유형을 준수합니다. 다음 코드는 샘플 메타 모델 구조를 나타냅니다.
 
@@ -120,7 +120,7 @@ Automated forms conversion 서비스에는 기본 메타 모델이 있습니다.
 
 ### 생성된 적응형 양식 필드에 대한 JSON 스키마 속성 {#jsonschemaproperties}
 
-메타 모델은 Automated forms conversion 서비스를 사용하여 생성된 적응형 양식 필드에 대한 다음의 JSON 스키마 공통 속성을 지원합니다.
+메타 모델은 Automated forms conversion 서비스(AFCS)를 사용하여 생성된 적응형 양식 필드에 대한 다음의 JSON 스키마 공통 속성을 지원합니다.
 
 <table> 
  <tbody> 
@@ -164,7 +164,7 @@ Automated forms conversion 서비스에는 기본 메타 모델이 있습니다.
 
 ### 생성된 적응형 양식 필드에 속성을 적용하는 키워드 기반 검색 {#keywordsearch}
 
-Automated forms conversion 서비스는 변환 중에 소스 양식에서 키워드 검색을 수행합니다. 검색 기준을 충족하는 필드를 필터링한 후 전환 서비스는 메타 모델의 해당 필드에 대해 정의된 속성을 생성된 적응형 양식 필드에 적용합니다.
+Automated forms conversion 서비스(AFCS)는 변환 중에 소스 양식에서 키워드 검색을 수행합니다. 검색 기준을 충족하는 필드를 필터링한 후 전환 서비스는 메타 모델의 해당 필드에 대해 정의된 속성을 생성된 적응형 양식 필드에 적용합니다.
 
 키워드는 를 사용하여 참조됩니다 **aem:affKeyword** 속성.
 
@@ -181,7 +181,7 @@ Automated forms conversion 서비스는 변환 중에 소스 양식에서 키워
 
 ### 생성된 적응형 양식 필드에 대한 추가 속성 {#additionalproperties}
 
-다음을 사용할 수 있습니다. **aem:afProperties** automated forms conversion 서비스를 사용하여 생성된 적응형 양식 필드에 대한 다음 추가 속성을 정의하는 메타 모델의 속성:
+다음을 사용할 수 있습니다. **aem:afProperties** AFCS(Automated forms conversion 서비스)를 사용하여 생성된 적응형 양식 필드에 대한 다음 추가 속성을 정의하는 메타 모델의 속성:
 
 <table> 
  <tbody> 
@@ -217,7 +217,7 @@ Automated forms conversion 서비스는 변환 중에 소스 양식에서 키워
 
 ## 자국어로 사용자 지정 메타모델 만들기{#language-specific-meta-model}
 
-언어별 메타 모델을 만들 수 있습니다. 이러한 메타 모델은 원하는 언어로 매핑 규칙을 만드는 데 도움이 됩니다. Automated forms conversion 서비스를 사용하면 다음 언어로 메타 모델을 만들 수 있습니다.
+언어별 메타 모델을 만들 수 있습니다. 이러한 메타 모델은 원하는 언어로 매핑 규칙을 만드는 데 도움이 됩니다. AFCS(automated forms conversion 서비스)를 사용하면 다음 언어로 메타 모델을 만들 수 있습니다.
 
 * 영어(en)
 * 프랑스어(fr)
@@ -226,7 +226,7 @@ Automated forms conversion 서비스는 변환 중에 소스 양식에서 키워
 * 이탈리아어(it)
 * 포르투갈어(pt-br)
 
-추가 *aem:Language* 메타 태그는 상위 메타 모델로 태그를 지정하여 해당 언어를 지정합니다. 예를 들어
+추가 *aem:Language* 메타 태그는 상위 메타 모델로 태그를 지정하여 해당 언어를 지정합니다. 예:
 
 ```JSON
 "metaTags": {
@@ -258,9 +258,9 @@ Automated forms conversion 서비스는 변환 중에 소스 양식에서 키워
 
 ## 사용자 지정 메타 모델을 사용하여 적응형 양식 필드 수정 {#modify-adaptive-form-fields-using-custom-meta-model}
 
-조직에는 기본 메타 모델에 나열된 패턴 및 유효성 검사 외에도 패턴 및 유효성 검사가 있을 수 있습니다. 기본 메타 모델을 확장하여 조직 고유의 패턴, 검증 및 엔티티를 추가할 수 있습니다. Automated forms conversion 서비스는 전환 중에 사용자 지정 메타 모델을 양식 필드에 적용합니다. 조직에 관련된 새 패턴, 유효성 검사 및 엔티티가 검색되면 메타 모델을 계속 업데이트할 수 있습니다.
+조직에는 기본 메타 모델에 나열된 패턴 및 유효성 검사 외에도 패턴 및 유효성 검사가 있을 수 있습니다. 기본 메타 모델을 확장하여 조직 고유의 패턴, 검증 및 엔티티를 추가할 수 있습니다. AFCS(automated forms conversion 서비스)는 변환하는 동안 사용자 지정 메타 모델을 양식 필드에 적용합니다. 조직에 관련된 새 패턴, 유효성 검사 및 엔티티가 검색되면 메타 모델을 계속 업데이트할 수 있습니다.
 
-Automated forms conversion 서비스는 다음 위치에 저장된 기본 메타 모델을 사용하여 변환 중 소스 양식 필드를 적응형 양식 필드에 매핑합니다.
+AFCS(automated forms conversion 서비스)는 전환 중에 다음 위치에 저장된 기본 메타 모델을 사용하여 소스 양식 필드를 적응형 양식 필드에 매핑합니다.
 
 http://&lt;server>:&lt;port>/aem/forms.html/content/dam/formsanddocuments/metamodel/global.schema.json
 
@@ -393,7 +393,7 @@ http://&lt;server>:&lt;port>/aem/forms.html/content/dam/formsanddocuments/metamo
 
 #### 적응형 양식 필드에 유효성 검사 추가 {#add-validations-to-adaptive-form-fields}
 
-**예 1:** 에 유효성 검사 추가 **우편 번호** 적응형 양식의 필드.
+**예제 1:** 에 유효성 검사 추가 **우편 번호** 적응형 양식의 필드.
 
 이 사용자 지정 메타 모델에서 전환 서비스는 다음 내에서 텍스트를 사용합니다. **aem:affKeyword** 를 검색 키워드로 사용하십시오. 검색 후 **우편 번호** 양식의 텍스트에서 전환 서비스는 다음을 사용하여 필드에 유효성 검사를 추가합니다. **validatePictureSection** 에 정의된 속성 **aem:afProperties** 섹션. 유효성 검사를 기반으로 **우편 번호** 변환 후 적응형 양식의 필드에는 6자가 포함되어야 합니다.
 

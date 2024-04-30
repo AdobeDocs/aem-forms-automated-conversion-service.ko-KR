@@ -1,27 +1,28 @@
 ---
 title: PDF forms을 적응형 양식으로 전환
 seo-title: Convert PDF forms to adaptive forms
-description: automated forms conversion 서비스를 실행하여 PDF forms을 적응형 양식으로 변환
-seo-description: Run the Automated Forms Conversion service to convert PDF forms to adaptive forms
+description: AFCS(Automated forms conversion 서비스)를 실행하여 PDF forms을 적응형 양식으로 변환
+seo-description: Run the Automated Forms Conversion service (AFCS) to convert PDF forms to adaptive forms
 contentOwner: khsingh
 topic-tags: forms
 feature: Adaptive Forms, Foundation Components
-source-git-commit: 444cc37ec6fa2af2d8d2952efd18368a5725e881
+exl-id: 415e05b5-5a90-490c-bf7c-d3365ce95e24
+source-git-commit: c2392932d1e29876f7a11bd856e770b8f7ce3181
 workflow-type: tm+mt
-source-wordcount: '1612'
+source-wordcount: '1616'
 ht-degree: 7%
 
 ---
 
 # PDF forms을 적응형 양식으로 전환 {#convert-print-forms-to-adaptive-forms}
 
-Adobe Sensei에서 제공하는 AEM Forms Automated forms conversion 서비스는 PDF forms을 장치 친화적이고 반응형 적응형 양식으로 자동 변환합니다. 비대화형 PDF forms, Acro Forms 또는 XFA 기반 PDF forms을 사용 중이든, Automated forms conversion 서비스는 이러한 양식을 적응형 양식으로 쉽게 변환할 수 있습니다. 기능, 전환 워크플로우 및 온보딩 정보에 대한 자세한 내용은 다음을 참조하십시오. [Automated forms conversion](introduction.md) 서비스.
+Adobe Sensei에서 제공하는 AEM Forms Automated forms conversion 서비스(AFCS)는 PDF forms을 장치 친화적이고 반응형 적응형 양식으로 자동 변환합니다. 비대화형 PDF forms, Acro Forms 또는 XFA 기반 PDF forms을 사용 중이든, Automated forms conversion 서비스(AFCS)는 이러한 양식을 적응형 양식으로 쉽게 변환할 수 있습니다. 기능, 전환 워크플로우 및 온보딩 정보에 대한 자세한 내용은 다음을 참조하십시오. [Automated forms conversion](introduction.md) 서비스.
 
 ## 전제 조건 {#pre-requisites}
 
 * [**전환 서비스 구성**](configure-service.md)
 
-* **준비 [템플릿](https://helpx.adobe.com/experience-manager/6-5/forms/using/template-editor.html) 변환된 양식에 적용하려는 경우:** 템플릿을 사용하면 모든 적응형 양식에 일관된 브랜딩을 적용할 수 있습니다. 또한 Automated forms conversion 서비스는 소스 PDF 문서의 머리글과 바닥글을 추출하고 사용하지 않습니다. 적응형 양식 템플릿을 사용하여 머리글과 바닥글을 지정할 수 있습니다. 템플릿에 지정된 머리글과 바닥글은 전환 중에 적응형 양식에 적용됩니다. 템플릿에 대한 폴더를 만들 때 **[!UICONTROL Browse configurations]** 모든 사용자를 위한 옵션입니다.
+* **준비 [템플릿](https://helpx.adobe.com/experience-manager/6-5/forms/using/template-editor.html) 변환된 양식에 적용하려는 경우:** 템플릿을 사용하면 모든 적응형 양식에 일관된 브랜딩을 적용할 수 있습니다. 또한 AFCS(Automated forms conversion 서비스)는 소스 PDF 문서의 머리글과 바닥글을 추출하여 사용하지 않습니다. 적응형 양식 템플릿을 사용하여 머리글과 바닥글을 지정할 수 있습니다. 템플릿에 지정된 머리글과 바닥글은 전환 중에 적응형 양식에 적용됩니다. 템플릿에 대한 폴더를 만들 때 **[!UICONTROL Browse configurations]** 모든 사용자를 위한 옵션입니다.
 
 * **준비 [테마](https://helpx.adobe.com/experience-manager/6-5/forms/using/themes.html) 변환된 양식에 적용하려는 경우:** 테마를 사용하면 조직의 모든 적응형 양식에 일관된 스타일을 적용할 수 있습니다.
 
@@ -67,7 +68,7 @@ AEM Forms 인스턴스의 폴더로 변환할 양식을 업로드하려면 다�
 
 1. 다음에서 **[!UICONTROL Basic]** 전환 설정 대화 상자의 탭:
 
-   * **[!UICONTROL Select a cloud configuration]**&#x200B;을 따르지 않는 경우입니다. 구성을 선택하면 기본 템플릿과 테마가 이미 지정되었습니다. 필요한 경우 다른 템플릿 또는 테마를 지정할 수 있습니다.
+   * **[!UICONTROL Select a cloud configuration]**. 구성을 선택하면 기본 템플릿과 테마가 이미 지정되었습니다. 필요한 경우 다른 템플릿 또는 테마를 지정할 수 있습니다.
    * 생성된 적응형 양식 및 해당 스키마를 저장할 위치를 지정하십시오. 기본 경로를 사용하거나 사용자 지정 경로를 지정할 수 있습니다.
    * 사용 **데이터 모델 바인딩 없이 적응형 양식 생성** 데이터 모델 바인딩을 사용하거나 사용하지 않고 적응형 양식을 생성하려는 경우 선택할 수 있는 옵션입니다.
 이 옵션을 선택하지 않으면 전환 서비스는 적응형 양식을 JSON 스키마와 자동으로 연결하고 적응형 양식에서 사용할 수 있는 필드와 JSON 스키마 사이에 데이터 바인딩을 만듭니다. 다음 **[!UICONTROL Save generated data model schema at]** 필드는 생성된 JSON 스키마를 저장할 기본 위치를 표시합니다. 생성된 스키마를 저장하도록 위치를 사용자 지정할 수도 있습니다.

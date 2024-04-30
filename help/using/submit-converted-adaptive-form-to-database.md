@@ -8,16 +8,16 @@ topic-tags: forms
 role: Admin, Developer
 level: Beginner, Intermediate
 exl-id: 5447b66f-9fac-476f-ab8a-9290bb1f9c0d
-source-git-commit: e95b4ed35f27f920b26c05f3398529f825948f1f
+source-git-commit: c2392932d1e29876f7a11bd856e770b8f7ce3181
 workflow-type: tm+mt
-source-wordcount: '1504'
-ht-degree: 2%
+source-wordcount: '1506'
+ht-degree: 1%
 
 ---
 
 # AEM 워크플로우를 사용하여 적응형 양식과 데이터베이스 통합 {#submit-forms-to-database-using-forms-portal}
 
-Automated forms conversion 서비스를 사용하면 비대화형 PDF 양식, Acro 양식 또는 XFA 기반 PDF 양식을 적응형 양식으로 변환할 수 있습니다. 변환 프로세스를 시작하는 동안 데이터 바인딩을 사용하거나 사용하지 않고 적응형 양식을 생성할 수 있습니다.
+AFCS(automated forms conversion 서비스)를 사용하면 비대화형 PDF 양식, Acro 양식 또는 XFA 기반 PDF 양식을 적응형 양식으로 변환할 수 있습니다. 변환 프로세스를 시작하는 동안 데이터 바인딩을 사용하거나 사용하지 않고 적응형 양식을 생성할 수 있습니다.
 
 데이터 바인딩 없이 적응형 양식을 생성하도록 선택한 경우, 변환된 적응형 양식을 변환 후 양식 데이터 모델, XML 스키마 또는 JSON 스키마와 통합할 수 있습니다. 양식 데이터 모델의 경우 적응형 양식 필드를 양식 데이터 모델에 수동으로 바인딩해야 합니다. 그러나 데이터 바인딩이 있는 적응형 양식을 생성하는 경우 전환 서비스는 적응형 양식을 JSON 스키마와 자동으로 연결하고 적응형 양식에서 사용할 수 있는 필드와 JSON 스키마 사이에 데이터 바인딩을 만듭니다. 그런 다음 적응형 양식을 선택한 데이터베이스와 통합하고 양식에 데이터를 입력한 다음 데이터베이스에 제출할 수 있습니다. 마찬가지로 데이터베이스와 통합한 후 변환된 적응형 양식의 필드를 구성하여 데이터베이스에서 값을 검색하고 적응형 양식 필드를 미리 채울 수 있습니다.
 
@@ -43,7 +43,7 @@ AEM 워크플로를 사용하여 변환된 적응형 양식을 데이터베이�
 
 [파일 가져오기](assets/sample_contact_us_form.pdf)
 
-PDF 파일은 Automated forms conversion 서비스에 대한 입력 역할을 합니다. 이 서비스는 이 파일을 적응형 양식으로 전환합니다. 다음 이미지는 PDF 형식의 샘플 연락처 양식을 보여 줍니다.
+PDF 파일은 Automated forms conversion 서비스(AFCS)에 대한 입력 역할을 합니다. 이 서비스는 이 파일을 적응형 양식으로 전환합니다. 다음 이미지는 PDF 형식의 샘플 연락처 양식을 보여 줍니다.
 
 ![샘플 대출 신청서 양식](assets/sample_contact_us_form.png)
 
@@ -66,7 +66,7 @@ AEM Forms 데이터 통합을 사용하면 서로 다른 데이터 소스를 구
 
 ![샘플 데이터 mysql](assets/db_entries_sample_form.png)
 
-다음 DDL 문을 사용하여 다음을 생성할 수 있습니다 **접촉선** 데이터베이스의 테이블입니다.
+다음 DDL 문을 사용하여 **접촉선** 데이터베이스의 테이블입니다.
 
 ```sql
 CREATE TABLE `contactus` (
@@ -117,7 +117,7 @@ AEM 인스턴스와 MYSQL 데이터베이스 간에 연결을 만들려면 다�
     </tr>
     <tr> 
     <td><p>최대 활성 연결</p></td> 
-    <td><p>1000</p></td>
+    <td><p>1000년</p></td>
     </tr>
     <tr> 
     <td><p>최대 유휴 연결</p></td> 
@@ -160,9 +160,9 @@ MYSQL을 데이터 소스로 구성했으면 다음 단계를 실행하여 양�
 
 1. AEM 작성자 인스턴스에서 **[!UICONTROL Forms]** > **[!UICONTROL Data Integrations]**.
 
-1. 탭 **[!UICONTROL Create]** > **[!UICONTROL Form Data Model]**.
+1. 누르기 **[!UICONTROL Create]** > **[!UICONTROL Form Data Model]**.
 
-1. 다음에서 **[!UICONTROL Create Form Data Model]** 마법사, 지정 **workflow_submit** 를 양식 데이터 모델의 이름으로 사용하십시오. **[!UICONTROL Next]**&#x200B;을 누릅니다. 
+1. 다음에서 **[!UICONTROL Create Form Data Model]** 마법사, 지정 **workflow_submit** 를 양식 데이터 모델의 이름으로 사용하십시오. 누르기 **[!UICONTROL Next]**.
 
 1. 이전 섹션에서 구성한 MYSQL 데이터 소스를 선택하고 **[!UICONTROL Create]**.
 
@@ -184,7 +184,7 @@ MYSQL을 데이터 소스로 구성했으면 다음 단계를 실행하여 양�
 
 ## JSON 바인딩을 사용하여 적응형 양식 생성 {#generate-adaptive-forms-with-json-binding}
 
-사용 [변환할 automated forms conversion 서비스](convert-existing-forms-to-adaptive-forms.md) 다음 [연락처 양식](#sample-adaptive-form) 데이터 바인딩을 사용하는 적응형 양식으로. 다음을 선택하지 않았는지 확인합니다. **[!UICONTROL Generate adaptive form(s) without data bindings]** 적응형 양식을 생성하는 동안 확인란을 선택합니다.
+사용 [변환할 automated forms conversion 서비스(AFCS)](convert-existing-forms-to-adaptive-forms.md) 다음 [연락처 양식](#sample-adaptive-form) 데이터 바인딩을 사용하는 적응형 양식으로. 다음을 선택하지 않았는지 확인합니다. **[!UICONTROL Generate adaptive form(s) without data bindings]** 적응형 양식을 생성하는 동안 확인란을 선택합니다.
 
 ![JSON 바인딩이 있는 적응형 양식](assets/generate_af_with_data_bindings.png)
 
@@ -253,7 +253,7 @@ MYSQL을 데이터 소스로 구성했으면 다음 단계를 실행하여 양�
 
 1. 다음에서 **[!UICONTROL Submission]** 섹션, 선택 **[!UICONTROL Invoke an AEM workflow]** 다음에서 **[!UICONTROL Submit Action]** 드롭다운 목록에서 이전 섹션에서 만든 워크플로 모델을 선택한 다음 지정합니다 **data.xml** 다음에서 **[!UICONTROL Data File Path]** 필드.
 
-1. 누르기 ![저장](assets/save_icon.png) 속성을 저장합니다.
+1. ![저장](assets/save_icon.png)을 탭하여 변경 내용을 저장합니다.
 
 1. 누르기 **[!UICONTROL Preview]**, 적응형 양식 필드에 값을 입력하고 을 누릅니다 **[!UICONTROL Submit]**. 이제 제출된 값이 대신 MYSQL 데이터베이스 테이블에 표시됩니다. **crx-repository**.
 

@@ -1,6 +1,6 @@
 ---
 title: 적응형 양식을 위한 권장 데이터 소스 기반 미리 채우기 및 제출 워크플로우
-description: automated forms conversion 서비스를 사용하여 생성된 적응형 양식을 위한 데이터 소스 기반 미리 채우기 및 제출 워크플로우입니다.
+description: AFCS(Automated forms conversion 서비스)를 사용하여 생성된 적응형 양식을 위한 데이터 소스 기반 미리 채우기 및 제출 워크플로우입니다.
 solution: Experience Manager Forms
 feature: Adaptive Forms
 topic: Administration
@@ -9,16 +9,16 @@ role: Admin, Developer
 level: Beginner, Intermediate
 contentOwner: khsingh
 exl-id: 5deef8f5-5098-47c1-b696-b2db59e92931
-source-git-commit: e95b4ed35f27f920b26c05f3398529f825948f1f
+source-git-commit: c2392932d1e29876f7a11bd856e770b8f7ce3181
 workflow-type: tm+mt
-source-wordcount: '2437'
-ht-degree: 2%
+source-wordcount: '2397'
+ht-degree: 1%
 
 ---
 
 # 적응형 양식을 위한 권장 데이터 소스 기반 미리 채우기 및 제출 워크플로우 {#recommended-data-source-btased-prefill-and-submit-workflows-for-adaptive-forms}
 
-automated forms conversion 서비스를 사용하여 변환된 적응형 양식에 다음 데이터 소스를 사용할 수 있습니다.
+AFCS(Automated forms conversion 서비스)를 사용하여 변환된 적응형 양식에 다음 데이터 소스를 사용할 수 있습니다.
 
 * 양식 데이터 모델, OData 또는 기타 타사 서비스
 * JSON 스키마
@@ -37,12 +37,12 @@ automated forms conversion 서비스를 사용하여 변환된 적응형 양식�
   <tr> 
    <td><p>양식 데이터 모델, OData 또는 기타 타사 서비스</p></td> 
    <td> 
-    <p><strong>옵션 1</strong>: 양식 데이터 모델, OData 또는 기타 타사 서비스를 데이터 소스로 선택합니다. 본인 <a href="#generate-adaptive-forms-with-no-data-binding">데이터 바인딩 없이 적응형 양식 생성</a> automated forms conversion 서비스 사용. 적응형 양식 필드를 양식 데이터 모델 엔티티에 수동으로 바인딩하고 양식 데이터 모델 미리 채우기 서비스 옵션을 사용하여 필드 값을 미리 채웁니다. 양식 데이터 모델을 사용하여 제출 옵션을 사용하여 적응형 양식을 제출합니다.</p></td> 
+    <p><strong>옵션 1</strong>: 양식 데이터 모델, OData 또는 기타 타사 서비스를 데이터 소스로 선택합니다. 본인 <a href="#generate-adaptive-forms-with-no-data-binding">데이터 바인딩 없이 적응형 양식 생성</a> automated forms conversion 서비스(AFCS) 사용. 적응형 양식 필드를 양식 데이터 모델 엔티티에 수동으로 바인딩하고 양식 데이터 모델 미리 채우기 서비스 옵션을 사용하여 필드 값을 미리 채웁니다. 양식 데이터 모델을 사용하여 제출 옵션을 사용하여 적응형 양식을 제출합니다.</p></td> 
   </tr>
   <tr> 
    <td></td> 
    <td> 
-   <p><strong>옵션 2</strong>: 양식 데이터 모델, OData 또는 기타 타사 서비스를 데이터 소스로 선택합니다. 본인 <a href="#generate-adaptive-forms-with-no-data-binding">데이터 바인딩 없이 적응형 양식 생성</a> automated forms conversion 서비스 사용. 규칙 편집기를 사용하여 적응형 양식 필드를 바인딩하여 필드 값을 미리 채웁니다. 필요한 경우 필드 값을 수정하고 crx-repository에 데이터를 전송합니다.</p>
+   <p><strong>옵션 2</strong>: 양식 데이터 모델, OData 또는 기타 타사 서비스를 데이터 소스로 선택합니다. 본인 <a href="#generate-adaptive-forms-with-no-data-binding">데이터 바인딩 없이 적응형 양식 생성</a> automated forms conversion 서비스(AFCS) 사용. 규칙 편집기를 사용하여 적응형 양식 필드를 바인딩하여 필드 값을 미리 채웁니다. 필요한 경우 필드 값을 수정하고 crx-repository에 데이터를 전송합니다.</p>
     </td> 
   </tr>
   <tr> 
@@ -58,7 +58,7 @@ automated forms conversion 서비스를 사용하여 변환된 적응형 양식�
   <tr>
   <td></td> 
    <td> 
-    <p><strong>옵션 1</strong>: 본인 <a href="#generate-adaptive-forms-with-no-data-binding">데이터 바인딩 없이 적응형 양식 생성</a> automated forms conversion 서비스를 사용하고 JSON 스키마를 데이터 소스로 구성합니다. 적응형 양식 필드를 JSON 스키마에 수동으로 바인딩하고 <a href="https://helpx.adobe.com/experience-manager/6-5/forms/using/prepopulate-adaptive-form-fields.html#Supportedprotocolsforprefillinguserdata" target="_blank">지원되는 프로토콜 사용</a> 필드 값을 미리 채우십시오. 필요한 경우 필드 값을 수정하고 crx-repository에 데이터를 전송합니다.</p></td> 
+    <p><strong>옵션 1</strong>: 본인 <a href="#generate-adaptive-forms-with-no-data-binding">데이터 바인딩 없이 적응형 양식 생성</a> AFCS(Automated forms conversion 서비스)를 사용하고 JSON 스키마를 데이터 소스로 구성합니다. 적응형 양식 필드를 JSON 스키마에 수동으로 바인딩하고 <a href="https://helpx.adobe.com/experience-manager/6-5/forms/using/prepopulate-adaptive-form-fields.html#Supportedprotocolsforprefillinguserdata" target="_blank">지원되는 프로토콜 사용</a> 필드 값을 미리 채우십시오. 필요한 경우 필드 값을 수정하고 crx-repository에 데이터를 전송합니다.</p></td> 
   </tr>
   <tr>
   <td></td> 
@@ -68,7 +68,7 @@ automated forms conversion 서비스를 사용하여 변환된 적응형 양식�
   <tr>
   <td></td> 
    <td> 
-    <p><strong>옵션 2</strong>: 본인 <a href="#generate-adaptive-forms-with-json-binding">json 데이터 바인딩을 사용하여 적응형 양식 생성</a> automated forms conversion 서비스 사용. 미리 채우기 서비스와 양식 제출이 원활하게 작동합니다. 구성 단계는 필요하지 않습니다.</p> </td> 
+    <p><strong>옵션 2</strong>: 본인 <a href="#generate-adaptive-forms-with-json-binding">json 데이터 바인딩을 사용하여 적응형 양식 생성</a> automated forms conversion 서비스(AFCS) 사용. 미리 채우기 서비스와 양식 제출이 원활하게 작동합니다. 구성 단계는 필요하지 않습니다.</p> </td> 
   </tr>
    <tr>
   <td></td> 
@@ -78,7 +78,7 @@ automated forms conversion 서비스를 사용하여 변환된 적응형 양식�
   <tr>
   <td><p>XSD 스키마</p></td> 
    <td> 
-    <p>XSD 스키마를 데이터 소스로 선택합니다. 선택한 데이터 소스를 기반으로 <a href="#generate-adaptive-forms-with-no-data-binding">데이터 바인딩 없이 적응형 양식 생성</a> automated forms conversion 서비스를 사용하고 XSD 스키마를 데이터 소스로 구성합니다. 적응형 양식 필드를 XSD 스키마에 수동으로 바인딩하고 <a href="https://helpx.adobe.com/experience-manager/6-5/forms/using/prepopulate-adaptive-form-fields.html#Supportedprotocolsforprefillinguserdata" target="_blank">지원되는 프로토콜 사용</a> 필드 값을 미리 채우십시오. 필요한 경우 필드 값을 수정하고 crx-repository에 데이터를 전송합니다.</p>
+    <p>XSD 스키마를 데이터 소스로 선택합니다. 선택한 데이터 소스를 기반으로 <a href="#generate-adaptive-forms-with-no-data-binding">데이터 바인딩 없이 적응형 양식 생성</a> automated forms conversion 서비스(AFCS)를 사용하고 XSD 스키마를 데이터 소스로 구성합니다. 적응형 양식 필드를 XSD 스키마에 수동으로 바인딩하고 <a href="https://helpx.adobe.com/experience-manager/6-5/forms/using/prepopulate-adaptive-form-fields.html#Supportedprotocolsforprefillinguserdata" target="_blank">지원되는 프로토콜 사용</a> 필드 값을 미리 채우십시오. 필요한 경우 필드 값을 수정하고 crx-repository에 데이터를 전송합니다.</p>
     </td> 
   </tr>
   <tr>
@@ -91,10 +91,10 @@ automated forms conversion 서비스를 사용하여 변환된 적응형 양식�
 </table>
 
 
-automated forms conversion 서비스에 대한 자세한 내용은 다음 문서를 참조하십시오.
+AFCS(Automated forms conversion 서비스)에 대한 자세한 내용은 다음 문서를 참조하십시오.
 
-* [자동 양식 전환 서비스 소개](introduction.md)
-* [자동 양식 전환 서비스 구성](configure-service.md)
+* [automated forms conversion 서비스 소개](introduction.md)
+* [automated forms conversion 서비스 구성](configure-service.md)
 * [인쇄 양식을 적응형 양식으로 전환](convert-existing-forms-to-adaptive-forms.md)
 * [전환된 양식 검토 및 수정](review-correct-ui-edited.md)
 
@@ -102,8 +102,8 @@ automated forms conversion 서비스에 대한 자세한 내용은 다음 문서
 
 ## 전제 조건 {#pre-requisites}
 
-* 구성 [AEM 작성자 인스턴스](https://helpx.adobe.com/kr/experience-manager/6-5/sites/deploying/using/deploy.html)
-* 구성 [AEM 작성자 인스턴스의 automated forms conversion 서비스](configure-service.md)
+* 구성 [AEM 작성자 인스턴스](https://helpx.adobe.com/experience-manager/6-5/sites/deploying/using/deploy.html)
+* 구성 [AEM 작성자 인스턴스의 AFCS(automated forms conversion 서비스)](configure-service.md)
 
 ## 샘플 적응형 양식 {#sample-adaptive-form}
 
@@ -113,7 +113,7 @@ automated forms conversion 서비스에 대한 자세한 내용은 다음 문서
 
 [파일 가져오기](assets/sample_loan_application_form.pdf)
 
-PDF 파일은 Automated forms conversion 서비스에 대한 입력 역할을 합니다. 이 서비스는 이 파일을 적응형 양식으로 전환합니다. 다음 이미지는 PDF 형식의 샘플 대출 신청을 보여 줍니다.
+PDF 파일은 Automated forms conversion 서비스(AFCS)에 대한 입력 역할을 합니다. 이 서비스는 이 파일을 적응형 양식으로 전환합니다. 다음 이미지는 PDF 형식의 샘플 대출 신청을 보여 줍니다.
 
 ![샘플 대출 신청서 양식](assets/sample_form_new.png)
 
@@ -125,7 +125,7 @@ AEM Forms 데이터 통합을 사용하면 서로 다른 데이터 소스를 구
 
 ![샘플 데이터 mysql](assets/sample_data_mysql.png)
 
-다음 DDL 문을 사용하여 다음을 생성할 수 있습니다 **지원자** 데이터베이스의 테이블입니다.
+다음 DDL 문을 사용하여 **지원자** 데이터베이스의 테이블입니다.
 
 ```sql
 CREATE TABLE `applicant` (
@@ -236,12 +236,12 @@ XSD 스키마를 양식 모델로 사용하여 사용 사례를 실행하는 경
 * [XSD 스키마](#xsddatasource)
 
 >[!NOTE]
-> automated forms conversion 서비스를 사용하여 변환하는 적응형 양식에 같은 이름의 필드가 여러 개 포함되어 있는 경우 제출 중 발생할 수 있는 데이터 손실을 방지하기 위해 해당 필드가 데이터 소스 엔티티에 바인딩되어 있는지 확인하십시오.
+> AFCS(Automated forms conversion 서비스)를 사용하여 변환하는 적응형 양식에 같은 이름의 필드가 여러 개 포함되어 있는 경우, 제출 중에 발생할 수 있는 데이터 손실을 방지하기 위해 해당 필드가 데이터 소스 엔티티에 바인딩되어 있는지 확인하십시오.
 >
 
 ### 데이터베이스, OData 또는 서드파티 서비스를 데이터 소스로 사용 {#sqldatasource}
 
-사용 사례: Automated forms conversion 서비스를 사용하여 데이터 바인딩 없이 적응형 양식을 생성하고 MYSQL 데이터베이스를 데이터 소스로 구성합니다. 적응형 양식 필드를 양식 데이터 모델 엔티티에 수동으로 바인딩하고 **[!UICONTROL Form Data Model Prefill Service]** 필드 값을 미리 채우는 옵션입니다. 다음을 사용합니다. **[!UICONTROL Submit using Form Data Model]** 옵션을 사용하여 적응형 양식을 전송하십시오.
+사용 사례: Automated forms conversion 서비스(AFCS)를 사용하여 데이터 바인딩 없이 적응형 양식을 생성하고 MYSQL 데이터베이스를 데이터 소스로 구성합니다. 적응형 양식 필드를 양식 데이터 모델 엔티티에 수동으로 바인딩하고 **[!UICONTROL Form Data Model Prefill Service]** 필드 값을 미리 채우는 옵션입니다. 다음을 사용합니다. **[!UICONTROL Submit using Form Data Model]** 옵션을 사용하여 적응형 양식을 전송하십시오.
 
 사용 사례를 실행하기 전에:
 
@@ -281,7 +281,7 @@ XSD 스키마를 양식 모델로 사용하여 사용 사례를 실행하는 경
 1. 누르기 **[!UICONTROL Preview]** 미리 채워진 적응형 양식 필드 값을 보려면
 1. 필요한 경우 필드 값을 수정하고 적응형 양식을 제출합니다. 필드 값이 MySQL 데이터베이스에 제출됩니다. 다음을 새로 고칠 수 있습니다. **지원자** 데이터베이스에서 테이블을 사용하여 테이블에서 업데이트된 값을 볼 수 있습니다.
 
-**사용 사례:** automated forms conversion 서비스를 사용하여 데이터 바인딩 없이 적응형 양식을 생성하고 MYSQL 데이터베이스를 데이터 소스로 구성합니다. 규칙 편집기를 사용하여 적응형 양식 필드를 바인딩하여 필드 값을 미리 채웁니다. 필요한 경우 필드 값을 수정하고 crx-repository에 데이터를 전송합니다.
+**사용 사례:** AFCS(Automated forms conversion 서비스)를 사용하여 데이터 바인딩 없이 적응형 양식을 생성하고 MYSQL 데이터베이스를 데이터 소스로 구성합니다. 규칙 편집기를 사용하여 적응형 양식 필드를 바인딩하여 필드 값을 미리 채웁니다. 필요한 경우 필드 값을 수정하고 crx-repository에 데이터를 전송합니다.
 
 사용하려면 다음 단계를 수행하십시오 [규칙 편집기](https://helpx.adobe.com/experience-manager/6-5/forms/using/rule-editor.html) 양식 데이터 모델 서비스를 호출하여 적응형 양식의 필드를 바인딩하고 값을 미리 채우려면 다음을 수행하십시오.
 
@@ -323,7 +323,7 @@ XSD 스키마를 양식 모델로 사용하여 사용 사례를 실행하는 경
 
 ### JSON 스키마를 데이터 소스로 사용 {#jsondatasource}
 
-**사용 사례:** automated forms conversion 서비스를 사용하여 데이터 바인딩 없이 적응형 양식을 생성하고 JSON 스키마를 데이터 소스로 구성합니다. 적응형 양식 필드를 JSON 스키마에 수동으로 바인딩하고 **데이터를 사용하여 미리 보기** 필드 값을 미리 채우는 옵션입니다. 필요한 경우 필드 값을 수정하고 crx-repository에 데이터를 전송합니다.
+**사용 사례:** AFCS(Automated forms conversion 서비스)를 사용하여 데이터 바인딩 없이 적응형 양식을 생성하고 JSON 스키마를 데이터 소스로 구성합니다. 적응형 양식 필드를 JSON 스키마에 수동으로 바인딩하고 **데이터를 사용하여 미리 보기** 필드 값을 미리 채우는 옵션입니다. 필요한 경우 필드 값을 수정하고 crx-repository에 데이터를 전송합니다.
 
 사용 사례를 실행하기 전에 다음을 확인하십시오.
 
@@ -351,7 +351,7 @@ XSD 스키마를 양식 모델로 사용하여 사용 사례를 실행하는 경
 
 ### XSD 스키마를 데이터 소스로 사용 {#xsddatasource}
 
-**사용 사례:** automated forms conversion 서비스를 사용하여 데이터 바인딩 없이 적응형 양식을 생성하고 XSD 스키마를 데이터 소스로 구성합니다. 적응형 양식 필드를 XSD 스키마에 수동으로 바인딩하고 **데이터를 사용하여 미리 보기** 필드 값을 미리 채우십시오. 필요한 경우 필드 값을 수정하고 crx-repository에 데이터를 전송합니다.
+**사용 사례:** AFCS(Automated forms conversion 서비스)를 사용하여 데이터 바인딩 없이 적응형 양식을 생성하고 XSD 스키마를 데이터 소스로 구성합니다. 적응형 양식 필드를 XSD 스키마에 수동으로 바인딩하고 **데이터를 사용하여 미리 보기** 필드 값을 미리 채우십시오. 필요한 경우 필드 값을 수정하고 crx-repository에 데이터를 전송합니다.
 
 사용 사례를 실행하기 전에 다음을 확인하십시오.
 
@@ -379,13 +379,13 @@ XSD 스키마를 양식 모델로 사용하여 사용 사례를 실행하는 경
 
 ## JSON 바인딩을 사용하여 적응형 양식 생성 {#generate-adaptive-forms-with-json-binding}
 
-사용 [변환할 automated forms conversion 서비스](convert-existing-forms-to-adaptive-forms.md) 다음 [샘플 대출 신청서 양식](#sample-adaptive-form) 데이터 바인딩을 사용하는 적응형 양식으로. 다음을 선택하지 않았는지 확인합니다. **[!UICONTROL Generate adaptive form(s) without data bindings]** 적응형 양식을 생성하는 동안 확인란을 선택합니다.
+사용 [변환할 automated forms conversion 서비스(AFCS)](convert-existing-forms-to-adaptive-forms.md) 다음 [샘플 대출 신청서 양식](#sample-adaptive-form) 데이터 바인딩을 사용하는 적응형 양식으로. 다음을 선택하지 않았는지 확인합니다. **[!UICONTROL Generate adaptive form(s) without data bindings]** 적응형 양식을 생성하는 동안 확인란을 선택합니다.
 
 ![JSON 바인딩이 있는 적응형 양식](assets/generate_af_with_data_bindings.png)
 
 ### JSON 스키마를 데이터 소스로 사용 {#jsonwithdatabinding}
 
-**사용 사례:** automated forms conversion 서비스를 사용하여 JSON 데이터 바인딩이 있는 적응형 양식을 생성합니다. 미리 채우기 서비스와 양식 제출이 원활하게 작동합니다. 구성 단계는 필요하지 않습니다.
+**사용 사례:** AFCS(Automated forms conversion 서비스)를 사용하여 JSON 데이터 바인딩이 있는 적응형 양식을 생성합니다. 미리 채우기 서비스와 양식 제출이 원활하게 작동합니다. 구성 단계는 필요하지 않습니다.
 
 사용 사례를 실행하기 전에 다음을 확인하십시오. [데이터 바인딩이 포함된 적응형 양식](#generate-adaptive-forms-with-json-binding).
 

@@ -1,5 +1,5 @@
 ---
-title: automated forms conversion 서비스 소개
+title: AFCS(automated forms conversion 서비스) 소개
 description: 인쇄 양식을 적응형 양식으로 신속하게 전환
 solution: Experience Manager Forms
 feature: Adaptive Forms, Foundation Components
@@ -8,16 +8,16 @@ topic-tags: forms
 role: Admin, Developer
 level: Beginner, Intermediate
 exl-id: edabeac8-cd66-48ca-a99f-9643a1c184cf
-source-git-commit: 919886cda2ec50ddb9b403cbb0e92fec2821c10e
+source-git-commit: c2392932d1e29876f7a11bd856e770b8f7ce3181
 workflow-type: tm+mt
-source-wordcount: '703'
-ht-degree: 64%
+source-wordcount: '711'
+ht-degree: 58%
 
 ---
 
-# 소개 {#introduction-to-automated-forms-conversion-service}
+# Automated forms conversion 서비스(AFCS) {#introduction-to-automated-forms-conversion-service}
 
-자동 양식 전환 서비스를 사용하면 PDF 양식을 적응형 양식으로 자동 전환하여 데이터 캡처 경험을 보다 빠르게 디지털화하고 현대화할 수 있습니다. Adobe Sensei 기반의 이 서비스는 PDF 양식을 장치 친화적인 반응형 및 HTML5 기반의 적응형 양식으로 자동 전환합니다. PDF 양식 및 XFA에 대한 기존 투자를 활용하는 동시에 전환 중에 적절한 유효성 검사, 스타일 지정 및 레이아웃을 적응형 양식 필드에 적용합니다. 이 서비스는 다음과 같은 이점을 제공합니다.
+Automated forms conversion 서비스(AFCS)는 PDF forms을 적응형 양식으로 자동 전환하여 데이터 캡처 환경을 디지털화하고 현대화하는 데 도움이 됩니다. Adobe Sensei 기반의 이 서비스는 PDF 양식을 장치 친화적인 반응형 및 HTML5 기반의 적응형 양식으로 자동 전환합니다. PDF 양식 및 XFA에 대한 기존 투자를 활용하는 동시에 전환 중에 적절한 유효성 검사, 스타일 지정 및 레이아웃을 적응형 양식 필드에 적용합니다. 이 서비스는 다음과 같은 이점을 제공합니다.
 
 * 인쇄 양식을 적응형 양식으로 전환하는 데 필요한 수작업 절감
 * 전환 중 패턴 및 적절한 유효성 검사 적용
@@ -43,13 +43,13 @@ Adobe는 조직에 대한 액세스 권한을 활성화하고 조직의 책임�
 
 ## 전환 워크플로우  {#conversion-workflow}
 
-자동 양식 전환 서비스는 Adobe Cloud에서 실행됩니다. AEM 인스턴스를 서비스에 연결하고, 양식을 AEM 인스턴스에 업로드하고, 전환을 시작합니다. 전체 전환 프로세스는 다음과 같습니다.
+AFCS(automated forms conversion 서비스)는 Adobe 클라우드에서 실행됩니다. AEM 인스턴스를 서비스에 연결하고, 양식을 AEM 인스턴스에 업로드하고, 전환을 시작합니다. 전체 전환 프로세스는 다음과 같습니다.
 
 ![워크플로우](assets/conversion-workflow.png)
 
 ### 1. 환경 설정 {#set-up-the-environment}
 
-자동 양식 전환 서비스는 Adobe Cloud에서 실행됩니다. [조직의 Adobe I/O 계정을 구성하고 로컬 AEM 인스턴스](configure-service.md)를 Adobe Cloud에서 실행되는 전환 서비스에 연결합니다.
+AFCS(automated forms conversion 서비스)는 Adobe 클라우드에서 실행됩니다. [조직의 Adobe I/O 계정을 구성하고 로컬 AEM 인스턴스](configure-service.md)를 Adobe Cloud에서 실행되는 전환 서비스에 연결합니다.
 
 ### 2. PDF forms을 적응형 양식으로 전환 {#use-the-conversion-service}
 
