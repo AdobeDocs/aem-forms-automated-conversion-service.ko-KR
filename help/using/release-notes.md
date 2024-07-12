@@ -10,8 +10,8 @@ level: Beginner, Intermediate
 exl-id: fccafbc9-28c1-4736-922c-24d675b25213
 source-git-commit: e95b4ed35f27f920b26c05f3398529f825948f1f
 workflow-type: tm+mt
-source-wordcount: '451'
-ht-degree: 66%
+source-wordcount: '487'
+ht-degree: 63%
 
 ---
 
@@ -30,7 +30,7 @@ ht-degree: 66%
 
 ## 2022년 2월 24일 (AFC-2022.02.0) {#feb-2022}
 
-* 에 기능이 추가됨 [섹션을 조각으로 자동 변환](convert-existing-forms-to-adaptive-forms.md) 를 사용하면 변환된 양식의 렌더링 속도를 개선하고 적응형 양식 편집기에서 보다 쉽게 대용량 양식을 로드할 수 있습니다.
+* [섹션을 조각으로 자동 변환](convert-existing-forms-to-adaptive-forms.md)하여 변환된 양식의 렌더링 속도를 개선하고 적응형 양식 편집기에서 보다 쉽게 대용량 양식을 로드할 수 있는 기능이 추가되었습니다.
 
 ## 2021년 8월 29일 (AFC-2021.08.0) {#aug-2021}
 

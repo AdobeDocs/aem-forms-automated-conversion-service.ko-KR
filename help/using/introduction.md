@@ -29,7 +29,7 @@ Automated forms conversion 서비스(AFCS)는 PDF forms을 적응형 양식으�
 
 ## 온보딩 {#onboarding}
 
-이 서비스는 AEM 6.4 Forms 및 AEM 6.5 Forms On-Premise 기간제 고객과 Adobe 관리 서비스 기업 고객에게 무료로 제공됩니다. Adobe 영업팀 또는 Adobe 담당자에게 문의하여 서비스 액세스를 요청할 수 있습니다. 이 서비스는 AEM Forms as a Cloud Service 고객에게도 무료로 제공되며 사전 활성화됩니다.
+이 서비스는 AEM 6.4 Forms 및 AEM 6.5 Forms On-Premise 기간제 고객과 Adobe 관리 서비스 기업 고객에게 무료로 제공됩니다. Adobe 영업팀 또는 Adobe 담당자에게 문의하여 서비스 액세스를 요청할 수 있습니다. 이 서비스는 AEM Forms as a Cloud Service 고객도 무료로 이용할 수 있으며, 사전 활성화도 가능합니다.
 
 Adobe는 조직에 대한 액세스 권한을 활성화하고 조직의 책임자로 지정된 사람에게 필요한 권한을 제공합니다. 책임자는 해당 서비스에 연결할 조직의 AEM Forms 개발자(사용자)에게 액세스 권한을 부여할 수 있습니다. 자세한 내용은 [자동 양식 전환 서비스 구성](configure-service.md)을 참조하십시오.
 
@@ -39,7 +39,7 @@ Adobe는 조직에 대한 액세스 권한을 활성화하고 조직의 책임�
 
 이 서비스는 Adobe Sign 지원 PDF forms도 지원합니다. 소스 PDF form에 Adobe Sign 텍스트 태그가 포함된 경우 서비스는 전환 중에 모든 Adobe Sign 관련 정보를 유지하고 소스 PDF의 서명자 정보를 해당 적응형 양식 필드와 연결합니다. 이 기능은 AcroForms에서만 사용할 수 있습니다.
 
-이 서비스는 영어, 프랑스어, 독일어, 스페인어, 이탈리아어 및 포르투갈어 언어 양식을 적응형 양식으로 전환할 수 있습니다. 을 사용하여 생성된 적응형 양식을 다른 언어로 번역할 수도 있습니다 [AEM 번역 워크플로](https://helpx.adobe.com/experience-manager/6-5/forms/using/using-aem-translation-workflow-to-localize-adaptive-forms.html).
+이 서비스는 영어, 프랑스어, 독일어, 스페인어, 이탈리아어 및 포르투갈어 언어 양식을 적응형 양식으로 전환할 수 있습니다. [AEM 번역 워크플로](https://helpx.adobe.com/experience-manager/6-5/forms/using/using-aem-translation-workflow-to-localize-adaptive-forms.html)를 사용하여 생성된 적응형 양식을 다른 언어로 번역할 수도 있습니다.
 
 ## 전환 워크플로우  {#conversion-workflow}
 

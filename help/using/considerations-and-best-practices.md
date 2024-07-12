@@ -1,6 +1,6 @@
 ---
 title: 모범 사례 및 고려 사항
-description: 게시 안 함
+description: Publish 금지
 seo-description: DO NOT PUBLISH
 page-status-flag: never-activated
 uuid: c2821264-39e2-44f8-b234-835c46f33fd5
@@ -26,7 +26,7 @@ AEM Forms 자동 전환 서비스는 PDF 양식을 적응형 양식으로 전환
 
 Automated forms conversion 서비스(AFCS)는 다양한 양식 세트에서 교육됩니다. 소스 양식의 필드를 쉽게 식별하고 적응형 양식을 생성합니다. 하지만 PDF forms은 사람의 눈에는 쉽게 볼 수 있지만 서비스를 위해 이해하기 어려운 분야와 스타일이 존재한다. 이 서비스는 일부 필드 또는 스타일에 적용 가능한 필드 유형 또는 패널과 다른 필드 유형 또는 패널을 할당할 수 있습니다. 이러한 모든 필드 및 스타일 패턴은 아래에 나열되어 있습니다.
 
-이 서비스는 소스 데이터에서 계속 학습하기 때문에 이러한 패턴에 올바른 필드 또는 패널을 식별하고 할당하기 시작합니다. 당분간 다음을 사용할 수 있습니다. [검토 및 수정](review-correct-ui-edited.md) 이러한 문제를 해결하기 위한 편집기. 문제를 수정하거나 더 자세히 읽기 전에 다음 사항에 대해 숙지하십시오. [적응형 양식 구성 요소](https://helpx.adobe.com/experience-manager/6-5/forms/using/introduction-forms-authoring.html).
+이 서비스는 소스 데이터에서 계속 학습하기 때문에 이러한 패턴에 올바른 필드 또는 패널을 식별하고 할당하기 시작합니다. 당분간 [검토 및 수정](review-correct-ui-edited.md) 편집기를 사용하여 이러한 문제를 해결할 수 있습니다. 문제를 수정하거나 더 자세히 읽기 전에 [적응형 양식 구성 요소](https://helpx.adobe.com/experience-manager/6-5/forms/using/introduction-forms-authoring.html)를 숙지하십시오.
 
 ## 일반 {#general}
 

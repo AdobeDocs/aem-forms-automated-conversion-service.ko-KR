@@ -24,9 +24,9 @@ DoR은 기본 템플릿을 사용하여 레이아웃을 정의합니다. 기본 
 
 ![생성된 기록 문서](assets/document_of_record.gif)
 
-DoR 생성에 대한 자세한 내용은 [적응형 양식을 위한 기록 문서 생성](https://helpx.adobe.com/experience-manager/6-5/forms/using/generate-document-of-record-for-non-xfa-based-adaptive-forms.html).
+DoR 생성에 대한 자세한 내용은 [적응형 양식에 대한 기록 문서 생성](https://helpx.adobe.com/experience-manager/6-5/forms/using/generate-document-of-record-for-non-xfa-based-adaptive-forms.html)을 참조하십시오.
 
-다음 [Automated forms conversion 서비스(AFCS)](/help/using/introduction.md) 다음 소스 양식을 적응형 양식으로 전환합니다.
+[AFCS(Automated forms conversion 서비스)](/help/using/introduction.md)이(가) 다음 원본 양식을 적응형 양식으로 전환합니다.
 
 * 비대화형 PDF forms
 * 아크로 Forms
@@ -43,7 +43,7 @@ DoR 생성에 대한 자세한 내용은 [적응형 양식을 위한 기록 문�
 <table> 
  <tbody>
  <tr>
-  <td><p><strong>소스 양식</strong></p></td>
+  <td><p><strong>Source 양식</strong></p></td>
   <td><p><strong>생성된 DoR</strong></p></td> 
    </tr>
   <tr>
@@ -63,7 +63,7 @@ DoR 생성에 대한 자세한 내용은 [적응형 양식을 위한 기록 문�
 <table> 
  <tbody> 
   <tr> 
-   <th><strong>소스 양식</strong></th> 
+   <th><strong>Source 양식</strong></th> 
    <th><strong>DoR 생성 방법</strong></th> 
   </tr> 
   <tr> 
@@ -94,30 +94,30 @@ DoR 생성에 대한 자세한 내용은 [적응형 양식을 위한 기록 문�
 
 ### 변환 전 DoR 생성을 활성화하여 기본 템플릿을 사용하여 DoR 생성 {#generate-document-of-record-using-cloud-configuration}
 
-1. 선택 **[!UICONTROL Tools]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL Automated Forms Conversion Configuration]** > 변환에 사용되는 클라우드 구성의 속성 > **[!UICONTROL Advanced]** > **[!UICONTROL Generate Document of Record]** 옵션을 선택합니다.
+1. **[!UICONTROL Tools]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL Automated Forms Conversion Configuration]** > 전환에 사용되는 클라우드 구성의 속성 > **[!UICONTROL Advanced]** > **[!UICONTROL Generate Document of Record]** 옵션을 선택합니다.
 
    ![클라우드 구성을 사용하여 기록 문서 생성](assets/generate_dor_cloud_config.gif)
 
-1. 누르기 **[!UICONTROL Save & Close]** 설정을 저장합니다.
+1. 설정을 저장하려면 **[!UICONTROL Save & Close]**&#x200B;을(를) 탭하세요.
 
-1. [전환 실행](/help/using/convert-existing-forms-to-adaptive-forms.md). 이 지침 중 1단계에서 편집한 클라우드 구성을 사용해야 합니다.
+1. [변환 실행](/help/using/convert-existing-forms-to-adaptive-forms.md). 이 지침 중 1단계에서 편집한 클라우드 구성을 사용해야 합니다.
 변환된 적응형 양식을 제출하면 기본 템플릿을 사용하여 DoR이 자동으로 생성됩니다.
 
 ### 전환 후 적응형 양식 속성을 편집하여 DoR 생성 활성화 {#edit-adaptive-form-properties-generate-document-of-record}
 
 에서 소스 양식을 적응형 양식으로 변환하기 전에 DoR 생성을 활성화하지 않으면 변환 후에도 활성화할 수 있습니다.
 
-1. [전환 실행](/help/using/convert-existing-forms-to-adaptive-forms.md) PDF 를 사용하여 적응형 양식을 생성할 수 있습니다.
+1. 적응형 양식을 생성하려면 비대화형 PDF 양식에서 [전환을 실행](/help/using/convert-existing-forms-to-adaptive-forms.md)하십시오.
 
-1. 에서 적응형 양식 선택 **[!UICONTROL output]** 폴더 및 탭 **[!UICONTROL Properties]**.
+1. **[!UICONTROL output]** 폴더에서 적응형 양식을 선택하고 **[!UICONTROL Properties]**&#x200B;을(를) 누릅니다.
 
-1. 다음에서 **[!UICONTROL Form Model]** 탭을 확장하고 **[!UICONTROL Document of Record Template Configuration]** 섹션 및 선택 **[!UICONTROL Generate Document of Record]**.
+1. **[!UICONTROL Form Model]** 탭에서 **[!UICONTROL Document of Record Template Configuration]** 섹션을 확장하고 **[!UICONTROL Generate Document of Record]**&#x200B;을(를) 선택합니다.
 
    ![기록 문서 생성](assets/generate_dor_af_properties.png)
 
-1. 누르기 **[!UICONTROL Save & Close]** 설정을 저장합니다.
+1. 설정을 저장하려면 **[!UICONTROL Save & Close]**&#x200B;을(를) 탭하세요.
 
-변환된 적응형 양식을 제출하면 기본 템플릿을 사용하여 DoR이 자동으로 생성됩니다. 다른 DoR 템플릿을 변환된 적응형 양식과 연결하려면 다음을 선택할 수 있습니다. **[!UICONTROL Associate form template as the Document of Record template]** 옵션을 선택합니다.
+변환된 적응형 양식을 제출하면 기본 템플릿을 사용하여 DoR이 자동으로 생성됩니다. 다른 DoR 템플릿을 변환된 적응형 양식과 연결하려면 **[!UICONTROL Associate form template as the Document of Record template]** 옵션을 선택할 수 있습니다.
 
 ## Acro Forms 또는 XFA 기반 PDF forms에 대한 기록 문서 생성 {#generate-document-of-record-acroform-xfaform}
 
@@ -129,25 +129,25 @@ Acro 양식 또는 XFA 기반 PDF 양식을 AFCS(Automated forms conversion 서�
 
 ### 변환 전 DoR 생성을 활성화하여 소스 양식 템플릿을 사용하여 DoR 생성 {#use-input-form-as-template-to-generate-document-of-record}
 
-1. 선택 **[!UICONTROL Tools]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL Automated Forms Conversion Configuration]** > 변환에 사용되는 클라우드 구성의 속성 > **[!UICONTROL Advanced]** > **[!UICONTROL Generate Document of Record]** 옵션을 선택합니다.
+1. **[!UICONTROL Tools]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL Automated Forms Conversion Configuration]** > 전환에 사용되는 클라우드 구성의 속성 > **[!UICONTROL Advanced]** > **[!UICONTROL Generate Document of Record]** 옵션을 선택합니다.
 
-1. 누르기 **[!UICONTROL Save & Close]** 설정을 저장합니다.
+1. 설정을 저장하려면 **[!UICONTROL Save & Close]**&#x200B;을(를) 탭하세요.
 
-1. [전환 실행](/help/using/convert-existing-forms-to-adaptive-forms.md). 이 지침 중 1단계에서 편집한 클라우드 구성을 사용해야 합니다.
+1. [변환 실행](/help/using/convert-existing-forms-to-adaptive-forms.md). 이 지침 중 1단계에서 편집한 클라우드 구성을 사용해야 합니다.
 변환 서비스는 Acro 양식 또는 XFA 기반 PDF 양식을 변환된 적응형 양식에 DoR 템플릿으로 자동 연결합니다.
-적응형 양식 속성을 열고 DoR 템플릿을 **[!UICONTROL Document of Record Template Configuration]** 섹션 / **[!UICONTROL Form Model]** 탭.
+적응형 양식 속성을 열어 **[!UICONTROL Form Model]** 탭의 **[!UICONTROL Document of Record Template Configuration]** 섹션에서 DoR 템플릿을 볼 수 있습니다.
 
-   ![기록 문서 생성을 위한 적응형 양식 속성 편집](assets/generate_dor_af_properties_xdp_acro.png)
+   ![적응형 양식 속성을 편집하여 기록 문서 생성](assets/generate_dor_af_properties_xdp_acro.png)
 
    변환된 적응형 양식을 제출하면 소스 양식 템플릿을 사용하여 DoR이 자동으로 생성됩니다.
 
 ### 전환 후 적응형 양식 속성을 편집하여 DoR 생성 활성화 {#edit-adaptive-form-properties-to-generate-document-of-record}
 
-1. [전환 실행](/help/using/convert-existing-forms-to-adaptive-forms.md) PDF 를 사용하여 적응형 양식을 생성할 수 있습니다.
+1. 적응형 양식을 생성하려면 비대화형 PDF 양식에서 [전환을 실행](/help/using/convert-existing-forms-to-adaptive-forms.md)하십시오.
 
-1. 에서 적응형 양식 선택 **[!UICONTROL output]** 폴더 및 탭 **[!UICONTROL Properties]**.
+1. **[!UICONTROL output]** 폴더에서 적응형 양식을 선택하고 **[!UICONTROL Properties]**&#x200B;을(를) 누릅니다.
 
-1. 다음에서 **[!UICONTROL Form Model]** 탭을 확장하고 **[!UICONTROL Document of Record Template Configuration]** 섹션 및 선택 **[!UICONTROL Generate Document of Record]** 기본 템플릿을 사용하여 DoR 생성을 활성화합니다.
-다음을 선택할 수도 있습니다. **[!UICONTROL Associate form template as the Document of Record template]** 옵션을 선택하고 템플릿을 선택하여 소스 양식 템플릿 또는 기타 양식 템플릿을 사용하여 DoR 생성을 활성화합니다.
+1. **[!UICONTROL Form Model]** 탭에서 **[!UICONTROL Document of Record Template Configuration]** 섹션을 확장하고 **[!UICONTROL Generate Document of Record]**을(를) 선택하여 기본 템플릿을 사용하여 DoR 생성을 사용하도록 설정합니다.
+**[!UICONTROL Associate form template as the Document of Record template]** 옵션을 선택하고 템플릿을 선택하여 소스 양식 템플릿 또는 다른 양식 템플릿을 사용하여 DoR 생성을 활성화할 수도 있습니다.
 
-1. 누르기 **[!UICONTROL Save & Close]** 설정을 저장합니다.
+1. 설정을 저장하려면 **[!UICONTROL Save & Close]**&#x200B;을(를) 탭하세요.
