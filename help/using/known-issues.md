@@ -1,6 +1,6 @@
 ---
 title: 알려진 문제
-description: automated forms conversion 서비스(AFCS)의 알려진 문제 및 제한 사항
+description: AFCS(자동 양식 전환 서비스)에 대한 알려진 문제 및 제한 사항
 solution: Experience Manager Forms
 feature: Adaptive Forms
 topic: Administration
@@ -8,16 +8,16 @@ topic-tags: introduction
 role: Admin, Developer
 level: Beginner, Intermediate
 exl-id: 35f59e02-e38e-473a-94c8-123e0a85ac8e
-source-git-commit: c2392932d1e29876f7a11bd856e770b8f7ce3181
+source-git-commit: a2472d5a1a66ffada7be485415f50f32643e03fc
 workflow-type: tm+mt
-source-wordcount: '789'
+source-wordcount: '821'
 ht-degree: 1%
 
 ---
 
 # 알려진 문제 및 제한 사항 {#known-issues-limitations}
 
-AFCS(AEM Forms Automated forms conversion 서비스)를 사용하기 전에 다음과 같은 알려진 문제 및 제한 사항을 검토하십시오.
+AEM Forms AFCS(자동 양식 전환 서비스) 사용을 시작하기 전에 다음과 같은 알려진 문제 및 제한 사항을 검토하십시오.
 
 ## 알려진 문제 {#known-issues}
 
@@ -79,5 +79,7 @@ AFCS(AEM Forms Automated forms conversion 서비스)를 사용하기 전에 다�
 * 이 서비스는 영어, 프랑스어, 독일어, 스페인어, 이탈리아어 및 포르투갈어 언어 양식만 적응형 양식으로 전환합니다. [AEM 번역 워크플로](https://helpx.adobe.com/experience-manager/6-5/forms/using/using-aem-translation-workflow-to-localize-adaptive-forms.html)를 사용하여 변환된 적응형 양식을 다른 언어로 번역할 수 있습니다.
 * AEM 6.4 Forms에서는 입력 양식의 다중 열 레이아웃에 대한 자동 검색을 지원하지 않습니다.
 * 소스 PDF 양식의 색상을 사용하여 인코딩된 정보는 적응형 양식으로 이전되지 않습니다.
-* 소스 PDF 양식의 색상은 적응형 양식 테마로 이전되지 않습니다.
+* 소스 PDF Form의 색상은 적응형 양식 테마로 이전되지 않습니다.
 * 색상이 있는 PDF forms은 그레이스케일 양식으로 처리되며 그에 따라 필드가 감지됩니다.
+* 데이터 바인딩 또는 데이터 모델 스키마와 같은 속성은 핵심 구성 요소 기반 적응형 양식에 사용할 수 없습니다.
+* 변환된 양식을 검토하고 수정하려면 핵심 구성 요소 기반 양식에 대해 사용할 수 없습니다.
