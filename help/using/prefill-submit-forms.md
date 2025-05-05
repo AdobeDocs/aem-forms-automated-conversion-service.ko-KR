@@ -58,7 +58,7 @@ AFCS(Automated forms conversion 서비스)를 사용하여 변환된 적응형 �
   <tr>
   <td></td> 
    <td> 
-    <p><strong>옵션 1</strong>: AFCS(Automated forms conversion 서비스)를 사용하여 <a href="#generate-adaptive-forms-with-no-data-binding">데이터 바인딩이 없는 적응형 양식을 생성</a>하고 JSON 스키마를 데이터 소스로 구성합니다. 적응형 양식 필드를 JSON 스키마에 수동으로 바인딩하고 <a href="https://helpx.adobe.com/experience-manager/6-5/forms/using/prepopulate-adaptive-form-fields.html#Supportedprotocolsforprefillinguserdata" target="_blank">지원되는 프로토콜 중 하나를 사용</a>하여 필드 값을 미리 채웁니다. 필요한 경우 필드 값을 수정하고 crx-repository에 데이터를 전송합니다.</p></td> 
+    <p><strong>옵션 1</strong>: AFCS(Automated forms conversion 서비스)를 사용하여 <a href="#generate-adaptive-forms-with-no-data-binding">데이터 바인딩이 없는 적응형 양식을 생성</a>하고 JSON 스키마를 데이터 소스로 구성합니다. 적응형 양식 필드를 JSON 스키마에 수동으로 바인딩하고 <a href="https://helpx.adobe.com/kr/experience-manager/6-5/forms/using/prepopulate-adaptive-form-fields.html#Supportedprotocolsforprefillinguserdata" target="_blank">지원되는 프로토콜 중 하나를 사용</a>하여 필드 값을 미리 채웁니다. 필요한 경우 필드 값을 수정하고 crx-repository에 데이터를 전송합니다.</p></td> 
   </tr>
   <tr>
   <td></td> 
@@ -78,7 +78,7 @@ AFCS(Automated forms conversion 서비스)를 사용하여 변환된 적응형 �
   <tr>
   <td><p>XSD 스키마</p></td> 
    <td> 
-    <p>XSD 스키마를 데이터 소스로 선택합니다. 선택한 데이터 원본을 기반으로 AFCS(Automated forms conversion 서비스)를 사용하여 <a href="#generate-adaptive-forms-with-no-data-binding">데이터 바인딩이 없는 적응형 양식을 생성</a>하고 XSD 스키마를 데이터 원본으로 구성합니다. 적응형 양식 필드를 XSD 스키마에 수동으로 바인딩하고 <a href="https://helpx.adobe.com/experience-manager/6-5/forms/using/prepopulate-adaptive-form-fields.html#Supportedprotocolsforprefillinguserdata" target="_blank">지원되는 프로토콜 중 하나를 사용</a>하여 필드 값을 미리 채웁니다. 필요한 경우 필드 값을 수정하고 crx-repository에 데이터를 전송합니다.</p>
+    <p>XSD 스키마를 데이터 소스로 선택합니다. 선택한 데이터 원본을 기반으로 AFCS(Automated forms conversion 서비스)를 사용하여 <a href="#generate-adaptive-forms-with-no-data-binding">데이터 바인딩이 없는 적응형 양식을 생성</a>하고 XSD 스키마를 데이터 원본으로 구성합니다. 적응형 양식 필드를 XSD 스키마에 수동으로 바인딩하고 <a href="https://helpx.adobe.com/kr/experience-manager/6-5/forms/using/prepopulate-adaptive-form-fields.html#Supportedprotocolsforprefillinguserdata" target="_blank">지원되는 프로토콜 중 하나를 사용</a>하여 필드 값을 미리 채웁니다. 필요한 경우 필드 값을 수정하고 crx-repository에 데이터를 전송합니다.</p>
     </td> 
   </tr>
   <tr>
@@ -102,7 +102,7 @@ AFCS(Automated forms conversion 서비스)에 대한 자세한 내용은 다음 
 
 ## 전제 조건 {#pre-requisites}
 
-* [AEM 작성자 인스턴스 구성](https://helpx.adobe.com/experience-manager/6-5/sites/deploying/using/deploy.html)
+* [AEM 작성자 인스턴스 구성](https://helpx.adobe.com/kr/experience-manager/6-5/sites/deploying/using/deploy.html)
 * AEM 작성자 인스턴스에서 [AFCS(Automated forms conversion 서비스) 구성](configure-service.md)
 
 ## 샘플 적응형 양식 {#sample-adaptive-form}
@@ -171,7 +171,7 @@ XSD 스키마를 양식 모델로 사용하여 사용 사례를 실행하는 경
 
 [파일 가져오기](assets/loanapplication.xsd)
 
-적응형 양식에서 XSD 스키마를 양식 모델로 사용하는 방법에 대한 자세한 내용은 [XML 스키마를 사용하여 적응형 양식 만들기](https://helpx.adobe.com/experience-manager/6-5/forms/using/adaptive-form-xml-schema-form-model.html)를 참조하십시오.
+적응형 양식에서 XSD 스키마를 양식 모델로 사용하는 방법에 대한 자세한 내용은 [XML 스키마를 사용하여 적응형 양식 만들기](https://helpx.adobe.com/kr/experience-manager/6-5/forms/using/adaptive-form-xml-schema-form-model.html)를 참조하십시오.
 
 양식 모델로 JSON 스키마를 사용하여 사용 사례를 실행하는 경우 다음 텍스트가 포함된 JSON 파일을 만듭니다.
 
@@ -221,7 +221,7 @@ XSD 스키마를 양식 모델로 사용하여 사용 사례를 실행하는 경
 
 [파일 가져오기](assets/demo_schema.json)
 
-적응형 양식에서 JSON 스키마를 양식 모델로 사용하는 방법에 대한 자세한 내용은 [JSON 스키마를 사용하여 적응형 양식 만들기](https://helpx.adobe.com/experience-manager/6-5/forms/using/adaptive-form-json-schema-form-model.html)를 참조하십시오.
+적응형 양식에서 JSON 스키마를 양식 모델로 사용하는 방법에 대한 자세한 내용은 [JSON 스키마를 사용하여 적응형 양식 만들기](https://helpx.adobe.com/kr/experience-manager/6-5/forms/using/adaptive-form-json-schema-form-model.html)를 참조하십시오.
 
 ## 데이터 바인딩 없이 적응형 양식 생성 {#generate-adaptive-forms-with-no-data-binding}
 
@@ -245,10 +245,10 @@ XSD 스키마를 양식 모델로 사용하여 사용 사례를 실행하는 경
 
 사용 사례를 실행하기 전에:
 
-* [MySQL 데이터베이스를 데이터 소스로 구성](https://helpx.adobe.com/experience-manager/6-5/forms/using/configure-data-sources.html#configurerelationaldatabase)
-* [양식 데이터 모델 만들기](https://helpx.adobe.com/experience-manager/6-5/forms/using/work-with-form-data-model.html)
+* [MySQL 데이터베이스를 데이터 소스로 구성](https://helpx.adobe.com/kr/experience-manager/6-5/forms/using/configure-data-sources.html#configurerelationaldatabase)
+* [양식 데이터 모델 만들기](https://helpx.adobe.com/kr/experience-manager/6-5/forms/using/work-with-form-data-model.html)
 
-사용 사례에 따라 **loanapplication** 양식 데이터 모델을 만들고 읽기 서비스 인수를 **[!UICONTROL Literal]** 값에 바인딩합니다. 전화 번호 리터럴 값은 MySQL 데이터베이스의 **appeline** 스키마에 구성된 레코드 중 하나여야 합니다. 서비스는 값을 인수로 사용하여 데이터 소스에서 세부 정보를 가져옵니다. **[!UICONTROL Binding To]** 드롭다운 목록에서 [사용자 프로필 속성 또는 요청 속성](https://helpx.adobe.com/experience-manager/6-5/forms/using/work-with-form-data-model.html#bindargument)을 선택할 수도 있습니다
+사용 사례에 따라 **loanapplication** 양식 데이터 모델을 만들고 읽기 서비스 인수를 **[!UICONTROL Literal]** 값에 바인딩합니다. 전화 번호 리터럴 값은 MySQL 데이터베이스의 **appeline** 스키마에 구성된 레코드 중 하나여야 합니다. 서비스는 값을 인수로 사용하여 데이터 소스에서 세부 정보를 가져옵니다. **[!UICONTROL Binding To]** 드롭다운 목록에서 [사용자 프로필 속성 또는 요청 속성](https://helpx.adobe.com/kr/experience-manager/6-5/forms/using/work-with-form-data-model.html#bindargument)을 선택할 수도 있습니다
 
 ![양식 데이터 모델 구성](assets/configure_model_object.png)
 
@@ -283,7 +283,7 @@ XSD 스키마를 양식 모델로 사용하여 사용 사례를 실행하는 경
 
 **사용 사례:** AFCS(Automated forms conversion 서비스)를 사용하여 데이터 바인딩이 없는 적응형 양식을 생성하고 MYSQL 데이터베이스를 데이터 소스로 구성합니다. 규칙 편집기를 사용하여 적응형 양식 필드를 바인딩하여 필드 값을 미리 채웁니다. 필요한 경우 필드 값을 수정하고 crx-repository에 데이터를 전송합니다.
 
-다음 단계를 실행하여 [규칙 편집기](https://helpx.adobe.com/experience-manager/6-5/forms/using/rule-editor.html)를 사용하여 양식 데이터 모델 서비스를 호출하여 적응형 양식의 필드를 바인딩하고 값을 미리 채우십시오.
+다음 단계를 실행하여 [규칙 편집기](https://helpx.adobe.com/kr/experience-manager/6-5/forms/using/rule-editor.html)를 사용하여 양식 데이터 모델 서비스를 호출하여 적응형 양식의 필드를 바인딩하고 값을 미리 채우십시오.
 
 1. **[!UICONTROL output]** 폴더에서 **샘플 대출 신청 양식**&#x200B;을 선택하고 **[!UICONTROL Edit]**&#x200B;을(를) 누릅니다.
 1. **[!UICONTROL Content]** 탭에서 구성 아이콘을 탭합니다.

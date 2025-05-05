@@ -37,7 +37,7 @@ AEM Forms AFCS(자동 양식 전환 서비스) 사용을 시작하기 전에 다
    * XFA 스크립트는 지원되지 않습니다. 예를 들어 드롭다운 구성 요소에 대한 값을 자동으로 생성하는 스크립트입니다.
    * 선택 그룹에 대해 메타 모델이 작동하지 않음
    * 단일 문자가 있는 선택 그룹 옵션이 식별되지 않음
-   * 원본 문서가 동적 XFA(.XDP)이고 [적응형 양식에서 XFA 속성의 동작을 정의](https://helpx.adobe.com/experience-manager/6-5/forms/using/xfa-api-supported-in-adaptive-form.html#supportedxfaelementsandtheirmappinginadaptiveformsbr)하면 원본 문서의 현재 상태 속성이 적용되지 않습니다. 예를 들어 소스 문서의 필드는 숨겨진 것으로 표시되고 스크립트는 필드를 표시하게 하지만 필드는 출력 적응형 양식에 계속 표시됩니다.
+   * 원본 문서가 동적 XFA(.XDP)이고 [적응형 양식에서 XFA 속성의 동작을 정의](https://helpx.adobe.com/kr/experience-manager/6-5/forms/using/xfa-api-supported-in-adaptive-form.html#supportedxfaelementsandtheirmappinginadaptiveformsbr)하면 원본 문서의 현재 상태 속성이 적용되지 않습니다. 예를 들어 소스 문서의 필드는 숨겨진 것으로 표시되고 스크립트는 필드를 표시하게 하지만 필드는 출력 적응형 양식에 계속 표시됩니다.
 
 * **생성된 적응형 양식에 대해 입력 AcroForm을 기록 문서(DoR)로 사용** 옵션을 사용하는 경우 다음 사항을 고려하십시오.
 
@@ -76,7 +76,7 @@ AEM Forms AFCS(자동 양식 전환 서비스) 사용을 시작하기 전에 다
 * 15페이지보다 큰 PDF forms은 지원되지 않습니다.
 * 암호화되고 암호로 보호되며 보안이 설정된 문서는 변환되지 않습니다. 변환을 실행하기 전에 암호화 또는 암호를 제거하십시오.
 * 테두리가 없는 표, 중첩된 표, 자리 표시자 값이 있는 표와 같은 복잡한 표는 지원되지 않습니다. 변환 후 적응형 양식 편집기를 사용하여 복잡한 표를 추가하거나 수정합니다. 빈 필드, 적절한 헤더 및 명확한 경계가 있는 간단한 테이블만 지원됩니다.
-* 이 서비스는 영어, 프랑스어, 독일어, 스페인어, 이탈리아어 및 포르투갈어 언어 양식만 적응형 양식으로 전환합니다. [AEM 번역 워크플로](https://helpx.adobe.com/experience-manager/6-5/forms/using/using-aem-translation-workflow-to-localize-adaptive-forms.html)를 사용하여 변환된 적응형 양식을 다른 언어로 번역할 수 있습니다.
+* 이 서비스는 영어, 프랑스어, 독일어, 스페인어, 이탈리아어 및 포르투갈어 언어 양식만 적응형 양식으로 전환합니다. [AEM 번역 워크플로](https://helpx.adobe.com/kr/experience-manager/6-5/forms/using/using-aem-translation-workflow-to-localize-adaptive-forms.html)를 사용하여 변환된 적응형 양식을 다른 언어로 번역할 수 있습니다.
 * AEM 6.4 Forms에서는 입력 양식의 다중 열 레이아웃에 대한 자동 검색을 지원하지 않습니다.
 * 소스 PDF 양식의 색상을 사용하여 인코딩된 정보는 적응형 양식으로 이전되지 않습니다.
 * 소스 PDF Form의 색상은 적응형 양식 테마로 이전되지 않습니다.

@@ -29,7 +29,7 @@ ht-degree: 3%
    <p>이 서비스는 비대화형 PDF forms, XFA 기반 XDP와 PDF forms, AcroForms를 적응형 양식으로 전환할 수 있습니다. 이 서비스는 스캔되거나 채워진 양식을 지원하지 않습니다. 다른 제한 사항에 대해서는 <a href="known-issues.md">알려진 문제</a> 문서를 참조하십시오.<br /> </p> 
     <p>다른 소스 유형에 대한 지원을 정기적으로 추가하고 있습니다. 새로 추가된 기능에 대한 정기적인 업데이트를 위해 감시 목록에 <a href="introduction.md">supportedPDF forms</a> 섹션을 보관하십시오.</p>
 
-   이 서비스는 영어, 프랑스어, 독일어, 스페인어, 이탈리아어 및 포르투갈어 언어 양식만 적응형 양식으로 전환할 수 있습니다. [AEM 번역 워크플로를 사용하여 생성된 적응형 양식을 다른 언어로 번역할 수 있습니다.](https://helpx.adobe.com/experience-manager/6-5/forms/using/using-aem-translation-workflow-to-localize-adaptive-forms.html)</br> </br>
+   이 서비스는 영어, 프랑스어, 독일어, 스페인어, 이탈리아어 및 포르투갈어 언어 양식만 적응형 양식으로 전환할 수 있습니다. [AEM 번역 워크플로를 사용하여 생성된 적응형 양식을 다른 언어로 번역할 수 있습니다.](https://helpx.adobe.com/kr/experience-manager/6-5/forms/using/using-aem-translation-workflow-to-localize-adaptive-forms.html)</br> </br>
 
 1. **서비스에서 적응형 양식 대신 XDP를 생성할 수 있습니까?**
    <p>서비스가 XDP 출력을 생성하지 않습니다. 우리는 정기적으로 기능에 및 서비스를 추가하고 있습니다. 새로 추가된 기능에 대한 정기적인 업데이트를 보려면 감시 목록에 <a href="introduction.md">지원되는 언어 및 PDF forms</a> 섹션을 유지하십시오.</p> <br>
@@ -43,8 +43,8 @@ ht-degree: 3%
 1. **서비스에서 Microsoft Word 양식을 적응형 양식으로 변환할 수 있습니까?**
    <p>아니요. 이 서비스는 Microsoft Word 양식을 적응형 양식으로 전환하지 않습니다. Microsoft Word 양식을 PDF 양식으로 저장하고 PDF 양식을 적응형 양식으로 변환할 수 있습니다. 전체 프로세스는 다음과 같습니다 </p> <br>
 
-   1. Adobe Acrobat을 사용하여 [Word 문서를 비대화형 PDF으로 변환](https://helpx.adobe.com/acrobat/how-to/create-pdf-files-word-excel-website.html)할 수 있습니다.
-   1. Adobe Acrobat을 사용하여 [생성된 PDF forms을 입력 가능한 PDF 양식으로 변환](https://helpx.adobe.com/acrobat/how-to/convert-word-excel-paper-pdf-forms.html)합니다.
+   1. Adobe Acrobat을 사용하여 [Word 문서를 비대화형 PDF으로 변환](https://helpx.adobe.com/kr/acrobat/how-to/create-pdf-files-word-excel-website.html)할 수 있습니다.
+   1. Adobe Acrobat을 사용하여 [생성된 PDF forms을 입력 가능한 PDF 양식으로 변환](https://helpx.adobe.com/kr/acrobat/how-to/convert-word-excel-paper-pdf-forms.html)합니다.
    1. Adobe Acrobat을 사용하여 양식 필드를 수동으로 업데이트하고 수정합니다.
    1. PDF 양식을 저장합니다. 이제 전환 서비스와 함께 양식을 사용하여 적응형 양식을 생성할 수 있습니다. 이 양식을 기록 문서 템플릿으로 사용할 수도 있습니다.
 
@@ -77,10 +77,10 @@ ht-degree: 3%
     <p> </p> <br>
 
 1. **서비스가 출력 적응형 양식에서 원본 PDF의 글꼴을 식별하고 사용합니까?**
-   <p>반응형 HTML 양식의 스타일 및 레이아웃은 일반적으로 PDF 또는 용지 기반 양식과 다릅니다. 조직 전체에서 일관된 레이아웃 및 스타일을 지원하기 위해 적응형 양식은 <a href="https://helpx.adobe.com/experience-manager/6-5/forms/using/themes.html">테마를 사용하여 양식 스타일을 지정</a>합니다. 변환 서비스는 변환 중에 적용된 테마에 지정된 글꼴과 글꼴 스타일을 사용합니다. 테마의 글꼴과 글꼴 스타일을 변경하여 적응형 양식의 구성 요소에 뚜렷한 모양과 느낌을 제공할 수 있습니다.</p> <br>
+   <p>반응형 HTML 양식의 스타일 및 레이아웃은 일반적으로 PDF 또는 용지 기반 양식과 다릅니다. 조직 전체에서 일관된 레이아웃 및 스타일을 지원하기 위해 적응형 양식은 <a href="https://helpx.adobe.com/kr/experience-manager/6-5/forms/using/themes.html">테마를 사용하여 양식 스타일을 지정</a>합니다. 변환 서비스는 변환 중에 적용된 테마에 지정된 글꼴과 글꼴 스타일을 사용합니다. 테마의 글꼴과 글꼴 스타일을 변경하여 적응형 양식의 구성 요소에 뚜렷한 모양과 느낌을 제공할 수 있습니다.</p> <br>
 
 1. **서비스가 XDP 기반 양식에서 JavaScript을 자동으로 추출하여 해당 적응형 양식에 적용합니까?**
-   <p>이 서비스는 XFA 기반 양식 또는 Acro Forms의 스크립트를 해당 적응형 양식 규칙으로 자동 전환하지 않습니다. <a href="https://helpx.adobe.com/experience-manager/6-5/forms/using/rule-editor.html">규칙 편집기</a>를 사용하여 적응형 양식에 대화형 기능을 추가할 수 있습니다.</p> <br>
+   <p>이 서비스는 XFA 기반 양식 또는 Acro Forms의 스크립트를 해당 적응형 양식 규칙으로 자동 전환하지 않습니다. <a href="https://helpx.adobe.com/kr/experience-manager/6-5/forms/using/rule-editor.html">규칙 편집기</a>를 사용하여 적응형 양식에 대화형 기능을 추가할 수 있습니다.</p> <br>
 
 1. **일부 양식 개체가 적응형 양식 구성 요소로 올바르게 변환되지 않았습니다. 문제를 해결하는 방법**
    <p>Automated forms conversion 서비스(AFCS)는 다양한 양식 세트에서 교육됩니다. 그러나 AI/ML 기반 애플리케이션은 교육 데이터와 패턴에 따라 제한됩니다. 인간의 인식에는 식별이 가능하지만 자동화된 인식에는 어려운 필드 유형, 레이아웃, 패턴 및 컨텍스트가 여러 개 존재할 수 있다. 서비스는 이러한 객체를 식별하지 못하거나 잘못 인식할 수 있습니다. <a href="review-correct-ui-edited.md" target="_blank">검토 및 수정</a> 편집기를 사용하여 입력 양식의 친숙한 용지 양식 기반 레이아웃에서 필요한 수정 작업을 수행할 수 있습니다.</p> <br/>
@@ -121,4 +121,4 @@ ht-degree: 3%
 1. **Adobe Sign 사용 PDF 양식을 만드는 방법**
    </p>Adobe Sign이 활성화된 PDF 양식을 만들려면 다음을 수행하십시오.</p>
 
-   필드 이름에 [Adobe Sign 텍스트 태그](https://helpx.adobe.com/sign/using/text-tag.html)를 추가하거나 [Adobe Sign 양식으로 변환](https://helpx.adobe.com/sign/using/create-forms-with-acrobat.html) 옵션을 사용하십시오.
+   필드 이름에 [Adobe Sign 텍스트 태그](https://helpx.adobe.com/kr/sign/using/text-tag.html)를 추가하거나 [Adobe Sign 양식으로 변환](https://helpx.adobe.com/kr/sign/using/create-forms-with-acrobat.html) 옵션을 사용하십시오.

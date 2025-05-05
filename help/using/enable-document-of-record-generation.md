@@ -24,7 +24,7 @@ DoR은 기본 템플릿을 사용하여 레이아웃을 정의합니다. 기본 
 
 ![생성된 기록 문서](assets/document_of_record.gif)
 
-DoR 생성에 대한 자세한 내용은 [적응형 양식에 대한 기록 문서 생성](https://helpx.adobe.com/experience-manager/6-5/forms/using/generate-document-of-record-for-non-xfa-based-adaptive-forms.html)을 참조하십시오.
+DoR 생성에 대한 자세한 내용은 [적응형 양식에 대한 기록 문서 생성](https://helpx.adobe.com/kr/experience-manager/6-5/forms/using/generate-document-of-record-for-non-xfa-based-adaptive-forms.html)을 참조하십시오.
 
 [AFCS(Automated forms conversion 서비스)](/help/using/introduction.md)이(가) 다음 원본 양식을 적응형 양식으로 전환합니다.
 

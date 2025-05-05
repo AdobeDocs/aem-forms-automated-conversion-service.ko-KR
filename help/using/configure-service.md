@@ -62,7 +62,7 @@ AFCS(자동 양식 전환 서비스)는 AEM 작성자 인스턴스에서 실행�
 
    * Adobe 파트너인 경우 [Adobe 파트너 교육 프로그램](https://adobe.allegiancetech.com/cgi-bin/qwebcorporate.dll?idx=82357Q)을 사용하여 AEM 6.5를 요청합니다.
 
-* AEM Forms as a Cloud Service을 사용하는 경우 [AEM Forms as a Cloud Service에 온보딩](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/setup-environment/setup-forms-cloud-service.html?lang=en#setup-environment) 및 [로컬 개발 환경 설정](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/setup-environment/setup-local-development-environment.html?lang=en#setup-environment)을 참조하십시오.
+* AEM Forms as a Cloud Service을 사용하는 경우 [AEM Forms as a Cloud Service에 온보딩](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/setup-environment/setup-forms-cloud-service.html?lang=ko#setup-environment) 및 [로컬 개발 환경 설정](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/setup-environment/setup-local-development-environment.html?lang=ko#setup-environment)을 참조하십시오.
 
 ### 2. (AEM 6.5만 해당) AEM 최신 서비스 팩 다운로드 및 설치 {#servicepack}
 
@@ -70,7 +70,7 @@ AFCS(자동 양식 전환 서비스)는 AEM 작성자 인스턴스에서 실행�
 
 ### 3. (AEM 6.5만 해당) AEM Forms 추가 기능 패키지 다운로드 및 설치   {#downloadaemformsaddon}
 
-AEM 인스턴스에는 기본 양식 기능이 포함되어 있습니다. 전환 서비스에는 AEM Forms의 모든 기능이 필요합니다. AEM Forms의 모든 기능을 사용하려면 AEM Forms 추가 기능 패키지를 다운로드하여 설치하십시오. 변환 서비스를 설정하고 실행하려면 패키지가 필요합니다. 자세한 지침은 [데이터 캡처 기능 설치 및 구성을 참조하십시오.](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/install-aem-forms/osgi-installation/installing-configuring-aem-forms-osgi)
+AEM 인스턴스에는 기본 양식 기능이 포함되어 있습니다. 전환 서비스에는 AEM Forms의 모든 기능이 필요합니다. AEM Forms의 모든 기능을 사용하려면 AEM Forms 추가 기능 패키지를 다운로드하여 설치하십시오. 변환 서비스를 설정하고 실행하려면 패키지가 필요합니다. 자세한 지침은 [데이터 캡처 기능 설치 및 구성을 참조하십시오.](https://experienceleague.adobe.com/ko/docs/experience-manager-65/content/forms/install-aem-forms/osgi-installation/installing-configuring-aem-forms-osgi)
 https://adminconsole.adobe.com/
 >[!NOTE]
 > 추가 기능 패키지를 설치한 후 필수 사후 설치 구성을 수행해야 합니다.
@@ -119,7 +119,7 @@ Adobe이 조직에 대한 액세스를 활성화하고 관리자에게 필요한
    1. 개발자 이메일 주소와 이름 및 성을 입력합니다(선택 사항).
    1. 제품 프로필을 선택합니다. **[!UICONTROL Save]**&#x200B;을(를) 클릭합니다.
 
-모든 사용자에 대해 위의 단계를 반복합니다. 개발자 추가에 대한 자세한 내용은 [개발자 관리](https://helpx.adobe.com/enterprise/using/manage-developers.html)를 참조하십시오.
+모든 사용자에 대해 위의 단계를 반복합니다. 개발자 추가에 대한 자세한 내용은 [개발자 관리](https://helpx.adobe.com/kr/enterprise/using/manage-developers.html)를 참조하십시오.
 
 관리자가 Adobe I/O 프로필에 개발자를 추가하면 개발자에게 이메일로 알립니다(구성된 경우).
 
@@ -137,7 +137,7 @@ Automated Forms Conversion service (AFCS) uses the Day CQ mail service to send e
 
    3. Open the **[!UICONTROL Day CQ Link Externalizer]** configuration. In the **[!UICONTROL Domains]** field, specify the actual host name or IP address and port number for local, author, and publish instances. Click **[!UICONTROL Save]**.
 
-* For AEM Forms as a Cloud Service, [log a support ticket to enable the email service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/development-guidelines.html?lang=en#sending-email). -->
+* For AEM Forms as a Cloud Service, [log a support ticket to enable the email service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/development-guidelines.html?lang=ko#sending-email). -->
 
 ### forms-users 그룹에 사용자 추가 {#adduserstousergroup}
 

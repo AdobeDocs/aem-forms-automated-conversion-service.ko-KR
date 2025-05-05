@@ -63,7 +63,7 @@ AFCS(AEM Forms Automated forms conversion 서비스)는 입력 PDF 문서의 필
 
 ### 시작하기 전 {#before-you-start}
 
-* 검토 및 수정 편집기는 조각을 지원하지 않습니다. 전환 중에 **조각 추출** 옵션이 활성화된 전환을 검토하는 데 편집기를 사용하지 마십시오. 이러한 전환에는 [적응형 양식 편집기](https://helpx.adobe.com/experience-manager/6-5/forms/using/introduction-forms-authoring.html)를 사용할 수 있습니다.
+* 검토 및 수정 편집기는 조각을 지원하지 않습니다. 전환 중에 **조각 추출** 옵션이 활성화된 전환을 검토하는 데 편집기를 사용하지 마십시오. 이러한 전환에는 [적응형 양식 편집기](https://helpx.adobe.com/kr/experience-manager/6-5/forms/using/introduction-forms-authoring.html)를 사용할 수 있습니다.
 
 * 검토 및 수정 편집기에 실행 취소 작업이 없습니다. 저장 단추는 변경 사항을 영구적으로 저장하는 경우에만 사용합니다.
 
@@ -187,7 +187,7 @@ AFCS(AEM Forms Automated forms conversion 서비스)는 입력 PDF 문서의 필
 
 검토 및 수정 편집기에서 필요한 모든 변경 작업을 수행한 후에는 전환을 위해 양식을 다시 보낼 수 있습니다. 전환을 위해 양식을 보내려면 **[!UICONTROL Save & Convert]**&#x200B;을(를) 누릅니다. **[!UICONTROL Sent for conversion label]**&#x200B;은(는) 원본 문서가 포함된 폴더에 적용되며 업데이트된 원본 양식은 Adobe I/O에서 실행 중인 전환 서비스에 업로드됩니다.
 
-양식의 복잡성에 따라 변환 서비스에서 양식을 변환하는 데 시간이 걸릴 수 있습니다. 전환이 완료되면 변환된 적응형 양식 및 관련 에셋이 컴퓨터에 다운로드됩니다. 필요한 경우 변환이 완료된 후 편집기에서 양식을 검토하고 [적응형 양식 편집기](https://helpx.adobe.com/experience-manager/6-5/forms/using/introduction-forms-authoring.html)에서 적응형 양식을 열어 최종 수정 사항을 볼 수 있습니다.
+양식의 복잡성에 따라 변환 서비스에서 양식을 변환하는 데 시간이 걸릴 수 있습니다. 전환이 완료되면 변환된 적응형 양식 및 관련 에셋이 컴퓨터에 다운로드됩니다. 필요한 경우 변환이 완료된 후 편집기에서 양식을 검토하고 [적응형 양식 편집기](https://helpx.adobe.com/kr/experience-manager/6-5/forms/using/introduction-forms-authoring.html)에서 적응형 양식을 열어 최종 수정 사항을 볼 수 있습니다.
 
 적응형 양식 편집기에서 양식을 업데이트한 후 전환을 위해 양식을 다시 보내면 적응형 양식에서 수행된 모든 변경 사항이 손실됩니다. 성공적으로 전환한 후에만 검토 및 수정 편집기에서 양식을 열 수 있습니다.
 

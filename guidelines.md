@@ -37,7 +37,7 @@ AEM 설명서에서는 표준 사용 사례를 다룹니다. 따라서 버그, �
 
 AEM 설명서를 개선하기 위해 필요한 모든 아이디어를 기여할 수 있습니다. 그러나 주석, 문제 및 가져오기 요청만 *기여*&#x200B;에 해당합니다. 하지만 기여는 AEM 사용 방법, AEM 프로젝트 구현 방법, 기술 문제 해결 방법 등에 대한 질문에 답변하기 위해 마련된 것이 아닙니다.
 
-[&#128279;](https://experienceleague.adobe.com/?support-solution=Experience+Manager#home) [&#128279;](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/ct-p/adobe-experience-manager-community)
+[&#128279;](https://experienceleague.adobe.com/ko?support-solution=Experience+Manager#home) [&#128279;](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/ct-p/adobe-experience-manager-community?profile.language=ko)
 
 **&#x200B;**&#x200B;**
 

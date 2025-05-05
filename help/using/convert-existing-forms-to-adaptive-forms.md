@@ -13,15 +13,15 @@ ht-degree: 8%
 
 # PDF forms을 적응형 양식으로 전환 {#convert-print-forms-to-adaptive-forms}
 
-Adobe Sensei에서 제공하는 AEM Forms AFCS(Automated Forms Conversion Service)는 PDF forms을 장치 친화적이고 반응형 적응형 양식<!--foundation and [core components](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/introduction)-->(으)로 자동으로 변환합니다. 비대화형 PDF forms, Acro Forms 또는 XFA 기반 PDF forms을 사용하는 경우 AFCS(자동화된 양식 변환 서비스)는 이러한 양식을 적응형 양식으로 쉽게 변환할 수 있습니다. 기능, 전환 워크플로우 및 온보딩 정보에 대한 자세한 내용은 [자동 양식 전환](introduction.md) 서비스를 참조하십시오.
+Adobe Sensei에서 제공하는 AEM Forms AFCS(Automated Forms Conversion Service)는 PDF forms을 장치 친화적이고 반응형 적응형 양식<!--foundation and [core components](https://experienceleague.adobe.com/ko/docs/experience-manager-core-components/using/adaptive-forms/introduction)-->(으)로 자동으로 변환합니다. 비대화형 PDF forms, Acro Forms 또는 XFA 기반 PDF forms을 사용하는 경우 AFCS(자동화된 양식 변환 서비스)는 이러한 양식을 적응형 양식으로 쉽게 변환할 수 있습니다. 기능, 전환 워크플로우 및 온보딩 정보에 대한 자세한 내용은 [자동 양식 전환](introduction.md) 서비스를 참조하십시오.
 
 ## 사전 요구 사항 {#pre-requisites}
 
 * [**전환 서비스 구성**](configure-service.md)
 
-* **변환된 양식에 적용할 [템플릿](https://helpx.adobe.com/experience-manager/6-5/forms/using/template-editor.html)을 준비하십시오.** 템플릿을 사용하면 모든 적응형 양식에 일관된 브랜딩을 적용할 수 있습니다. 또한 AFCS(Automated Forms Conversion Service)는 소스 PDF 문서의 머리글 및 바닥글을 추출하고 사용하지 않습니다. 적응형 양식 템플릿을 사용하여 머리글과 바닥글을 지정할 수 있습니다. 템플릿에 지정된 머리글과 바닥글은 전환 중에 적응형 양식에 적용됩니다. 서식 파일에 대한 폴더를 만들 때 모든 사용자에 대한 **[!UICONTROL Browse configurations]** 옵션을 선택하십시오.
+* **변환된 양식에 적용할 [템플릿](https://helpx.adobe.com/kr/experience-manager/6-5/forms/using/template-editor.html)을 준비하십시오.** 템플릿을 사용하면 모든 적응형 양식에 일관된 브랜딩을 적용할 수 있습니다. 또한 AFCS(Automated Forms Conversion Service)는 소스 PDF 문서의 머리글 및 바닥글을 추출하고 사용하지 않습니다. 적응형 양식 템플릿을 사용하여 머리글과 바닥글을 지정할 수 있습니다. 템플릿에 지정된 머리글과 바닥글은 전환 중에 적응형 양식에 적용됩니다. 서식 파일에 대한 폴더를 만들 때 모든 사용자에 대한 **[!UICONTROL Browse configurations]** 옵션을 선택하십시오.
 
-* **전환된 양식에 적용할 [테마](https://helpx.adobe.com/experience-manager/6-5/forms/using/themes.html)를 준비하세요.** 테마를 사용하면 조직의 모든 적응형 양식에 일관된 스타일을 적용할 수 있습니다.
+* **전환된 양식에 적용할 [테마](https://helpx.adobe.com/kr/experience-manager/6-5/forms/using/themes.html)를 준비하세요.** 테마를 사용하면 조직의 모든 적응형 양식에 일관된 스타일을 적용할 수 있습니다.
 
 * **(선택 사항)** [**소스 PDF forms을 Adobe Sign 양식으로 변환**](frequently-asked-questions.md)
 
@@ -42,7 +42,7 @@ AEM 인스턴스를 AEM Forms 전환 서비스와 연결한 후 PDF forms을 적
 * 페이지 수를 15개 이하의 양식으로 유지합니다.
 * 보호된 양식을 업로드하지 마십시오. 이 서비스는 암호로 보호되고 보안이 설정된 양식을 전환하지 않습니다.
 * 파일 이름에 공백이 있는 소스 양식을 업로드하지 마십시오. 양식을 업로드하기 전에 파일 이름에서 공백을 제거합니다.
-* [PDF 포트폴리오](https://helpx.adobe.com/acrobat/using/overview-pdf-portfolios.html)를 업로드하지 마십시오. 이 서비스는 PDF Portfolio을 적응형 양식으로 전환하지 않습니다.
+* [PDF 포트폴리오](https://helpx.adobe.com/kr/acrobat/using/overview-pdf-portfolios.html)를 업로드하지 마십시오. 이 서비스는 PDF Portfolio을 적응형 양식으로 전환하지 않습니다.
 * [알려진 문제](known-issues.md) 및 [모범 사례 및 고려 사항](styles-and-pattern-considerations-and-best-practices.md) 섹션을 읽고 양식에 대해 제안된 변경 사항을 적용하세요.
 
 AEM Forms 인스턴스의 폴더로 변환할 양식을 업로드하려면 다음 단계를 수행하십시오.
@@ -68,8 +68,8 @@ AEM Forms 인스턴스의 폴더로 변환할 양식을 업로드하려면 다�
 
    PDF forms을 기초 기반 양식으로 변환하려면 위의 변환 설정이 필요합니다. PDF 양식을 핵심 구성 요소 기반 적응형 양식으로 전환하려면 다음 작업을 수행하십시오.
 
-   1. AEM Forms 인스턴스에서 [핵심 구성 요소](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/introduction)를 활성화했는지 확인합니다. 활성화되지 않은 경우 [AEM 6.5](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/adaptive-forms-core-components/enable-adaptive-forms-core-components) 또는 [Cloud Service 환경](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/setup-configure-migrate/enable-adaptive-forms-core-components)에서 핵심 구성 요소를 활성화할 수 있습니다.
-   1. 아래 이미지에 표시된 대로 [적응형 양식 템플릿 및 테마 기반의 핵심 구성 요소 선택](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components):
+   1. AEM Forms 인스턴스에서 [핵심 구성 요소](https://experienceleague.adobe.com/ko/docs/experience-manager-core-components/using/adaptive-forms/introduction)를 활성화했는지 확인합니다. 활성화되지 않은 경우 [AEM 6.5](https://experienceleague.adobe.com/ko/docs/experience-manager-65/content/forms/adaptive-forms-core-components/enable-adaptive-forms-core-components) 또는 [Cloud Service 환경](https://experienceleague.adobe.com/ko/docs/experience-manager-cloud-service/content/forms/setup-configure-migrate/enable-adaptive-forms-core-components)에서 핵심 구성 요소를 활성화할 수 있습니다.
+   1. 아래 이미지에 표시된 대로 [적응형 양식 템플릿 및 테마 기반의 핵심 구성 요소 선택](https://experienceleague.adobe.com/ko/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components):
 
       ![적응형 양식 템플릿을 선택하십시오](assets/select-af-template-1.png).
    1. PDF을 핵심 구성 요소 기반 양식으로 전환하려면 **[!UICONTROL Start Conversion]**&#x200B;을(를) 탭하세요.
@@ -85,7 +85,7 @@ AEM Forms 인스턴스의 폴더로 변환할 양식을 업로드하려면 다�
    * 생성된 적응형 양식 및 해당 스키마를 저장할 위치를 지정하십시오. 기본 경로를 사용하거나 사용자 지정 경로를 지정할 수 있습니다.
    * 데이터 모델 바인딩이 있거나 없는 적응형 양식을 생성하려면 **데이터 모델 바인딩이 없는 적응형 양식 생성** 옵션을 사용하여 선택하십시오.
 이 옵션을 선택하지 않으면 전환 서비스는 적응형 양식을 JSON 스키마와 자동으로 연결하고 적응형 양식에서 사용할 수 있는 필드와 JSON 스키마 사이에 데이터 바인딩을 만듭니다. **[!UICONTROL Save generated data model schema at]** 필드에 생성된 JSON 스키마를 저장할 기본 위치가 표시됩니다. 생성된 스키마를 저장하도록 위치를 사용자 지정할 수도 있습니다.
-이 옵션을 선택하면 전환 서비스가 데이터 모델 바인딩 없이 적응형 양식을 생성합니다. 성공적으로 전환하면 적응형 양식을 양식 데이터 모델, XML 스키마 또는 JSON 스키마와 연결할 수 있습니다. 자세한 내용은 [적응형 양식 만들기](https://helpx.adobe.com/experience-manager/6-5/forms/using/creating-adaptive-form.html)를 참조하십시오.
+이 옵션을 선택하면 전환 서비스가 데이터 모델 바인딩 없이 적응형 양식을 생성합니다. 성공적으로 전환하면 적응형 양식을 양식 데이터 모델, XML 스키마 또는 JSON 스키마와 연결할 수 있습니다. 자세한 내용은 [적응형 양식 만들기](https://helpx.adobe.com/kr/experience-manager/6-5/forms/using/creating-adaptive-form.html)를 참조하십시오.
 
    <!--
 
@@ -124,7 +124,7 @@ AEM Forms 인스턴스의 폴더로 변환할 양식을 업로드하려면 다�
   >
   > * 간소화된 계층 구조를 만들기 위해 양식 재구성
   > * [예외가 사라질 때까지 sling.max.calls 매개 변수의 값을 충분히 높은 수로 늘립니다].
-  > * [캐시의 크기를 늘립니다](https://experienceleague.adobe.com/docs/experience-manager-65/forms/install-aem-forms/configure-aem-forms/configure-adaptive-forms-cache.html). 양식이 너무 복잡하고 표의 수가 많으며 여러 수준의 계층 구조를 사용하는 경우 오류가 발생합니다.
+  > * [캐시의 크기를 늘립니다](https://experienceleague.adobe.com/docs/experience-manager-65/forms/install-aem-forms/configure-aem-forms/configure-adaptive-forms-cache.html?lang=ko). 양식이 너무 복잡하고 표의 수가 많으며 여러 수준의 계층 구조를 사용하는 경우 오류가 발생합니다.
 
 1. **[!UICONTROL Start Conversion]**&#x200B;을 누릅니다. 전환이 시작되었습니다. 전환이 진행될 때까지 폴더 또는 양식에 전환 진행률이 표시됩니다. 전환이 완료된 후 메시지가 다른 상태 메시지(전환됨, 부분적으로 전환됨 또는 전환 실패)로 바뀝니다. 전환 완료 시 구성된 이메일 주소에서도 상태 이메일이 전송됩니다.
 

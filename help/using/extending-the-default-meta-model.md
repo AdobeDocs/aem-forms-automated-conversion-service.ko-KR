@@ -201,7 +201,7 @@ Automated forms conversion 서비스(AFCS)는 변환 중에 소스 양식에서 
   </tr>
   <td><p>jcr:title</p></td> 
    <td> 
-    <p>제목 JSON 스키마 속성이 있는 jcr:title 속성을 사용하면 전환 후 적응형 양식 필드의 레이블을 수정할 수 있습니다.<br>자세한 내용은 <a href="#custommetamodelexamples">사용자 지정 메타 모델 예제에서 <strong>양식 필드의 레이블 수정</strong>을 참조하십시오.</a><br>JSON 스키마를 사용하여 적응형 양식 만들기</a>에서 JSON 스키마를 사용하여 적응형 양식 필드에 적용할 수 있는 추가 속성에 대한 정보를 참조하십시오.<a href="https://helpx.adobe.com/experience-manager/6-5/forms/using/adaptive-form-json-schema-form-model.html" target="_blank"></p>
+    <p>제목 JSON 스키마 속성이 있는 jcr:title 속성을 사용하면 전환 후 적응형 양식 필드의 레이블을 수정할 수 있습니다.<br>자세한 내용은 <a href="#custommetamodelexamples">사용자 지정 메타 모델 예제에서 <strong>양식 필드의 레이블 수정</strong>을 참조하십시오.</a><br>JSON 스키마를 사용하여 적응형 양식 만들기</a>에서 JSON 스키마를 사용하여 적응형 양식 필드에 적용할 수 있는 추가 속성에 대한 정보를 참조하십시오.<a href="https://helpx.adobe.com/kr/experience-manager/6-5/forms/using/adaptive-form-json-schema-form-model.html" target="_blank"></p>
     <p></p></td> 
   </tr>
   <td><p>sling:resourceType 및 guideNodeClass</p></td> 
