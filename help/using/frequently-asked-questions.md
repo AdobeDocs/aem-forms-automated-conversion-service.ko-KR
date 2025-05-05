@@ -101,7 +101,7 @@ ht-degree: 3%
    <p>시간은 입력 양식의 크기 및 복잡성과 요청 수에 따라 다릅니다. 이 서비스는 PDF forms을 적응형 양식으로 전환하는 과정이 수작업으로 이뤄지는 것보다 훨씬 빠른 속도로 전환해 가치 창출 시간을 대폭 단축하겠다는 취지다. </p> <br />
 
 1. **RSA 라이브러리 관련 오류가 발생하면 어떻게 해야 합니까? 오류 메시지는 아래에 언급된 메시지와 유사합니다.** <br/>
-   `*ERROR* [0:0:0:0:0:0:0:1 [1565757652491] POST /content/dam/formsanddocuments/demo004.affBatchProcessor.html HTTP/1.1] org.apache.sling.engine.impl.SlingRequestProcessorImpl service: Uncaught Throwable java.lang.NoClassDefFoundError: Could not initialize class com.rsa.cryptoj.o.dl at com.rsa.jsafe.JSAFE_SecureRandom.getInstance(Unknown Source) at com.adobe.internal.pdfm.util.Util.appendRandomNumberToPrefix(Util.java: 169) [com.adobe.aemfd.adobe-aemfd-assembler:6.0.34] at com.adobe.internal.pdfm.logging.JobLog.&amp;lt;init&amp;gt;(JobLog.java:126) [com.adobe.aemfd.adobe-aemfd-assembler:6.0.34]` <br>
+   `*ERROR* [0:0:0:0:0:0:0:1 [1565757652491] POST /content/dam/formsanddocuments/demo004.affBatchProcessor.html HTTP/1.1] org.apache.sling.engine.impl.SlingRequestProcessorImpl service: Uncaught Throwable java.lang.NoClassDefFoundError: Could not initialize class com.rsa.cryptoj.o.dl at com.rsa.jsafe.JSAFE_SecureRandom.getInstance(Unknown Source) at com.adobe.internal.pdfm.util.Util.appendRandomNumberToPrefix(Util.java: 169) [com.adobe.aemfd.adobe-aemfd-assembler:6.0.34] at com.adobe.internal.pdfm.logging.JobLog.&lt;init&gt;(JobLog.java:126) [com.adobe.aemfd.adobe-aemfd-assembler:6.0.34]` <br>
 앞서 언급한 오류는 RSA/BouncyCastle 라이브러리에 대해 부팅 위임이 구성되지 않은 경우 발생합니다. 아래 단계를 수행하여 문제를 해결하십시오.
    <p> </p>
 
@@ -109,6 +109,7 @@ ht-degree: 3%
    1. sling.properties 파일에 다음 속성을 추가하십시오.<br/> `sling.bootdelegation.class.com.rsa.jsafe.provider.JsafeJCE=com.rsa.*`<br />  `sling.bootdelegation.class.org.bouncycastle.jce.provider.BouncyCastleProvider=org.bouncycastle.*`<br /> `sling.bootdelegation.xerces=org.apache.xerces.*`
    1. 파일을 저장하고 닫습니다. <br/>
    1. AEM 인스턴스를 시작합니다.<br/>
+
    <br/>
 
 1. **적응형 양식 텍스트의 대/소문자를 자동으로 변경하는 방법**

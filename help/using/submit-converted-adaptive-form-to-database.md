@@ -184,7 +184,7 @@ MYSQL을 데이터 소스로 구성했으면 다음 단계를 실행하여 양�
 
 ## JSON 바인딩을 사용하여 적응형 양식 생성 {#generate-adaptive-forms-with-json-binding}
 
-[Automated forms conversion 서비스(AFCS)를 사용하여 [연락처 양식](#sample-adaptive-form)을(를) 데이터 바인딩이 있는 적응형 양식으로 변환](convert-existing-forms-to-adaptive-forms.md)할 수 있습니다. 적응형 양식을 생성하는 동안 **[!UICONTROL Generate adaptive form(s) without data bindings]** 확인란을 선택하지 마십시오.
+[&#128279;](convert-existing-forms-to-adaptive-forms.md)Automated forms conversion 서비스(AFCS)를 사용하여 [연락처 양식](#sample-adaptive-form)을(를) 데이터 바인딩이 있는 적응형 양식으로 변환할 수 있습니다. 적응형 양식을 생성하는 동안 **[!UICONTROL Generate adaptive form(s) without data bindings]** 확인란을 선택하지 마십시오.
 
 ![JSON 바인딩이 있는 적응형 양식](assets/generate_af_with_data_bindings.png)
 

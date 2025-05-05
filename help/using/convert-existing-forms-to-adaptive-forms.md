@@ -70,8 +70,10 @@ AEM Forms 인스턴스의 폴더로 변환할 양식을 업로드하려면 다�
 
    1. AEM Forms 인스턴스에서 [핵심 구성 요소](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/introduction)를 활성화했는지 확인합니다. 활성화되지 않은 경우 [AEM 6.5](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/adaptive-forms-core-components/enable-adaptive-forms-core-components) 또는 [Cloud Service 환경](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/setup-configure-migrate/enable-adaptive-forms-core-components)에서 핵심 구성 요소를 활성화할 수 있습니다.
    1. 아래 이미지에 표시된 대로 [적응형 양식 템플릿 및 테마 기반의 핵심 구성 요소 선택](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components):
+
       ![적응형 양식 템플릿을 선택하십시오](assets/select-af-template-1.png).
    1. PDF을 핵심 구성 요소 기반 양식으로 전환하려면 **[!UICONTROL Start Conversion]**&#x200B;을(를) 탭하세요.
+
    >[!NOTE]
    > * 핵심 구성 요소 기반 적응형 양식에는 데이터 바인딩 또는 데이터 모델 스키마와 같은 속성을 사용할 수 없지만 기초 구성 요소에는 동일한 속성을 사용할 수 있습니다.
    > * [변환된 양식을 검토하고 수정합니다](#review-and-correct-the-converted-forms)은(는) 핵심 구성 요소 기반 양식에 사용할 수 없습니다.
@@ -102,7 +104,7 @@ AEM Forms 인스턴스의 폴더로 변환할 양식을 업로드하려면 다�
    >[!NOTE]
    >
    >
-   > * 한 번에 **[!UICONTROL  Extract Fragment]** 또는 **[!UICONTROL Use existing adaptive form fragments]** 옵션만 사용할 수 있습니다. 두 옵션을 동시에 사용할 수는 없습니다.
+   > * 한 번에 **[!UICONTROL &#x200B; Extract Fragment]** 또는 **[!UICONTROL Use existing adaptive form fragments]** 옵션만 사용할 수 있습니다. 두 옵션을 동시에 사용할 수는 없습니다.
    > * **[!UICONTROL Use existing adaptive form fragments]** 옵션은 비대화형 PDF forms에서만 사용할 수 있습니다. 다른 양식 유형은 아직 지원되지 않습니다.
    > * 자동화된 전환 서비스를 사용하여 JSON 스키마에 바인딩된 바인딩되지 않은 조각 또는 조각만 사용할 수 있습니다. XFA 조각을 사용하지 마십시오. XFA 조각은 지원되지 않습니다.
    >

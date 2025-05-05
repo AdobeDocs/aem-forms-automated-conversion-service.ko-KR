@@ -225,7 +225,7 @@ XSD 스키마를 양식 모델로 사용하여 사용 사례를 실행하는 경
 
 ## 데이터 바인딩 없이 적응형 양식 생성 {#generate-adaptive-forms-with-no-data-binding}
 
-[Automated forms conversion 서비스를 사용하여 [샘플 대출 응용 프로그램 양식](#sample-adaptive-form)을(를) 데이터 바인딩이 없는 적응형 양식으로 변환](convert-existing-forms-to-adaptive-forms.md)할 수 있습니다. 데이터 바인딩 없이 적응형 양식을 생성하려면 **[!UICONTROL Generate adaptive form(s) without data bindings]** 확인란을 선택해야 합니다.
+[&#128279;](convert-existing-forms-to-adaptive-forms.md)Automated forms conversion 서비스를 사용하여 [샘플 대출 응용 프로그램 양식](#sample-adaptive-form)을(를) 데이터 바인딩이 없는 적응형 양식으로 변환할 수 있습니다. 데이터 바인딩 없이 적응형 양식을 생성하려면 **[!UICONTROL Generate adaptive form(s) without data bindings]** 확인란을 선택해야 합니다.
 
 ![데이터 바인딩이 없는 적응형 양식](assets/generate_af_without_binding.png)
 
@@ -274,7 +274,7 @@ XSD 스키마를 양식 모델로 사용하여 사용 사례를 실행하는 경
 
 1. 지원자 이름 텍스트 상자를 누르고 ![구성 아이콘](assets/configure_icon.svg)(구성)을 선택합니다.
 
-   1. 바인드 참조 필드에서 **지원자** > **이름**&#x200B;을 선택하고 ![완료 아이콘](assets/save_icon.svg)을 눌러 속성을 저장합니다. 마찬가지로 **주소**, **전화 번호**, **전자 메일**, **직업**, **연봉(달러)** 및 **아니요}에 대한 데이터 바인딩을 만듭니다. 양식 데이터 모델 엔터티가 있는 종속 패밀리 멤버**&#x200B;개 필드
+   1. 바인드 참조 필드에서 **지원자** > **이름**&#x200B;을 선택하고 ![완료 아이콘](assets/save_icon.svg)을 눌러 속성을 저장합니다. 마찬가지로 **주소**, **전화 번호**, **전자 메일**, **직업**, **연봉(달러)** 및 **아니요&rbrace;에 대한 데이터 바인딩을 만듭니다. 양식 데이터 모델 엔터티가 있는 종속 패밀리 멤버**&#x200B;개 필드
 
    ![참조 바인딩](assets/bind_references.png)
 
@@ -337,7 +337,7 @@ XSD 스키마를 양식 모델로 사용하여 사용 사례를 실행하는 경
 1. **샘플 대출 신청서 양식**&#x200B;을 선택하고 **[!UICONTROL Edit]**&#x200B;을(를) 탭하세요.
 1. 지원자 이름 텍스트 상자를 누르고 ![구성 아이콘](assets/configure_icon.svg)(구성)을 선택합니다.
 
-   바인드 참조 필드에서 **지원자** > **이름**&#x200B;을 선택하고 ![완료 아이콘](assets/save_icon.svg)을 눌러 속성을 저장합니다. 마찬가지로 **주소**, **전화 번호**, **전자 메일**, **직업**, **연봉(달러)** 및 **아니요}에 대한 데이터 바인딩을 만듭니다. JSON 스키마 엔터티가 있는 종속 패밀리 멤버**&#x200B;개 필드 중
+   바인드 참조 필드에서 **지원자** > **이름**&#x200B;을 선택하고 ![완료 아이콘](assets/save_icon.svg)을 눌러 속성을 저장합니다. 마찬가지로 **주소**, **전화 번호**, **전자 메일**, **직업**, **연봉(달러)** 및 **아니요&rbrace;에 대한 데이터 바인딩을 만듭니다. JSON 스키마 엔터티가 있는 종속 패밀리 멤버**&#x200B;개 필드 중
 
 1. **[!UICONTROL output]** 폴더에서 사용 가능한 전환된 **샘플 대출 신청 양식**&#x200B;을 다시 선택하고 **[!UICONTROL Preview]** > **[!UICONTROL Preview with Data]**&#x200B;을(를) 선택합니다.</br>
 
@@ -364,7 +364,7 @@ XSD 스키마를 양식 모델로 사용하여 사용 사례를 실행하는 경
 1. **[!UICONTROL Form Model]** 탭을 탭하고 **[!UICONTROL Select From]** 드롭다운 목록에서 **[!UICONTROL Schema]**&#x200B;을(를) 선택한 다음 **[!UICONTROL Select Schema]**&#x200B;을(를) 탭하여 로컬 파일 시스템에 저장된 **loanapplication** XSD 스키마를 업로드합니다. XSD 스키마에 대한 루트 요소를 선택하고 **[!UICONTROL Save & Close]**&#x200B;을(를) 탭하여 양식을 저장합니다.
 1. **샘플 대출 신청서 양식**&#x200B;을 선택하고 **[!UICONTROL Edit]**&#x200B;을(를) 탭하세요.
 1. 지원자 이름 텍스트 상자를 누르고 ![구성 아이콘](assets/configure_icon.svg)(구성)을 선택합니다.
-바인드 참조 필드에서 **지원자** > **이름**&#x200B;을 선택하고 ![완료 아이콘](assets/save_icon.svg)을 눌러 속성을 저장합니다. 마찬가지로 **주소**, **전화 번호**, **전자 메일**, **직업**, **연봉(달러)** 및 **아니요}에 대한 데이터 바인딩을 만듭니다. XSD 스키마 엔터티가 있는 종속 패밀리 멤버** 필드
+바인드 참조 필드에서 **지원자** > **이름**&#x200B;을 선택하고 ![완료 아이콘](assets/save_icon.svg)을 눌러 속성을 저장합니다. 마찬가지로 **주소**, **전화 번호**, **전자 메일**, **직업**, **연봉(달러)** 및 **아니요&rbrace;에 대한 데이터 바인딩을 만듭니다. XSD 스키마 엔터티가 있는 종속 패밀리 멤버** 필드
 
 1. **output** 폴더에서 사용할 수 있는 변환된 **샘플 대출 신청 양식**&#x200B;을 다시 선택하고 **[!UICONTROL Preview]** > **[!UICONTROL Preview with Data]**&#x200B;을(를) 선택합니다.</br>
 
@@ -379,7 +379,7 @@ XSD 스키마를 양식 모델로 사용하여 사용 사례를 실행하는 경
 
 ## JSON 바인딩을 사용하여 적응형 양식 생성 {#generate-adaptive-forms-with-json-binding}
 
-[Automated forms conversion 서비스(AFCS)를 사용하여 [샘플 대출 응용 프로그램 양식](#sample-adaptive-form)을(를) 데이터 바인딩이 있는 적응형 양식으로 변환](convert-existing-forms-to-adaptive-forms.md)합니다. 적응형 양식을 생성하는 동안 **[!UICONTROL Generate adaptive form(s) without data bindings]** 확인란을 선택하지 마십시오.
+[&#128279;](convert-existing-forms-to-adaptive-forms.md)Automated forms conversion 서비스(AFCS)를 사용하여 [샘플 대출 응용 프로그램 양식](#sample-adaptive-form)을(를) 데이터 바인딩이 있는 적응형 양식으로 변환합니다. 적응형 양식을 생성하는 동안 **[!UICONTROL Generate adaptive form(s) without data bindings]** 확인란을 선택하지 마십시오.
 
 ![JSON 바인딩이 있는 적응형 양식](assets/generate_af_with_data_bindings.png)
 

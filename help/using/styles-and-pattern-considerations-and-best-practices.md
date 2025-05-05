@@ -17,7 +17,7 @@ ht-degree: 2%
 
 # 모범 사례 및 알려진 복잡한 패턴 {#Best-practices-and-considerations2}
 
-이 문서에서는 [!DNL Automated Forms Conversion service](AFCS)을 사용하여 작업할 때 양식 관리자, 작성자 및 개발자가 활용할 수 있는 지침과 권장 사항을 제공합니다. 이 비디오에서는 소스 양식 준비에서 자동 전환을 위한 추가 작업이 필요한 복잡한 패턴 수정까지의 모범 사례에 대해 설명합니다. 이러한 모범 사례는 전체적으로 [!DNL Automated Forms Conversion service](AFCS)의 전체 성능과 출력에 기여합니다.
+이 문서에서는 [!DNL Automated Forms Conversion service] (AFCS)을 사용하여 작업할 때 양식 관리자, 작성자 및 개발자가 활용할 수 있는 지침과 권장 사항을 제공합니다. 이 비디오에서는 소스 양식 준비에서 자동 전환을 위한 추가 작업이 필요한 복잡한 패턴 수정까지의 모범 사례에 대해 설명합니다. 이러한 모범 사례는 전체적으로 [!DNL Automated Forms Conversion service] (AFCS)의 전체 성능과 출력에 기여합니다.
 
 ## 모범 사례
 

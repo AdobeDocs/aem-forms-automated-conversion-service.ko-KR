@@ -147,7 +147,7 @@ Acro 양식 또는 XFA 기반 PDF 양식을 AFCS(Automated forms conversion 서�
 
 1. **[!UICONTROL output]** 폴더에서 적응형 양식을 선택하고 **[!UICONTROL Properties]**&#x200B;을(를) 누릅니다.
 
-1. **[!UICONTROL Form Model]** 탭에서 **[!UICONTROL Document of Record Template Configuration]** 섹션을 확장하고 **[!UICONTROL Generate Document of Record]**을(를) 선택하여 기본 템플릿을 사용하여 DoR 생성을 사용하도록 설정합니다.
+1. **[!UICONTROL Form Model]** 탭에서 **[!UICONTROL Document of Record Template Configuration]** 섹션을 확장하고 **[!UICONTROL Generate Document of Record]**&#x200B;을(를) 선택하여 기본 템플릿을 사용하여 DoR 생성을 사용하도록 설정합니다.
 **[!UICONTROL Associate form template as the Document of Record template]** 옵션을 선택하고 템플릿을 선택하여 소스 양식 템플릿 또는 다른 양식 템플릿을 사용하여 DoR 생성을 활성화할 수도 있습니다.
 
 1. 설정을 저장하려면 **[!UICONTROL Save & Close]**&#x200B;을(를) 탭하세요.
