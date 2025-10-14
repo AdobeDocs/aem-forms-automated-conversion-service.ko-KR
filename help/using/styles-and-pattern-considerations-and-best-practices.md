@@ -80,7 +80,7 @@ AEM [!DNL Forms Automated Conversion service]은(는) 인공 지능과 머신 �
 
 | 패턴 | 해결 방법 |
 |--- |--- |
-| **패턴** 상자 또는 원이 아닌 모양이 있는 <br> 선택 그룹 옵션은 해당 적응형 양식 구성 요소로 변환되지 않습니다. <br><br>**해결 방법** <br> 선택 옵션 도형을 상자 또는 원으로 변경하거나 [검토 및 수정] 편집기를 사용하여 도형을 식별하십시오. | ![선택 필드 ](assets/best-practice-choice-group-options.png) |
+| **패턴** 상자 또는 원이 아닌 모양이 있는 <br> 선택 그룹 옵션은 해당 적응형 양식 구성 요소로 변환되지 않습니다. <br><br>**해결 방법** <br> 선택 옵션 도형을 상자 또는 원으로 변경하거나 [검토 및 수정] 편집기를 사용하여 도형을 식별하십시오. | ![선택 필드 &#x200B;](assets/best-practice-choice-group-options.png) |
 
 ### 양식 필드 {#form-fields}
 

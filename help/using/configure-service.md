@@ -242,7 +242,7 @@ Adobe Developer Console에서 자동 양식 전환 서비스 API를 구성하려
 
    연결에 성공하면 *토큰이 검색되었습니다*&#x200B;라는 메시지가 나타납니다.
 
-   ![연결이 성공하면 토큰이 검색되었습니다. 메시지가 나타납니다. ](/help/using/assets/healthy-dialog.png)
+   ![연결이 성공하면 토큰이 검색되었습니다. 메시지가 나타납니다. &#x200B;](/help/using/assets/healthy-dialog.png)
 
 1. **닫기**&#x200B;를 클릭합니다.
 

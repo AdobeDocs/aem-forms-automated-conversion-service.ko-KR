@@ -25,7 +25,7 @@ Automated forms conversion 서비스(AFCS)는 PDF forms을 적응형 양식으�
 * 일반적으로 발생하는 필드를 재사용 가능한 양식 조각으로 그룹화
 * 전환 중 Adobe Analytics 사용
 
-![간단합니다. 소스 양식을 제공하고 모든 것을 우리에게 맡기십시오. 멋진 적응형 양식을 제공합니다. 언제든지 원하는 대로 결과물을 수정하실 수 있습니다. ](assets/pdf-to-adaptive-form-gitx50.gif)
+![간단합니다. 소스 양식을 제공하고 모든 것을 우리에게 맡기십시오. 멋진 적응형 양식을 제공합니다. 언제든지 원하는 대로 결과물을 수정하실 수 있습니다. &#x200B;](assets/pdf-to-adaptive-form-gitx50.gif)
 
 ## 온보딩 {#onboarding}
 
