@@ -66,7 +66,7 @@ ht-degree: 3%
    * 보안 PDF forms은 전환을 위해 제공됩니다. 암호로 보호되거나 보안된 PDF forms을 전환에 사용하지 마십시오.
    * 인터넷 연결이 중단되었습니다. 변환 중에 인터넷에 연결되어 있는지 확인합니다.
    * Source PDF에는 실제 양식 대신 양식 이미지가 있습니다.
-   * 서비스가 잘못 구성되었거나 서비스 URL이 제공되지 않았거나 제공된 서비스 URL이 잘못되었습니다. [ > ](configure-service.md#configure-the-cloud-service) > **[!UICONTROL AEM]** > **[!UICONTROL Tools]**&#x200B;에서 **[!UICONTROL Cloud Services]**&#x200B;서비스 구성&#x200B;**[!UICONTROL Automated Forms Conversion configuration]**&#x200B;을(를) 확인하십시오.
+   * 서비스가 잘못 구성되었거나 서비스 URL이 제공되지 않았거나 제공된 서비스 URL이 잘못되었습니다. [&#x200B; > &#x200B;](configure-service.md#configure-the-cloud-service) > **[!UICONTROL AEM]** > **[!UICONTROL Tools]**&#x200B;에서 **[!UICONTROL Cloud Services]**&#x200B;서비스 구성&#x200B;**[!UICONTROL Automated Forms Conversion configuration]**&#x200B;을(를) 확인하십시오.
    * IMS 구성이 제대로 구성되지 않았습니다. IMS 구성이 제대로 작동하는지 확인하려면 상태 검사를 수행하십시오. IMS 구성이 올바른지 확인하려면:
       1. `http://[servername]:[port]/libs/cq/adobeims-configuration/content/configurations.html`(으)로 이동
       2. 구성을 선택합니다. 헤더에서 **[!UICONTROL Check Health]**&#x200B;을(를) 클릭하고 **[!UICONTROL Check]**&#x200B;을(를) 클릭합니다. 성공하면 **[!UICONTROL Token retrieved successfully!]**&#x200B;개의 메시지가 표시됩니다. <br> <br>
@@ -101,7 +101,7 @@ ht-degree: 3%
    <p>시간은 입력 양식의 크기 및 복잡성과 요청 수에 따라 다릅니다. 이 서비스는 PDF forms을 적응형 양식으로 전환함으로써 양식을 수동으로 전환하는 프로세스에 비해 훨씬 빠른 속도로 가치 실현 시간을 크게 단축하고자 합니다. </p> <br />
 
 1. **RSA 라이브러리 관련 오류가 발생하면 어떻게 해야 합니까? 오류 메시지는 아래에 언급된 메시지와 유사합니다.** <br/>
-   `*ERROR* [0:0:0:0:0:0:0:1 [1565757652491] POST /content/dam/formsanddocuments/demo004.affBatchProcessor.html HTTP/1.1] org.apache.sling.engine.impl.SlingRequestProcessorImpl service: Uncaught Throwable java.lang.NoClassDefFoundError: Could not initialize class com.rsa.cryptoj.o.dl at com.rsa.jsafe.JSAFE_SecureRandom.getInstance(Unknown Source) at com.adobe.internal.pdfm.util.Util.appendRandomNumberToPrefix(Util.java: 169) [com.adobe.aemfd.adobe-aemfd-assembler:6.0.34] at com.adobe.internal.pdfm.logging.JobLog.&amp;lt;init&amp;gt;(JobLog.java:126) [com.adobe.aemfd.adobe-aemfd-assembler:6.0.34]` <br>
+   `*ERROR* [0:0:0:0:0:0:0:1 [1565757652491] POST /content/dam/formsanddocuments/demo004.affBatchProcessor.html HTTP/1.1] org.apache.sling.engine.impl.SlingRequestProcessorImpl service: Uncaught Throwable java.lang.NoClassDefFoundError: Could not initialize class com.rsa.cryptoj.o.dl at com.rsa.jsafe.JSAFE_SecureRandom.getInstance(Unknown Source) at com.adobe.internal.pdfm.util.Util.appendRandomNumberToPrefix(Util.java: 169) [com.adobe.aemfd.adobe-aemfd-assembler:6.0.34] at com.adobe.internal.pdfm.logging.JobLog.&lt;init&gt;(JobLog.java:126) [com.adobe.aemfd.adobe-aemfd-assembler:6.0.34]` <br>
 앞서 언급한 오류는 RSA/BouncyCastle 라이브러리에 대해 부팅 위임이 구성되지 않은 경우 발생합니다. 아래 단계를 수행하여 문제를 해결하십시오.
    <p> </p>
 
