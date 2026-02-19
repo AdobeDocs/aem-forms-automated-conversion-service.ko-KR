@@ -66,7 +66,7 @@ AFCS(자동 양식 전환 서비스)는 AEM 작성자 인스턴스에서 실행�
 
    * Adobe 파트너인 경우 [Adobe 파트너 교육 프로그램](https://adobe.allegiancetech.com/cgi-bin/qwebcorporate.dll?idx=82357Q)을 사용하여 AEM 6.5 또는 AEM 6.5 LTS를 요청하십시오.
 
-* AEM Forms as a Cloud Service을 사용하는 경우 [AEM Forms as a Cloud Service에 온보딩](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/setup-environment/setup-forms-cloud-service.html?lang=en#setup-environment) 및 [로컬 개발 환경 설정](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/setup-environment/setup-local-development-environment.html?lang=en#setup-environment)을 참조하십시오.
+* AEM Forms as a Cloud Service을 사용하는 경우 [AEM Forms as a Cloud Service에 온보딩](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/setup-environment/setup-forms-cloud-service.html?lang=ko#setup-environment) 및 [로컬 개발 환경 설정](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/setup-environment/setup-local-development-environment.html?lang=ko#setup-environment)을 참조하십시오.
 
 
 ### (AEM 6.5 및 AEM 6.5 LTS만 해당) AEM 최신 서비스 팩 다운로드 및 설치 {#servicepack}
@@ -75,7 +75,7 @@ AFCS(자동 양식 전환 서비스)는 AEM 작성자 인스턴스에서 실행�
 
 ### (AEM 6.5 및 AEM 6.5 LTS만 해당) AEM Forms 추가 기능 패키지 다운로드 및 설치  {#downloadaemformsaddon}
 
-AEM 인스턴스에는 기본 양식 기능이 포함되어 있습니다. 전환 서비스에는 AEM Forms의 모든 기능이 필요합니다. AEM Forms의 모든 기능을 사용하려면 AEM Forms 추가 기능 패키지를 다운로드하여 설치하십시오. 변환 서비스를 설정하고 실행하려면 패키지가 필요합니다. 자세한 지침은 [데이터 캡처 기능 설치 및 구성](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/install-aem-forms/osgi-installation/installing-configuring-aem-forms-osgi)을 참조하세요.
+AEM 인스턴스에는 기본 양식 기능이 포함되어 있습니다. 전환 서비스에는 AEM Forms의 모든 기능이 필요합니다. AEM Forms의 모든 기능을 사용하려면 AEM Forms 추가 기능 패키지를 다운로드하여 설치하십시오. 변환 서비스를 설정하고 실행하려면 패키지가 필요합니다. 자세한 지침은 [데이터 캡처 기능 설치 및 구성](https://experienceleague.adobe.com/ko/docs/experience-manager-65/content/forms/install-aem-forms/osgi-installation/installing-configuring-aem-forms-osgi)을 참조하세요.
 >[!NOTE]
 > 추가 기능 패키지를 설치한 후 필수 사후 설치 구성을 수행해야 합니다.
 >
@@ -89,7 +89,7 @@ The connector package provides early access to the [Auto-detect logical sections
 
 **AEM Forms as a Cloud Service:** 기본 제공 템플릿을 사용하거나 사용자 지정 템플릿을 만들고 [서비스 구성](#configure-the-cloud-service)을 지정할 수 있습니다.
 
-**(AEM 6.5 및 AEM 6.5 LTS만 해당)** AFCS(자동 양식 전환 서비스)를 사용하려면 PDF 양식을 적응형 양식으로 전환하기 위한 하나 이상의 테마와 템플릿이 필요합니다. 핵심 구성 요소 기반 템플릿 및 테마를 사용하려면 [적응형 양식 핵심 구성 요소를 활성화](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-core-components/enable-adaptive-forms-core-components.html)해야 합니다. 지침이 문서화되어 있습니다. [프로덕션 모드](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/production-ready.html)&#x200B;(nosamplecontent 실행 모드)에서 AEM 6.5 또는 AEM 6.5 LTS를 시작하면 참조 패키지가 설치되지 않습니다. 자신만의 사용자 지정 테마 및 템플릿을 만들거나 작성자 인스턴스에 [AEM Forms 참조 Assets](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html) 패키지를 다운로드하여 설치하여 참조 테마 및 템플릿을 가져옵니다. 서비스를 사용하기 전에 템플릿과 테마를 사용하도록 [서비스 구성](#configure-the-cloud-service)을 가리킵니다.
+**(AEM 6.5 및 AEM 6.5 LTS만 해당)** AFCS(자동 양식 전환 서비스)를 사용하려면 PDF 양식을 적응형 양식으로 전환하기 위한 하나 이상의 테마와 템플릿이 필요합니다. 핵심 구성 요소 기반 템플릿 및 테마를 사용하려면 [적응형 양식 핵심 구성 요소를 활성화](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-core-components/enable-adaptive-forms-core-components.html?lang=ko)해야 합니다. 지침이 문서화되어 있습니다. [프로덕션 모드](https://helpx.adobe.com/kr/experience-manager/6-5/sites/administering/using/production-ready.html)&#x200B;(nosamplecontent 실행 모드)에서 AEM 6.5 또는 AEM 6.5 LTS를 시작하면 참조 패키지가 설치되지 않습니다. 자신만의 사용자 지정 테마 및 템플릿을 만들거나 작성자 인스턴스에 [AEM Forms 참조 Assets](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html) 패키지를 다운로드하여 설치하여 참조 테마 및 템플릿을 가져옵니다. 서비스를 사용하기 전에 템플릿과 테마를 사용하도록 [서비스 구성](#configure-the-cloud-service)을 가리킵니다.
 
 ## 액세스 및 권한 구성
 
@@ -141,7 +141,7 @@ Automated Forms Conversion service (AFCS) uses the Day CQ mail service to send e
 
    3. Open the **[!UICONTROL Day CQ Link Externalizer]** configuration. In the **[!UICONTROL Domains]** field, specify the actual host name or IP address and port number for local, author, and publish instances. Click **[!UICONTROL Save]**.
 
-* For AEM Forms as a Cloud Service, [log a support ticket to enable the email service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/development-guidelines.html?lang=en#sending-email). -->
+* For AEM Forms as a Cloud Service, [log a support ticket to enable the email service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/development-guidelines.html?lang=ko#sending-email). -->
 
 ### forms-users 그룹에 사용자 추가 {#adduserstousergroup}
 
