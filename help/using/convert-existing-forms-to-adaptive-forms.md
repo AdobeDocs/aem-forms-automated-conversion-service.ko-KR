@@ -128,7 +128,7 @@ AEM Forms 인스턴스의 폴더로 변환할 양식을 업로드하려면 다�
    >[!NOTE]
    >
    >
-   > * 한 번에 **[!UICONTROL  Extract Fragment]** 또는 **[!UICONTROL Use existing adaptive form fragments]** 옵션만 사용할 수 있습니다. 두 옵션을 동시에 사용할 수는 없습니다.
+   > * 한 번에 **[!UICONTROL &#x200B; Extract Fragment]** 또는 **[!UICONTROL Use existing adaptive form fragments]** 옵션만 사용할 수 있습니다. 두 옵션을 동시에 사용할 수는 없습니다.
    > * **[!UICONTROL Use existing adaptive form fragments]** 옵션은 비대화형 PDF forms에서만 사용할 수 있습니다. 다른 양식 유형은 아직 지원되지 않습니다.
    > * 자동화된 전환 서비스를 사용하여 JSON 스키마에 바인딩된 바인딩되지 않은 조각 또는 조각만 사용할 수 있습니다. XFA 조각을 사용하지 마십시오. XFA 조각은 지원되지 않습니다.
    >
