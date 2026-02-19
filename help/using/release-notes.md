@@ -8,10 +8,10 @@ topic-tags: forms
 role: Admin, Developer
 level: Beginner, Intermediate
 exl-id: fccafbc9-28c1-4736-922c-24d675b25213
-source-git-commit: e95b4ed35f27f920b26c05f3398529f825948f1f
+source-git-commit: 2c2b8f0103c608e68f28b89964d200490b46e781
 workflow-type: tm+mt
-source-wordcount: '487'
-ht-degree: 63%
+source-wordcount: '504'
+ht-degree: 53%
 
 ---
 
@@ -38,7 +38,7 @@ ht-degree: 63%
 
 ## 2021년 7월 29일 (AFC-2021.07.2) {#july-2021}
 
-* 프랑스어, 독일어 및 스페인어로 된 PDF 양식을 적응형 양식으로 전환하는 기능이 추가되었습니다.
+* 프랑스어, 독일어 및 스페인어로 된 PDF Form을 적응형 양식으로 전환하는 기능이 추가되었습니다.
 
 ## 2021년 6월 24일 (AFC-2021.06.2) {#june-2021}
 
@@ -88,4 +88,4 @@ ht-degree: 63%
 
 AFC-2020.03.1 릴리스에서 제공되는 최신 기능 및 개선 사항을 사용하려면 커넥터 패키지 1.1.38 이상이 필요합니다.
 
-자동 양식 전환 서비스 환경을 이미 실행 중인 경우 전환 서비스의 최신 기능을 사용하려면 최신 서비스 팩, 최신 AEM Forms 추가 기능 패키지, 최신 커넥터 패키지를 차례대로 설치하십시오. 자세한 지침은 [자동 양식 전환 서비스 구성](configure-service.md) 문서를 참조하십시오.
+자동 양식 전환 서비스 환경(AEM 6.5 또는 AEM 6.5 LTS)을 이미 실행 중인 경우 전환 서비스의 최신 기능을 사용하려면 최신 서비스 팩, 최신 AEM Forms 추가 기능 패키지 및 최신 커넥터 패키지를 언급된 순서로 설치하십시오. AEM Forms as a Cloud Service의 경우 업데이트가 자동으로 전달됩니다. 자세한 지침은 [자동 양식 전환 서비스 구성](configure-service.md) 문서를 참조하십시오.

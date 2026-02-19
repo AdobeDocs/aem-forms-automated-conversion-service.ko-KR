@@ -1,12 +1,12 @@
 ---
 title: Forms 포털을 사용하여 적응형 양식을 데이터베이스에 제출
-description: 기본 메타 모델을 확장하여 조직 고유의 패턴, 유효성 검사 및 엔티티를 추가하고, Automated forms conversion 서비스(AFCS)를 실행하는 동안 구성을 적응형 양식 필드에 적용합니다.
+description: AFCS(자동 양식 전환 서비스)를 실행하는 동안 기본 메타 모델을 확장하여 조직 고유의 패턴, 유효성 검사 및 엔티티를 추가하고 구성을 적응형 양식 필드에 적용합니다.
 uuid: f98b4cca-f0a3-4db8-aef2-39b8ae462628
 topic-tags: forms
 discoiquuid: cad72699-4a4b-4c52-88a5-217298490a7c
-source-git-commit: c2392932d1e29876f7a11bd856e770b8f7ce3181
+source-git-commit: 2c2b8f0103c608e68f28b89964d200490b46e781
 workflow-type: tm+mt
-source-wordcount: '1159'
+source-wordcount: '1161'
 ht-degree: 1%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 1%
 
 # Forms 포털을 사용하여 적응형 양식과 데이터베이스 통합 {#submit-forms-to-database-using-forms-portal}
 
-AFCS(automated forms conversion 서비스)를 사용하면 비대화형 PDF 양식, Acro 양식 또는 XFA 기반 PDF 양식을 적응형 양식으로 변환할 수 있습니다. 변환 프로세스를 시작하는 동안 데이터 바인딩을 사용하거나 사용하지 않고 적응형 양식을 생성할 수 있습니다.
+AFCS(자동화된 양식 변환 서비스)를 사용하면 비대화형 PDF 양식, Acro 양식 또는 XFA 기반 PDF 양식을 적응형 양식으로 변환할 수 있습니다. 변환 프로세스를 시작하는 동안 데이터 바인딩을 사용하거나 사용하지 않고 적응형 양식을 생성할 수 있습니다.
 
 데이터 바인딩 없이 적응형 양식을 생성하도록 선택한 경우, 변환된 적응형 양식을 변환 후 양식 데이터 모델, XML 스키마 또는 JSON 스키마와 통합할 수 있습니다. 그러나 데이터 바인딩이 있는 적응형 양식을 생성하는 경우 전환 서비스는 적응형 양식을 JSON 스키마와 자동으로 연결하고 적응형 양식에서 사용할 수 있는 필드와 JSON 스키마 사이에 데이터 바인딩을 만듭니다. 그런 다음 적응형 양식을 선택한 데이터베이스와 통합하고 양식에 데이터를 입력한 다음 Forms 포털을 사용하여 데이터베이스에 제출할 수 있습니다.
 
@@ -26,12 +26,12 @@ AFCS(automated forms conversion 서비스)를 사용하면 비대화형 PDF 양�
 
 이 문서에서 설명하는 샘플은 Forms 포털 페이지를 데이터베이스와 통합하기 위한 사용자 지정된 데이터 및 메타데이터 서비스의 참조 구현입니다. 샘플 구현에 사용되는 데이터베이스는 MySQL 5.6.24입니다. 그러나 Forms 포털 페이지를 원하는 데이터베이스와 통합할 수 있습니다.
 
-## 전제 조건 {#pre-requisites}
+## 사전 요구 사항 {#pre-requisites}
 
-* AEM 6.4 또는 6.5 작성자 인스턴스 설정
-* AEM 인스턴스에 대해 [최신 서비스 팩](https://helpx.adobe.com/kr/experience-manager/aem-releases-updates.html) 설치
+* AEM 6.5 또는 AEM 6.5 LTS 작성자 인스턴스 설정
+* AEM 인스턴스용 [최신 서비스 팩](https://helpx.adobe.com/kr/experience-manager/aem-releases-updates.html) 설치
 * 최신 버전의 AEM Forms 추가 기능 패키지
-* [AFCS(Automated forms conversion 서비스) 구성](configure-service.md)
+* [AFCS(자동 양식 전환 서비스) 구성](configure-service.md)
 * 데이터베이스를 설정합니다. 샘플 구현에 사용되는 데이터베이스는 MySQL 5.6.24입니다. 그러나 변환된 적응형 양식을 원하는 데이터베이스와 통합할 수 있습니다.
 
 ## AEM 인스턴스와 데이터베이스 간의 연결 설정 {#set-up-connection-aem-instance-database}
@@ -226,7 +226,7 @@ AEM 인스턴스와 MYSQL 데이터베이스 간에 연결을 만들려면 다�
     </tr>
     <tr> 
     <td><p>최대 활성 연결</p></td> 
-    <td><p>1000년</p></td>
+    <td><p>1000</p></td>
     </tr>
     <tr> 
     <td><p>최대 유휴 연결</p></td> 
@@ -282,7 +282,7 @@ Forms 포털 페이지를 사용하여 적응형 양식 제출을 활성화하�
 1. [변환을 실행](convert-existing-forms-to-adaptive-forms.md#start-the-conversion-process)하여 원본 양식을 적응형 양식으로 전환합니다.
 1. 편집 모드에서 적응형 양식을 엽니다.
 1. 양식 컨테이너를 누르고 ![적응형 양식 구성](assets/configure-adaptive-form.png)을 선택합니다.
-1. **[!UICONTROL Submission]** 섹션의 **[!UICONTROL Submit Action]** 드롭다운 목록에서 **[!UICONTROL Forms Portal Submit Action]**&#x200B;을(를) 선택합니다.
+1. **[!UICONTROL Submission]** 섹션의 **[!UICONTROL Forms Portal Submit Action]** 드롭다운 목록에서 **[!UICONTROL Submit Action]**&#x200B;을(를) 선택합니다.
 1. 설정을 저장하려면 ![템플릿 정책 저장](assets/edit_template_done.png)을 탭하세요.
 
 ## Forms 포털 페이지 만들기 및 구성 {#create-configure-forms-portal-page}
