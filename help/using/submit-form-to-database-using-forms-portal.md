@@ -4,9 +4,9 @@ description: AFCS(자동 양식 전환 서비스)를 실행하는 동안 기본 
 uuid: f98b4cca-f0a3-4db8-aef2-39b8ae462628
 topic-tags: forms
 discoiquuid: cad72699-4a4b-4c52-88a5-217298490a7c
-source-git-commit: 2c2b8f0103c608e68f28b89964d200490b46e781
+source-git-commit: 23d441d19dea63382f0a0024b4682d5bd0eaa63c
 workflow-type: tm+mt
-source-wordcount: '1161'
+source-wordcount: '1159'
 ht-degree: 1%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 1%
 
 # Forms 포털을 사용하여 적응형 양식과 데이터베이스 통합 {#submit-forms-to-database-using-forms-portal}
 
-AFCS(자동화된 양식 변환 서비스)를 사용하면 비대화형 PDF 양식, Acro 양식 또는 XFA 기반 PDF 양식을 적응형 양식으로 변환할 수 있습니다. 변환 프로세스를 시작하는 동안 데이터 바인딩을 사용하거나 사용하지 않고 적응형 양식을 생성할 수 있습니다.
+AFCS(자동화된 양식 변환 서비스)를 사용하면 비대화형 PDF 양식, Acro 양식 또는 XFA 기반 PDF 양식을 적응형 양식으로 변환할 수 있습니다. 변환 프로세스를 시작하는 동안 데이터 바인딩이 있거나 없는 적응형 양식을 생성할 수 있습니다.
 
 데이터 바인딩 없이 적응형 양식을 생성하도록 선택한 경우, 변환된 적응형 양식을 변환 후 양식 데이터 모델, XML 스키마 또는 JSON 스키마와 통합할 수 있습니다. 그러나 데이터 바인딩이 있는 적응형 양식을 생성하는 경우 전환 서비스는 적응형 양식을 JSON 스키마와 자동으로 연결하고 적응형 양식에서 사용할 수 있는 필드와 JSON 스키마 사이에 데이터 바인딩을 만듭니다. 그런 다음 적응형 양식을 선택한 데이터베이스와 통합하고 양식에 데이터를 입력한 다음 Forms 포털을 사용하여 데이터베이스에 제출할 수 있습니다.
 
@@ -299,3 +299,4 @@ Forms 포털 페이지를 사용하여 적응형 양식 제출을 활성화하�
 1. 페이지에 **[!UICONTROL Drafts & Submissions]** 구성 요소를 삽입합니다. Forms 포털 페이지에 두 개의 탭 **[!UICONTROL Draft Forms]** 및 **[!UICONTROL Submitted Forms]**&#x200B;이(가) 표시됩니다. **[!UICONTROL Draft Forms]** 탭에는 [Forms 포털 통합을 위해 변환된 적응형 양식 구성](#configure-converted-adaptive-form-for-forms-portal-integration)에 언급된 단계를 사용하여 생성된 변환된 적응형 양식도 표시됩니다
 
 1. **[!UICONTROL Preview]**&#x200B;을(를) 탭하고 전환된 적응형 양식을 탭하고 적응형 양식 필드에 대한 값을 지정하고 제출합니다. 적응형 양식 필드에 대해 지정하는 값이 통합 데이터베이스에 제출됩니다.
+

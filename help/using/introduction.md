@@ -8,9 +8,9 @@ topic-tags: forms
 role: Admin, Developer
 level: Beginner, Intermediate
 exl-id: edabeac8-cd66-48ca-a99f-9643a1c184cf
-source-git-commit: 2c2b8f0103c608e68f28b89964d200490b46e781
+source-git-commit: 23d441d19dea63382f0a0024b4682d5bd0eaa63c
 workflow-type: tm+mt
-source-wordcount: '738'
+source-wordcount: '739'
 ht-degree: 53%
 
 ---
@@ -25,7 +25,7 @@ AFCS(자동 양식 전환 서비스)는 PDF forms을 적응형 양식으로 자�
 * 일반적으로 발생하는 필드를 재사용 가능한 양식 조각으로 그룹화
 * 전환 중 Adobe Analytics 사용
 
-![간단합니다. 소스 양식을 제공하고 모든 것을 우리에게 맡기십시오. 멋진 적응형 양식을 제공합니다. 언제든지 원하는 대로 결과물을 수정하실 수 있습니다. &#x200B;](assets/pdf-to-adaptive-form-gitx50.gif)
+![간단합니다. 소스 양식을 제공하고 모든 것을 우리에게 맡기십시오. 멋진 적응형 양식을 제공합니다. 언제든지 원하는 대로 결과물을 수정하실 수 있습니다. ](assets/pdf-to-adaptive-form-gitx50.gif)
 
 ## 온보딩 {#onboarding}
 
@@ -39,7 +39,7 @@ Adobe는 조직에 대한 액세스 권한을 활성화하고 조직의 책임�
 
 이 서비스는 Adobe Sign이 활성화된 PDF forms도 지원합니다. 소스 PDF form에 Adobe Sign 텍스트 태그가 포함된 경우 서비스는 전환 중에 모든 Adobe Sign 관련 정보를 유지하고 소스 PDF의 서명자 정보를 해당 적응형 양식 필드와 연결합니다. 이 기능은 AcroForms에서만 사용할 수 있습니다.
 
-이 서비스는 영어, 프랑스어, 독일어, 스페인어, 이탈리아어 및 포르투갈어 언어 양식을 적응형 양식으로 전환할 수 있습니다. [AEM 번역 워크플로](https://helpx.adobe.com/kr/experience-manager/6-5/forms/using/using-aem-translation-workflow-to-localize-adaptive-forms.html)를 사용하여 생성된 적응형 양식을 다른 언어로 번역할 수도 있습니다.
+이 서비스는 영어, 프랑스어, 독일어, 스페인어, 이탈리아어 및 포르투갈어 언어 양식을 적응형 양식으로 전환할 수 있습니다. [AEM 번역 워크플로](https://helpx.adobe.com/experience-manager/6-5/forms/using/using-aem-translation-workflow-to-localize-adaptive-forms.html)를 사용하여 생성된 적응형 양식을 다른 언어로 번역할 수도 있습니다.
 
 ## 전환 워크플로우  {#conversion-workflow}
 
@@ -58,7 +58,7 @@ AEM Forms 환경이 구성된 후 PDF 양식을 적응형 양식으로 전환하
 * 보안 양식을 업로드하지 마십시오. 이 서비스는 암호로 보호되거나 암호화된 양식을 전환하지 않습니다.
 * 스캔, 컬러, 채워진 양식 및 영어, 프랑스어, 독일어, 스페인어, 이탈리아어 및 포르투갈어가 아닌 다른 언어로 양식을 업로드하지 마십시오. 이러한 양식은 지원되지 않습니다.
 * 파일 이름에 공백이 있는 PDF 양식을 업로드하지 마십시오.
-* [PDF 포트폴리오](https://helpx.adobe.com/kr/acrobat/using/overview-pdf-portfolios.html)를 업로드하지 마십시오. 이 서비스는 PDF Portfolio을 적응형 양식으로 전환하지 않습니다.
+* [PDF 포트폴리오](https://helpx.adobe.com/acrobat/using/overview-pdf-portfolios.html)를 업로드하지 마십시오. 이 서비스는 PDF Portfolio을 적응형 양식으로 전환하지 않습니다.
 * [모범 사례 및 고려 사항](styles-and-pattern-considerations-and-best-practices.md) 문서에 설명된 제안 변경 사항을 PDF 양식에 적용하십시오.
 * [알려진 문제](known-issues.md) 문서를 참조하여 문제를 방지하십시오.
 
@@ -67,3 +67,4 @@ AEM Forms 환경이 구성된 후 PDF 양식을 적응형 양식으로 전환하
 실제 양식에는 AI/ML 기반 감지 로직에 의해 정확하게 캡처되지 않을 수 있는 필드 레이아웃, 이름 지정 또는 암시적 제안 측면에서 복잡한 데이터 캡처 요구 사항이 있을 수 있습니다. 자동 전환이 완료되면 [검토 및 수정 편집기](review-correct-ui-edited.md)를 사용하여 전환된 양식을 검토하고 필요한 업데이트를 수행하여 원하는 경험에 가까운 향상된 결과물을 생성할 수 있습니다. 필요한 변경 작업을 수행한 후 전환을 위해 양식을 다시 보냅니다.
 
 자동 전환에 소요되는 시간은 입력 양식 크기, 양식의 복잡성, 서비스 처리 대기열 대출 등 다양한 요인에 따라 다릅니다. 사용자는 폴더/파일의 상태 표시기를 통해 정기적으로 진행 상황에 대한 알림을 받습니다. 전환이 완료되면 구성된 전자 메일 주소로도 전자 메일 알림을 보냅니다.
+

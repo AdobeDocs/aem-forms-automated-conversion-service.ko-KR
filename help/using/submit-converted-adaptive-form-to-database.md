@@ -8,9 +8,9 @@ topic-tags: forms
 role: Admin, Developer
 level: Beginner, Intermediate
 exl-id: 5447b66f-9fac-476f-ab8a-9290bb1f9c0d
-source-git-commit: 2c2b8f0103c608e68f28b89964d200490b46e781
+source-git-commit: 23d441d19dea63382f0a0024b4682d5bd0eaa63c
 workflow-type: tm+mt
-source-wordcount: '1508'
+source-wordcount: '1507'
 ht-degree: 1%
 
 ---
@@ -184,7 +184,7 @@ MYSQL을 데이터 소스로 구성했으면 다음 단계를 실행하여 양�
 
 ## JSON 바인딩을 사용하여 적응형 양식 생성 {#generate-adaptive-forms-with-json-binding}
 
-[AFCS(자동 양식 전환 서비스)를 사용하여 &#x200B;](convert-existing-forms-to-adaptive-forms.md)연락처 양식[을(를) 데이터 바인딩이 있는 적응형 양식으로 변환](#sample-adaptive-form)할 수 있습니다. 적응형 양식을 생성하는 동안 **[!UICONTROL Generate adaptive form(s) without data bindings]** 확인란을 선택하지 마십시오.
+[AFCS(자동 양식 전환 서비스)를 사용하여 ](convert-existing-forms-to-adaptive-forms.md)연락처 양식[을(를) 데이터 바인딩이 있는 적응형 양식으로 변환](#sample-adaptive-form)할 수 있습니다. 적응형 양식을 생성하는 동안 **[!UICONTROL Generate adaptive form(s) without data bindings]** 확인란을 선택하지 마십시오.
 
 ![JSON 바인딩이 있는 적응형 양식](assets/generate_af_with_data_bindings.png)
 
@@ -276,3 +276,4 @@ MYSQL을 데이터 소스로 구성했으면 다음 단계를 실행하여 양�
 다음을 사용하여 샘플 변환된 적응형 양식을 다운로드할 수 있습니다.
 
 [파일 가져오기](assets/DownloadedFormsPackage_1498226829041200.zip)
+
