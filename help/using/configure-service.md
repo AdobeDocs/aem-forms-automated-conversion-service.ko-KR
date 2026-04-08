@@ -8,9 +8,9 @@ topic-tags: forms
 role: Admin, Developer, User
 level: Beginner, Intermediate
 exl-id: 8f21560f-157f-41cb-ba6f-12a4d6e18555
-source-git-commit: ba5457fc64a6525c3dc02a00484030760c373c98
+source-git-commit: 2ec7faabc02ec6f416aafcbe7f7305e9323bd9eb
 workflow-type: tm+mt
-source-wordcount: '2664'
+source-wordcount: '2663'
 ht-degree: 6%
 
 ---
@@ -235,7 +235,7 @@ Adobe Developer Console에서 자동 양식 전환 서비스 API를 구성하려
       * **클라이언트 ID**: **API 키(클라이언트 ID)**&#x200B;를 복사하여 붙여 넣습니다.
       * **클라이언트 암호**: **클라이언트 암호**&#x200B;을(를) 복사하여 붙여 넣습니다.
       * **범위**: **범위**&#x200B;를 복사하여 붙여 넣습니다.
-      * **조직 ID**: **기술 계정 ID**&#x200B;를 복사하여 붙여 넣습니다.
+      * **조직 ID**: **조직 ID**&#x200B;을(를) 복사하여 붙여 넣습니다.
 
      ![IMS Adobe 구성 만들기](/help/using/assets/save-ims-configuration.png)
 
