@@ -8,9 +8,25 @@ topic-tags: forms
 role: Admin, Developer
 level: Beginner, Intermediate
 exl-id: 9ada091a-e7c6-40e9-8196-c568f598fc2a
-source-git-commit: ba5457fc64a6525c3dc02a00484030760c373c98
+TQID: https://experienceleague.adobe.com/EixW6MGzAyHz-JcPYmnKQBLWqnEFOwUepUFOcG8DBUo
+product_v2:
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+feature_v2:
+  - id: d49d6117-dd89-469c-a774-cc96b7eee433
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2:
+  - id: bbbea26f-9621-49eb-9ab8-e06fb3bbce8c
+  - id: eb30f47f-d87a-400f-8f78-63ce7979ff56
+  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+source-git-commit: 0be767cc3d09331ea7a61c114a11bb0354b5f4ad
 workflow-type: tm+mt
-source-wordcount: '1356'
+source-wordcount: 1356
 ht-degree: 4%
 
 ---
@@ -70,7 +86,7 @@ AEM [!DNL Forms Automated Conversion service]은(는) 인공 지능과 머신 �
 | 패턴 | 예 |
 |--- |--- |
 | **Pattern** <br>Service가 채워진 PDF forms을 적응형 양식으로 전환하지 않습니다. <br><br>**해결 방법** <br>빈 적응형 양식을 사용하십시오. | ![채워진 양식](assets/best-practice-filled-forms.png) |
-| **Pattern** <br>Service가 조밀한 형식의 텍스트 및 필드를 인식하지 못할 수 있습니다. <br><br>**해결 방법** <br> 전환을 시작하기 전에 조밀한 형식의 텍스트와 필드 사이의 너비를 늘리십시오. |  |
+| **Pattern** <br>Service가 조밀한 형식의 텍스트 및 필드를 인식하지 못할 수 있습니다. <br><br>**해상도** <br> 전환을 시작하기 전에 조밀한 형식의 텍스트와 필드 사이의 너비를 늘리십시오. |  |
 | **패턴** <br>서비스가 검사한 양식을 지원하지 않습니다. <br><br>**해결 방법** <br>검사한 양식을 사용하지 마십시오. | ![검사한 양식](assets/scanned-forms.png) |
 | **패턴** <br>서비스에서 이미지 및 이미지 내의 텍스트를 추출하지 않습니다. <br><br>**해상도** <br> 변환된 양식에 이미지 또는 텍스트를 수동으로 추가합니다. | ![텍스트 양식이 있는 이미지](assets/best-practice-image-with-text.png) |
 | **패턴** <br>점선 또는 명확하지 않은 경계와 테두리가 있는 테이블은 변환되지 않습니다. <br><br>**해결 방법** <br>명확한 경계와 테두리가 있는 표를 사용합니다. 지원됨. | ![명확하지 않은 테이블 양식](assets/best-practice-table-dotted-non-clear.png) |
@@ -82,15 +98,15 @@ AEM [!DNL Forms Automated Conversion service]은(는) 인공 지능과 머신 �
 
 | 패턴 | 해결 방법 |
 |--- |--- |
-| **패턴** 상자 또는 원이 아닌 모양이 있는 <br> 선택 그룹 옵션은 해당 적응형 양식 구성 요소로 변환되지 않습니다. <br><br>**해결 방법** <br> 선택 옵션 셰이프를 상자 또는 원으로 변경하거나 [검토 및 수정] 편집기를 사용하여 셰이프를 식별하십시오. | ![선택 필드 &#x200B;](assets/best-practice-choice-group-options.png) |
+| **패턴** 상자 또는 원이 아닌 모양이 있는 <br> 선택 그룹 옵션은 해당 적응형 양식 구성 요소로 변환되지 않습니다. <br><br>**해결 방법** <br> 선택 옵션 도형을 상자 또는 원으로 변경하거나 [검토 및 수정] 편집기를 사용하여 도형을 식별하십시오. | ![선택 필드 &#x200B;](assets/best-practice-choice-group-options.png) |
 
 ### 양식 필드 {#form-fields}
 
 | 패턴 | 해결 방법 |
 |--- |--- |
-| **Pattern** <br> 서비스에서 테두리가 없는 필드를 식별하지 않습니다. <br><br>**해결 방법** <br> 검토 및 수정 편집기를 사용하여 이러한 필드를 식별합니다. | ![경계가 명확하지 않은 필드](assets/best-practice-fields-without-clear-borders.png) |
+| **Pattern** <br> 서비스에서 테두리가 없는 필드를 식별하지 않습니다. <br><br>**해결 방법** <br> 검토 및 수정 편집기를 사용하여 이러한 필드를 식별하십시오. | ![경계가 명확하지 않은 필드](assets/best-practice-fields-without-clear-borders.png) |
 | **패턴** <br> 서비스가 양식의 아래쪽 또는 오른쪽에 캡션이 있는 일부 선택 그룹 양식 필드를 식별하지 못할 수 있습니다. <br><br>**해결 방법** <br> 검토 및 수정 편집기를 사용하여 이러한 필드를 식별하십시오 | ![선택 필드](assets/best-practice-caption-bottom-right.png) |
-| **패턴** <br> 서비스가 서로 매우 가까운 위치에 있거나 명확한 테두리가 없는 일부 양식 필드에 잘못된 형식을 병합하거나 할당합니다. <br><br>**해결 방법** <br> 검토 및 수정 편집기를 사용하여 이러한 필드를 식별합니다. | ![선택 필드](assets/best-practice-placed-very-near.png) |
+| **패턴** <br> 서비스가 서로 매우 가까운 위치에 있거나 명확한 테두리가 없는 일부 양식 필드에 잘못된 형식을 병합하거나 할당합니다. <br><br>**해결 방법** <br> 검토 및 수정 편집기를 사용하여 이러한 필드를 식별하십시오. | ![선택 필드](assets/best-practice-placed-very-near.png) |
 | **패턴** <br> 서비스에서 캡션과 입력 필드 사이에 멀리 있는 캡션 또는 점선이 있는 필드를 인식하지 못할 수 있습니다. <br><br>**해결 방법** <br> 경계가 명확한 양식 필드를 사용하거나 검토 및 수정 편집기를 사용하여 이러한 문제를 수정하십시오. | ![캡션 필드 사이에 있는 멀리 떨어진 필드 또는 점선](assets/best-practice-far-away-captions-or-a-dotted-line.png) |
 
 ### 목록 {#lists}

@@ -7,10 +7,20 @@ role: Admin, Developer
 topic-tags: forms
 feature: Adaptive Forms
 exl-id: 415e05b5-5a90-490c-bf7c-d3365ce95e24
-source-git-commit: 23d441d19dea63382f0a0024b4682d5bd0eaa63c
+TQID: https://experienceleague.adobe.com/t3Ng0VnihUMkisnaGzTBaw2QIR93l-fSHApCaOvz0r0
+product_v2:
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+source-git-commit: 0be767cc3d09331ea7a61c114a11bb0354b5f4ad
 workflow-type: tm+mt
-source-wordcount: '1794'
-ht-degree: 6%
+source-wordcount: 1905
+ht-degree: 8%
 
 ---
 
@@ -140,7 +150,7 @@ AEM Forms 인스턴스의 폴더로 변환할 양식을 업로드하려면 다�
    * 전환이 성공하면 전환된 적응형 양식 및 관련 스키마가 전환 대화 상자의 **[!UICONTROL Basic]** 탭에 지정된 경로로 다운로드됩니다. 양식 조각 및 해당 스키마는 전환을 시작하기 전에 조각 추출 옵션을 선택한 경우에만 다운로드됩니다.
    * 변환 실패 시 모든 입력 양식이 변환되지 않는 경우 **[!UICONTROL Conversion Failed]** 메시지가 표시되고, 일부 입력 양식만 변환되지 않는 경우 **[!UICONTROL Partially Failed]** 메시지가 표시됩니다. [구성된 전자 메일 주소](configure-service.md#configureemailnotification)에서 상태 전자 메일이 전송되며 오류가 error.log 파일에 기록됩니다.
 
-   에서 XFA 기반 PDF 양식을 적응형 양식으로 전환하는 경우 전환 서비스는 PDF 양식을 기록 문서 템플릿으로 변환된 적응형 양식에 자동으로 연결합니다. 변환 후 적응형 양식 속성을 열어 **[!UICONTROL Document of Record Template Configuration]** 탭의 **[!UICONTROL Form Model]** 섹션에서 기록 문서 템플릿을 볼 수 있습니다. </br>
+   에서 XFA 기반 PDF 양식을 적응형 양식으로 전환하는 경우 전환 서비스는 PDF 양식을 기록 문서 템플릿으로 변환된 적응형 양식에 자동으로 연결합니다. 변환 후 적응형 양식 속성을 열어 **[!UICONTROL Form Model]** 탭의 **[!UICONTROL Document of Record Template Configuration]** 섹션에서 기록 문서 템플릿을 볼 수 있습니다. </br>
 
    **[!UICONTROL Tools]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL Automated Forms Conversion Configuration]** > **[!UICONTROL Properties of selected configuration]** > **[!UICONTROL Advanced]** > **[!UICONTROL Generate Document of Record]** 옵션을 사용하도록 설정하는 경우에만 변환 서비스에서 변환된 적응형 양식에 PDF 양식을 기록 문서 템플릿으로 자동으로 업로드합니다.
 

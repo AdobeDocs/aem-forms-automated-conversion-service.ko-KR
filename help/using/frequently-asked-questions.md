@@ -8,10 +8,25 @@ topic-tags: introduction
 role: Admin, Developer
 level: Beginner, Intermediate
 exl-id: 3a29f8d4-8ea0-49eb-bfe0-0eab5f0c52c7
-source-git-commit: 23d441d19dea63382f0a0024b4682d5bd0eaa63c
+TQID: https://experienceleague.adobe.com/yp0Kt5IApys-pqUHzqYJlzY9zhMg7z26v-bB0Fp9fjI
+product_v2:
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+feature_v2:
+  - id: d49d6117-dd89-469c-a774-cc96b7eee433
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2:
+  - id: cc72dcf1-72e1-48cc-b434-e7c27d62d67c
+  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+source-git-commit: 0be767cc3d09331ea7a61c114a11bb0354b5f4ad
 workflow-type: tm+mt
-source-wordcount: '1806'
-ht-degree: 3%
+source-wordcount: 1918
+ht-degree: 4%
 
 ---
 
@@ -66,7 +81,7 @@ ht-degree: 3%
    * 보안 PDF forms은 전환을 위해 제공됩니다. 암호로 보호되거나 보안된 PDF forms을 전환에 사용하지 마십시오.
    * 인터넷 연결이 중단되었습니다. 변환 중에 인터넷에 연결되어 있는지 확인합니다.
    * Source PDF에는 실제 양식 대신 양식 이미지가 있습니다.
-   * 서비스가 잘못 구성되었거나 서비스 URL이 제공되지 않았거나 제공된 서비스 URL이 잘못되었습니다. [&#x200B; > &#x200B;](configure-service.md#configure-the-cloud-service) > **[!UICONTROL AEM]** > **[!UICONTROL Tools]**&#x200B;에서 **[!UICONTROL Cloud Services]**&#x200B;서비스 구성&#x200B;**[!UICONTROL Automated Forms Conversion configuration]**&#x200B;을(를) 확인하십시오.
+   * 서비스가 잘못 구성되었거나 서비스 URL이 제공되지 않았거나 제공된 서비스 URL이 잘못되었습니다. **[!UICONTROL AEM]** > **[!UICONTROL Tools]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL Automated Forms Conversion configuration]**&#x200B;에서 [서비스 구성](configure-service.md#configure-the-cloud-service)을(를) 확인하십시오.
    * IMS 구성이 제대로 구성되지 않았습니다. IMS 구성이 제대로 작동하는지 확인하려면 상태 검사를 수행하십시오. IMS 구성이 올바른지 확인하려면:
       1. `http://[servername]:[port]/libs/cq/adobeims-configuration/content/configurations.html`(으)로 이동
       2. 구성을 선택합니다. 헤더에서 **[!UICONTROL Check Health]**&#x200B;을(를) 클릭하고 **[!UICONTROL Check]**&#x200B;을(를) 클릭합니다. 성공하면 **[!UICONTROL Token retrieved successfully!]**&#x200B;개의 메시지가 표시됩니다. <br> <br>

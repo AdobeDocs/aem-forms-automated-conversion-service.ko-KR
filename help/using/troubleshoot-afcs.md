@@ -9,10 +9,26 @@ role: Admin, Developer
 level: Beginner, Intermediate
 contentOwner: khsingh
 exl-id: e8406ed9-37f5-4f26-be97-ad042f9ca57c
-source-git-commit: c2392932d1e29876f7a11bd856e770b8f7ce3181
+TQID: https://experienceleague.adobe.com/CYDvLiZX-BqErF-cKQX1SieVDMxkoD1kfP4rLIT9ku0
+product_v2:
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+feature_v2:
+  - id: d49d6117-dd89-469c-a774-cc96b7eee433
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2:
+  - id: c1579802-ddd4-4214-8a91-97b2066abe11
+  - id: ce44533e-8ec8-4e11-a9e9-78b0fe561832
+  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+source-git-commit: 0be767cc3d09331ea7a61c114a11bb0354b5f4ad
 workflow-type: tm+mt
-source-wordcount: '655'
-ht-degree: 85%
+source-wordcount: 689
+ht-degree: 79%
 
 ---
 
@@ -26,8 +42,8 @@ ht-degree: 85%
 
 | 오류 | 예 |
 |--- |--- |
-| **오류 메시지** <br> 액세스 토큰 헤더를 사용할 수 없습니다. <br><br> **원인** <br> 관리자가 여러 개의 IMS 구성을 작성했거나 IMS 구성을 Adobe Cloud의 AFCS 서비스에 연결할 수 없습니다. <br><br>**해결 방법** <br> 구성이 여러 개인 경우 모든 구성을 삭제하고 [새 구성을 생성](configure-service.md#obtainpubliccertificates)합니다. <br> 단일 구성이 있는 경우 **상태 점검** 을 사용하여 [연결 상태를 확인](configure-service.md#createintegrationoption)합니다. | ![액세스 토큰 헤더를 사용할 수 없습니다](assets/invalid-ims-configurations.png) |
-| **오류 메시지** <br> 서비스에 연결할 수 없습니다.  <br><br>**이유** <br> 서비스 URL이 잘못되었거나 AFCS(Automated forms conversion 서비스) 클라우드 서비스에 서비스 URL이 언급되지 않았습니다. AFCS(Automated forms conversion 서비스) 클라우드 서비스에서 <br><br>**해결 방법** <br> 올바른 [서비스 URL](configure-service.md#configure-the-cloud-service)입니다. | ![서비스에 연결할 수 없습니다.](assets/wrong-service-url-configured.png) |
+| **오류 메시지** <br> 액세스 토큰 헤더를 사용할 수 없습니다. <br><br> **원인** <br> 관리자가 여러 개의 IMS 구성을 작성했거나 IMS 구성을 Adobe Cloud의 AFCS 서비스에 연결할 수 없습니다. <br><br>**해결 방법** <br> 구성이 여러 개인 경우 모든 구성을 삭제하고 [새 구성을 만드십시오](configure-service.md#obtainpubliccertificates). <br> 단일 구성이 있는 경우 **상태 검사**&#x200B;를 사용하여 [연결 확인](configure-service.md#createintegrationoption)을 하세요. | ![액세스 토큰 헤더를 사용할 수 없습니다](assets/invalid-ims-configurations.png) |
+| **오류 메시지** <br> 서비스에 연결할 수 없습니다.  <br><br>**이유** <br> AFCS(자동 양식 전환 서비스) 클라우드 서비스에서 서비스 URL이 잘못되었거나 서비스 URL이 언급되지 않았습니다. <br><br>**해결 방법** <br> AFCS(자동 양식 전환 서비스) 클라우드 서비스에서 [서비스 URL](configure-service.md#configure-the-cloud-service)을(를) 수정합니다. | ![서비스에 연결할 수 없습니다.](assets/wrong-service-url-configured.png) |
 | **오류 메시지** <br> 이 서비스에서 양식을 전환하지 못했습니다.  <br><br>**원인** <br> 사용자 측 네트워크 연결 문제입니다. 예약된 유지 보수 또는 Adobe Cloud의 중단으로 인해 서비스가 중단되었습니다. <br><br>**해결 방법** <br> 사용자 측의 네트워크 연결 문제를 해결하고 https://status.adobe.com/ko-kr/에서 서비스 상태를 통해 계획된 운영 중단인지, 아니면 계획되지 않은 운영 중단인지 확인합니다. | ![서비스에 연결할 수 없습니다.](assets/conversion-failure.png) |
 | **오류 메시지** <br> 페이지 수가 15페이지를 넘습니다.  <br><br>**원인** <br> 소스 양식의 길이가 15페이지를 넘습니다.  <br><br>**해결 방법** <br> 15페이지 이상의 양식인 경우 Adobe Acrobat을 사용하여 페이지를 나눕니다. 양식의 페이지 수를 15개 미만으로 줄입니다. | ![서비스에 연결할 수 없습니다.](assets/number-of-pages.png) |
 | **오류 메시지** <br> 파일 수가 15개를 넘습니다.  <br><br>**원인** <br>  폴더에 15개 이상의 양식이 있습니다. <br><br>**해결 방법** <br> 폴더의 양식 수를 15개 이하로 줄입니다. 폴더의 총 페이지 수를 50개 미만으로 줄입니다. 폴더 크기를 10MB 미만으로 줄입니다. 하위 폴더에 양식을 보관하지 마십시오. 소스 양식을 8~15개 양식의 배치로 구성합니다. | ![서비스에 연결할 수 없습니다.](assets/number-of-pages.png) |

@@ -8,10 +8,24 @@ topic-tags: forms
 role: Admin, Developer
 level: Beginner, Intermediate
 exl-id: edabeac8-cd66-48ca-a99f-9643a1c184cf
-source-git-commit: 23d441d19dea63382f0a0024b4682d5bd0eaa63c
+TQID: https://experienceleague.adobe.com/stoZAgMJGYjT1IKCcXBAe2JxWAvPJfwq0znNs757b0U
+product_v2:
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+feature_v2:
+  - id: d49d6117-dd89-469c-a774-cc96b7eee433
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2:
+  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+source-git-commit: 0be767cc3d09331ea7a61c114a11bb0354b5f4ad
 workflow-type: tm+mt
-source-wordcount: '739'
-ht-degree: 53%
+source-wordcount: 769
+ht-degree: 57%
 
 ---
 
@@ -49,7 +63,7 @@ AFCS(자동 양식 전환 서비스)는 Adobe Cloud에서 실행됩니다. AEM �
 
 ### &#x200B;1. 환경 설정 {#set-up-the-environment}
 
-AFCS(자동 양식 전환 서비스)는 Adobe Cloud에서 실행됩니다. [조직의 Adobe I/O 계정을 구성하고 로컬 AEM 인스턴스를 Adobe Cloud에서 실행되는 전환 서비스에 연결합니다](configure-service.md). AEM 6.5 및 AEM 6.5 LTS의 경우 핵심 구성 요소 기반 템플릿 및 테마를 사용하는 경우 적응형 양식 핵심 구성 요소를 활성화해야 합니다. [서비스 구성](configure-service.md#referencepackage)을 참조하십시오.
+AFCS(자동 양식 전환 서비스)는 Adobe Cloud에서 실행됩니다. [조직의 Adobe I/O 계정을 구성하고 로컬 AEM 인스턴스](configure-service.md)를 Adobe Cloud에서 실행되는 전환 서비스에 연결합니다. AEM 6.5 및 AEM 6.5 LTS의 경우 핵심 구성 요소 기반 템플릿 및 테마를 사용하는 경우 적응형 양식 핵심 구성 요소를 활성화해야 합니다. [서비스 구성](configure-service.md#referencepackage)을 참조하십시오.
 
 ### &#x200B;2. PDF forms을 적응형 양식으로 전환 {#use-the-conversion-service}
 
