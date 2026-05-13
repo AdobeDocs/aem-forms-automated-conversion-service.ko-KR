@@ -9,11 +9,19 @@ role: Admin, Developer
 level: Beginner, Intermediate
 exl-id: 64330fa2-aa9d-4ba4-96df-b75deed3e693
 TQID: https://experienceleague.adobe.com/r--F0l84gNKh6jvpjo7cCV4NS-i3hM7zcK3kl0h3YX8
-product_v2: id: e8f6de9b-cf88-4405-8d10-15efa08c230eid: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
-feature_v2: id: d49d6117-dd89-469c-a774-cc96b7eee433
-role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-topic_v2: id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+product_v2:
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+feature_v2:
+  - id: d49d6117-dd89-469c-a774-cc96b7eee433
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2:
+  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
 source-git-commit: 0be767cc3d09331ea7a61c114a11bb0354b5f4ad
 workflow-type: tm+mt
 source-wordcount: 2548
@@ -91,7 +99,7 @@ AEM Forms AFCS(자동 양식 전환 서비스)는 입력 PDF 문서의 필드, �
 
    * 패널을 삭제하려면 패널을 선택하고 도구 모음에서 ![](assets/delete-icon.png) 삭제 아이콘을 탭합니다. 확인 대화 상자에서 **[!UICONTROL Confirm]**&#x200B;을 누릅니다. 변경 내용을 저장하려면 **[!UICONTROL Save]**&#x200B;을(를) 탭하세요.
 
-   * 패널을 그룹 해제하려면 패널을 선택하고 도구 모음에서 그룹 해제 아이콘을 탭합니다. 패널이 그룹 해제되고 그룹 해제된 패널의 하위 필드가 상위 필드로 조정됩니다. **[!UICONTROL Save]**을 눌러 변경 내용을 저장합니다.
+   * 패널을 그룹 해제하려면 패널을 선택하고 도구 모음에서 그룹 해제 아이콘을 탭합니다. 패널이 그룹 해제되고 그룹 해제된 패널의 하위 필드가 상위 필드로 조정됩니다. **[!UICONTROL Save]**&#x200B;을 눌러 변경 내용을 저장합니다.
 
 1. **텍스트 논리 그룹을 만듭니다**: 식별된 텍스트의 완전성과 정확성을 확인합니다. 또한 텍스트를 논리적으로 올바른 패널이나 그룹에 배치합니다. 예를 들어 다중 열 레이아웃에서 한 논리 그룹과 다른 그룹에 있는 텍스트를 예로 들 수 있습니다.
 

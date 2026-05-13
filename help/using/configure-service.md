@@ -9,11 +9,25 @@ role: Admin, Developer, User
 level: Beginner, Intermediate
 exl-id: 8f21560f-157f-41cb-ba6f-12a4d6e18555
 TQID: https://experienceleague.adobe.com/xxFiHKgzZsDqk1rjtsBOEa-gaEi5S7iRY-Ela1T6eL8
-product_v2: id: e8f6de9b-cf88-4405-8d10-15efa08c230eid: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
-feature_v2: id: a01bfd36-4ab8-4bf8-9dc0-5b45b890552eid: a1df6763-63b5-45b4-8c8a-155a692a2b3eid: ae478996-b206-4712-9b0c-dc78a2644453id: d49d6117-dd89-469c-a774-cc96b7eee433id: f013e6ab-27b8-4645-b5a7-31ffa474d04f
-role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-topic_v2: id: d095671a-1355-40aa-8b5f-06c33c68080bid: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+product_v2:
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+feature_v2:
+  - id: a01bfd36-4ab8-4bf8-9dc0-5b45b890552e
+  - id: a1df6763-63b5-45b4-8c8a-155a692a2b3e
+  - id: ae478996-b206-4712-9b0c-dc78a2644453
+  - id: d49d6117-dd89-469c-a774-cc96b7eee433
+  - id: f013e6ab-27b8-4645-b5a7-31ffa474d04f
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2:
+  - id: d095671a-1355-40aa-8b5f-06c33c68080b
+  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
 source-git-commit: cb6b167400093c85e8929eb147e2a0be256772a6
 workflow-type: tm+mt
 source-wordcount: 2663
@@ -195,24 +209,24 @@ Adobe Developer Console에서 자동 양식 전환 서비스 API를 구성하려
 
    ![새 API 프로젝트 만들기](/help/using/assets/create-new-api-project.png)
 
-1. **[!UICONTROL Add API]**를 클릭합니다. 계정에 대해 활성화된 모든 API 목록이 포함된 화면이 나타납니다.
+1. **[!UICONTROL Add API]**&#x200B;를 클릭합니다. 계정에 대해 활성화된 모든 API 목록이 포함된 화면이 나타납니다.
    ![API 추가](/help/using/assets/add-api.png)
 
-1. **[!UICONTROL Automated Forms Conversion service]**&#x200B;을(를) 선택하고 **[!UICONTROL Next]**을(를) 클릭합니다. API 구성 화면이 나타납니다.
+1. **[!UICONTROL Automated Forms Conversion service]**&#x200B;을(를) 선택하고 **[!UICONTROL Next]**&#x200B;을(를) 클릭합니다. API 구성 화면이 나타납니다.
    ![AFCS API 선택](/help/using/assets/select-afcs-api.png)
 
 1. **OAuth 서버 간** 인증 방법을 선택하십시오.
-1. **[!UICONTROL Credential Name]**&#x200B;을(를) 지정하고 **[!UICONTROL Next]**을(를) 클릭합니다.
+1. **[!UICONTROL Credential Name]**&#x200B;을(를) 지정하고 **[!UICONTROL Next]**&#x200B;을(를) 클릭합니다.
    ![자격 증명 이름 지정](/help/using/assets/specify-credential-name.png)
 1. **제품 프로필**&#x200B;을 선택하세요. 예를 들어 프로필을 **AFC_Flamingo_Test_Dev**(으)로 선택합니다.
-1. **[!UICONTROL Save configured API]**를 클릭합니다.
+1. **[!UICONTROL Save configured API]**&#x200B;를 클릭합니다.
    ![프로필 선택](/help/using/assets/select-profile.png)
 
    >[!NOTE]
    >
    > 조직의 개발자에게 액세스 권한을 부여하는 동안 생성된 프로필을 선택합니다. 선택할 프로필을 모르는 경우 관리자에게 문의하십시오.
 
-1. AEM 인스턴스를 AFCS(자동 양식 전환 서비스)에 연결하는 데 필요한 API 키, 클라이언트 암호 및 기타 정보를 보려면 **[!UICONTROL OAuth Server-to-Server]**을(를) 클릭하십시오.
+1. AEM 인스턴스를 AFCS(자동 양식 전환 서비스)에 연결하는 데 필요한 API 키, 클라이언트 암호 및 기타 정보를 보려면 **[!UICONTROL OAuth Server-to-Server]**&#x200B;을(를) 클릭하십시오.
    ![Oath 자격 증명 선택](/help/using/assets/select-oauth-credential.png)
 
    [AEM 작성자 인스턴스에서 IMS 기술 구성 만들기](#2-create-ims-technical-configuration-on-aem-author-instance) 섹션에 설명된 대로 페이지의 정보를 사용하여 IMS 구성을 만듭니다.
@@ -251,7 +265,7 @@ Adobe Developer Console에서 자동 양식 전환 서비스 API를 구성하려
    >
    > IMS 구성을 하나만 만듭니다. IMS 구성을 두 개 이상 만들지 마십시오.
 
-1. **Adobe IMS 구성**&#x200B;을(를) 선택하고 **[!UICONTROL Check Health]**을(를) 클릭합니다. 대화 상자가 나타납니다.
+1. **Adobe IMS 구성**&#x200B;을(를) 선택하고 **[!UICONTROL Check Health]**&#x200B;을(를) 클릭합니다. 대화 상자가 나타납니다.
    ![상태 확인](/help/using/assets/check-health.png)
 
    **확인** 대화 상자가 나타납니다.
@@ -262,7 +276,7 @@ Adobe Developer Console에서 자동 양식 전환 서비스 API를 구성하려
 
    연결에 성공하면 *토큰이 검색되었습니다*&#x200B;라는 메시지가 나타납니다.
 
-   ![연결이 성공하면 토큰이 검색되었습니다. 메시지가 나타납니다. ](/help/using/assets/healthy-dialog.png)
+   ![연결이 성공하면 토큰이 검색되었습니다. 메시지가 나타납니다. &#x200B;](/help/using/assets/healthy-dialog.png)
 
 1. **닫기**&#x200B;를 클릭합니다.
 
@@ -272,7 +286,7 @@ AEM 인스턴스를 전환 서비스에 연결하려면 자동 양식 전환 구
 예를 들어 판매 부서 양식에 대해 별도의 구성을 가지고 고객 지원 양식에 대해 별도의 구성을 가질 수 있습니다. 클라우드 서비스 구성을 만들려면 다음 단계를 수행하십시오.
 
 1. AEM Forms 인스턴스에서 **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Tools]**> **[!UICONTROL Cloud Services]** > **[!UICONTROL Automate Forms Conversion Configuration]**&#x200B;을(를) 클릭합니다.
-1. **[!UICONTROL Global]** 폴더를 선택하고 **[!UICONTROL Create]**을(를) 클릭합니다.
+1. **[!UICONTROL Global]** 폴더를 선택하고 **[!UICONTROL Create]**&#x200B;을(를) 클릭합니다.
 **자동 양식 전환 구성 만들기** 페이지가 나타납니다. 구성이 **전역** 폴더에 만들어집니다. 존재하는 다른 폴더에 구성을 만들거나 구성에 대한 폴더를 만들 수도 있습니다.
    ![전역 폴더 선택](/help/using/assets/create-afcs-cloud-conf.png)
 1. **[!UICONTROL Create Automated Forms Conversion Configuration]** 페이지에서 다음 필드에 대한 값을 지정하고 **[!UICONTROL Next]**&#x200B;을(를) 클릭합니다.
