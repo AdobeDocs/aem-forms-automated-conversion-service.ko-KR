@@ -1,6 +1,6 @@
 ---
 title: 전환된 양식 검토 및 수정
-description: AFCS(Automated forms conversion 서비스)에서 변환된 적응형 양식을 검토하고 수정합니다.
+description: AFCS(자동 양식 전환 서비스)에서 전환된 적응형 양식을 검토하고 수정합니다.
 solution: Experience Manager Forms
 feature: Adaptive Forms, Foundation Components
 topic: Administration
@@ -8,16 +8,22 @@ topic-tags: forms
 role: Admin, Developer
 level: Beginner, Intermediate
 exl-id: 64330fa2-aa9d-4ba4-96df-b75deed3e693
-source-git-commit: c2392932d1e29876f7a11bd856e770b8f7ce3181
+TQID: https://experienceleague.adobe.com/r--F0l84gNKh6jvpjo7cCV4NS-i3hM7zcK3kl0h3YX8
+product_v2: id: e8f6de9b-cf88-4405-8d10-15efa08c230eid: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+feature_v2: id: d49d6117-dd89-469c-a774-cc96b7eee433
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2: id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+source-git-commit: 0be767cc3d09331ea7a61c114a11bb0354b5f4ad
 workflow-type: tm+mt
-source-wordcount: '2512'
+source-wordcount: 2548
 ht-degree: 0%
 
 ---
 
 # 전환된 양식 검토 및 수정{#review-and-correct-converted-forms}
 
-AFCS(AEM Forms Automated forms conversion 서비스)는 입력 PDF 문서의 필드, 컨텐츠 및 레이아웃을 식별하고 PDF 문서를 적응형 양식으로 변환합니다. 출력 적응형 양식에 누락되거나 잘못 변환된 필드가 있을 수 있습니다. 검토 및 수정 편집기를 사용하여 식별된 필드를 개선하고 적응형 양식을 재생성하여 원하는 경험에 가까운 출력을 얻을 수 있습니다. 첫 번째 변환 후 편집기에서 입력 PDF 문서를 열어 다음과 같은 작업을 수행할 수 있습니다.
+AEM Forms AFCS(자동 양식 전환 서비스)는 입력 PDF 문서의 필드, 컨텐츠 및 레이아웃을 식별하고 PDF 문서를 적응형 양식으로 전환합니다. 출력 적응형 양식에 누락되거나 잘못 변환된 필드가 있을 수 있습니다. 검토 및 수정 편집기를 사용하여 식별된 필드를 개선하고 적응형 양식을 재생성하여 원하는 경험에 가까운 출력을 얻을 수 있습니다. 첫 번째 변환 후 편집기에서 입력 PDF 문서를 열어 다음을 수행할 수 있습니다.
 
 * 전환 중에 식별된 모든 필드 및 콘텐츠 보기
 * 전환 중 누락된 필드 및 콘텐츠 식별
@@ -45,7 +51,7 @@ AFCS(AEM Forms Automated forms conversion 서비스)는 입력 PDF 문서의 필
 
 ![UI 검토 및 수정](assets/reviewcorrectui.png)
 
-**A.** 콘텐츠 브라우저 **B.** 속성 브라우저 **C.** 도구 모음 **D.** 속성 단추 **E.** 필터 단추 **F.** 저장 단추 **G.** PDF 양식이 식별된 필드로 오버레이됨
+**A.** 콘텐츠 브라우저 **B.** 속성 브라우저 **C.** 도구 모음 **D.** 속성 단추 **E.** 필터 단추 **F.** 저장 단추 **G.** 식별된 필드로 오버레이된 PDF 양식
 
 첫 번째 성공적인 전환 이후 전환 서비스는 소스 PDF 문서를 식별된 필드 및 구성 요소로 오버레이합니다. 이러한 필드 또는 구성 요소는 텍스트, 필드, 패널, 선택 그룹 및 테이블 유형입니다.
 
@@ -63,13 +69,13 @@ AFCS(AEM Forms Automated forms conversion 서비스)는 입력 PDF 문서의 필
 
 ### 시작하기 전 {#before-you-start}
 
-* 검토 및 수정 편집기는 조각을 지원하지 않습니다. 전환 중에 **조각 추출** 옵션이 활성화된 전환을 검토하는 데 편집기를 사용하지 마십시오. 이러한 전환에는 [적응형 양식 편집기](https://helpx.adobe.com/kr/experience-manager/6-5/forms/using/introduction-forms-authoring.html)를 사용할 수 있습니다.
+* 검토 및 수정 편집기는 조각을 지원하지 않습니다. 전환 중에 **조각 추출** 옵션이 활성화된 전환을 검토하는 데 편집기를 사용하지 마십시오. 이러한 전환에는 [적응형 양식 편집기](https://helpx.adobe.com/experience-manager/6-5/forms/using/introduction-forms-authoring.html)를 사용할 수 있습니다.
 
 * 검토 및 수정 편집기에 실행 취소 작업이 없습니다. 저장 단추는 변경 사항을 영구적으로 저장하는 경우에만 사용합니다.
 
 ### 리뷰 시작 {#start-the-review}
 
-전환 검토를 시작하려면 전환에 사용되는 소스 PDF 문서를 선택하고 **전환 검토**&#x200B;를 선택한 후 탭하세요. 검토 및 수정 편집기가 새 탭에서 열립니다. 전환 검토를 시작할 수 있습니다. 다른 문제 해결을 시작하기 전에 다음 기본 검사를 수행하십시오.
+전환 검토를 시작하려면 전환에 사용되는 소스 PDF 문서를 선택하고 **전환 검토**&#x200B;를 선택한 후 탭합니다. 검토 및 수정 편집기가 새 탭에서 열립니다. 전환 검토를 시작할 수 있습니다. 다른 문제 해결을 시작하기 전에 다음 기본 검사를 수행하십시오.
 
 ![](assets/usingreviewandcorrecteditor.png)
 
@@ -85,13 +91,13 @@ AFCS(AEM Forms Automated forms conversion 서비스)는 입력 PDF 문서의 필
 
    * 패널을 삭제하려면 패널을 선택하고 도구 모음에서 ![](assets/delete-icon.png) 삭제 아이콘을 탭합니다. 확인 대화 상자에서 **[!UICONTROL Confirm]**&#x200B;을 누릅니다. 변경 내용을 저장하려면 **[!UICONTROL Save]**&#x200B;을(를) 탭하세요.
 
-   * 패널을 그룹 해제하려면 패널을 선택하고 도구 모음에서 그룹 해제 아이콘을 탭합니다. 패널이 그룹 해제되고 그룹 해제된 패널의 하위 필드가 상위 필드로 조정됩니다. **[!UICONTROL Save]**&#x200B;을 눌러 변경 내용을 저장합니다.
+   * 패널을 그룹 해제하려면 패널을 선택하고 도구 모음에서 그룹 해제 아이콘을 탭합니다. 패널이 그룹 해제되고 그룹 해제된 패널의 하위 필드가 상위 필드로 조정됩니다. **[!UICONTROL Save]**을 눌러 변경 내용을 저장합니다.
 
 1. **텍스트 논리 그룹을 만듭니다**: 식별된 텍스트의 완전성과 정확성을 확인합니다. 또한 텍스트를 논리적으로 올바른 패널이나 그룹에 배치합니다. 예를 들어 다중 열 레이아웃에서 한 논리 그룹과 다른 그룹에 있는 텍스트를 예로 들 수 있습니다.
 
    * 텍스트의 완전성과 정확성을 검토하려면 필터 ![](assets/toggle_eye.png) 단추를 사용하여 텍스트만 보고 각 텍스트를 클릭한 다음 유효성을 검사하십시오. 맞춤법, 오타 또는 문법 문제가 있는 경우 수정하십시오.
 
-   * 양식에 텍스트를 추가하려면 + 단추를 누르고 **[!UICONTROL Text]**&#x200B;을(를) 누릅니다. Draw 상자를 열고 속성 브라우저를 열고 콘텐츠 상자에 추가할 텍스트를 입력합니다.
+   * 양식에 텍스트를 추가하려면 + 단추를 누르고 **[!UICONTROL Text]**&#x200B;을(를) 누릅니다. 상자를 그리고 속성 브라우저를 열고 콘텐츠 상자에 추가할 텍스트를 입력합니다.
 
 1. **테이블 검토:** 테이블의 테두리를 모두 식별해야 합니다. 또한 셀의 내용이 올바르게 식별되는지 확인합니다.
 
@@ -99,7 +105,7 @@ AFCS(AEM Forms Automated forms conversion 서비스)는 입력 PDF 문서의 필
 
    * 추가 테두리를 제거하려면 **[!UICONTROL Delete Column]** 또는 **[!UICONTROL Delete Row]** 옵션을 사용하십시오.
 
-필요한 변경을 수행한 후 **[!UICONTROL Save & Convert]** 단추를 탭하여 PDF forms을 전환 서비스로 다시 보냅니다. 각 필드는 해당 적응형 필드 구성 요소로 변환됩니다. 변환 후 적응형 양식 및 스키마를 포함하여 업데이트된 자산이 AEM Forms 인스턴스로 다운로드됩니다. 양식의 복잡성에 따라 서비스에서 변환을 완료하는 데 시간이 걸릴 수 있습니다.
+필요한 변경 작업을 수행한 후 **[!UICONTROL Save & Convert]** 버튼을 탭하여 PDF forms을 전환 서비스로 다시 보냅니다. 각 필드는 해당 적응형 필드 구성 요소로 변환됩니다. 변환 후 적응형 양식 및 스키마를 포함하여 업데이트된 자산이 AEM Forms 인스턴스로 다운로드됩니다. 양식의 복잡성에 따라 서비스에서 변환을 완료하는 데 시간이 걸릴 수 있습니다.
 
 ![저장 및 변환](assets/save-and-convert.png)
 
@@ -126,9 +132,9 @@ AFCS(AEM Forms Automated forms conversion 서비스)는 입력 PDF 문서의 필
 
 ![](assets/add-component.gif)
 
-양식에 구성 요소를 추가하려면 **[!UICONTROL +]**&#x200B;을 누르고 **[!UICONTROL Field]**&#x200B;을 누릅니다. Draw 필드의 레이블 및 입력 상자를 다루는 상자입니다. 예를 들어 위의 예제 이미지는 필드 구성 요소를 사용하여 **생년월일** 레이블과 그 아래의 값 상자를 양식에 추가합니다. 상자를 그리면 전환 서비스가 필드의 유형을 식별합니다. 필요한 경우 속성 브라우저에서 필드 유형을 변경할 수 있습니다. 구성 요소를 만든 후 속성 브라우저를 열고 구성 요소의 속성을 설정합니다.
+양식에 구성 요소를 추가하려면 **[!UICONTROL +]**&#x200B;을 누르고 **[!UICONTROL Field]**&#x200B;을 누릅니다. 필드의 레이블과 입력 상자를 덮는 상자를 그립니다. 예를 들어 위의 예제 이미지는 필드 구성 요소를 사용하여 **생년월일** 레이블과 그 아래의 값 상자를 양식에 추가합니다. 상자를 그리면 전환 서비스가 필드의 유형을 식별합니다. 필요한 경우 속성 브라우저에서 필드 유형을 변경할 수 있습니다. 구성 요소를 만든 후 속성 브라우저를 열고 구성 요소의 속성을 설정합니다.
 
-수정 사항을 저장하려면 **[!UICONTROL Save]** 단추를 탭하거나 전환 서비스로 PDF forms을 다시 보내려면 **[!UICONTROL Save & Convert]** 단추를 사용하십시오.
+수정 사항을 저장하려면 **[!UICONTROL Save]** 버튼을 탭하거나 **[!UICONTROL Save & Convert]** 버튼을 사용하여 PDF forms을 전환 서비스로 다시 보냅니다.
 
 ### 표 추가 또는 편집 {#addedittable}
 
@@ -169,7 +175,7 @@ AFCS(AEM Forms Automated forms conversion 서비스)는 입력 PDF 문서의 필
 
 * 패널을 만들려면 Ctrl 키(Windows 또는 Linux의 경우) 또는 Control 키(Mac의 경우)를 사용하여 관련 구성 요소를 선택하고 ![그룹](assets/group.jpg)을 눌러 패널을 만듭니다. 속성 브라우저를 열어 패널의 속성을 지정합니다.
 
-수정 사항을 저장하려면 **[!UICONTROL Save]** 단추를 탭하거나 전환 서비스로 PDF forms을 다시 보내려면 **[!UICONTROL Save & Convert]** 단추를 사용하십시오.
+수정 사항을 저장하려면 **[!UICONTROL Save]** 버튼을 탭하거나 **[!UICONTROL Save & Convert]** 버튼을 사용하여 PDF forms을 전환 서비스로 다시 보냅니다.
 
 ### 패널 또는 구성 요소 삭제 {#delete-a-panel-or-component}
 
@@ -181,13 +187,13 @@ AFCS(AEM Forms Automated forms conversion 서비스)는 입력 PDF 문서의 필
 
 양식의 모든 구성 요소에는 이름, 제목, 유형과 같은 속성 세트가 있습니다. 구성 요소의 속성을 설정하려면 구성 요소를 선택하고 속성 브라우저를 누릅니다. 선택한 구성 요소의 속성이 표시됩니다. 속성을 변경하거나 설정합니다.
 
-수정 사항을 저장하려면 **[!UICONTROL Save]** 단추를 탭하거나 전환 서비스로 PDF forms을 다시 보내려면 **[!UICONTROL Save & Convert]** 단추를 사용하십시오.
+수정 사항을 저장하려면 **[!UICONTROL Save]** 버튼을 탭하거나 **[!UICONTROL Save & Convert]** 버튼을 사용하여 PDF forms을 전환 서비스로 다시 보냅니다.
 
 ### 전환을 위한 양식 보내기 {#send-a-form-for-conversion}
 
 검토 및 수정 편집기에서 필요한 모든 변경 작업을 수행한 후에는 전환을 위해 양식을 다시 보낼 수 있습니다. 전환을 위해 양식을 보내려면 **[!UICONTROL Save & Convert]**&#x200B;을(를) 누릅니다. **[!UICONTROL Sent for conversion label]**&#x200B;은(는) 원본 문서가 포함된 폴더에 적용되며 업데이트된 원본 양식은 Adobe I/O에서 실행 중인 전환 서비스에 업로드됩니다.
 
-양식의 복잡성에 따라 변환 서비스에서 양식을 변환하는 데 시간이 걸릴 수 있습니다. 전환이 완료되면 변환된 적응형 양식 및 관련 에셋이 컴퓨터에 다운로드됩니다. 필요한 경우 변환이 완료된 후 편집기에서 양식을 검토하고 [적응형 양식 편집기](https://helpx.adobe.com/kr/experience-manager/6-5/forms/using/introduction-forms-authoring.html)에서 적응형 양식을 열어 최종 수정 사항을 볼 수 있습니다.
+양식의 복잡성에 따라 변환 서비스에서 양식을 변환하는 데 시간이 걸릴 수 있습니다. 전환이 완료되면 변환된 적응형 양식 및 관련 에셋이 컴퓨터에 다운로드됩니다. 필요한 경우 변환이 완료된 후 편집기에서 양식을 검토하고 [적응형 양식 편집기](https://helpx.adobe.com/experience-manager/6-5/forms/using/introduction-forms-authoring.html)에서 적응형 양식을 열어 최종 수정 사항을 볼 수 있습니다.
 
 적응형 양식 편집기에서 양식을 업데이트한 후 전환을 위해 양식을 다시 보내면 적응형 양식에서 수행된 모든 변경 사항이 손실됩니다. 성공적으로 전환한 후에만 검토 및 수정 편집기에서 양식을 열 수 있습니다.
 

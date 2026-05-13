@@ -8,10 +8,16 @@ topic-tags: forms
 role: Admin, Developer
 level: Beginner, Intermediate
 exl-id: 5447b66f-9fac-476f-ab8a-9290bb1f9c0d
-source-git-commit: 23d441d19dea63382f0a0024b4682d5bd0eaa63c
+TQID: https://experienceleague.adobe.com/NjVGOlVHFuhj4IP-PL8NwhX0g78-x250m7QedQxLkEg
+product_v2: id: e8f6de9b-cf88-4405-8d10-15efa08c230eid: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+feature_v2: id: a1df6763-63b5-45b4-8c8a-155a692a2b3eid: ae478996-b206-4712-9b0c-dc78a2644453id: d49d6117-dd89-469c-a774-cc96b7eee433
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dcid: b5ce8718-c3af-4fdb-a1a9-fca32f83a87cid: df401a2a-327d-468c-a5e4-b7b7ccd071a0id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+source-git-commit: 0be767cc3d09331ea7a61c114a11bb0354b5f4ad
 workflow-type: tm+mt
-source-wordcount: '1507'
-ht-degree: 1%
+source-wordcount: 1541
+ht-degree: 2%
 
 ---
 
@@ -162,7 +168,7 @@ MYSQL을 데이터 소스로 구성했으면 다음 단계를 실행하여 양�
 
 1. **[!UICONTROL Create]** > **[!UICONTROL Form Data Model]**&#x200B;을(를) 누릅니다.
 
-1. **[!UICONTROL Create Form Data Model]** 마법사에서 양식 데이터 모델의 이름으로 **workflow_submit**&#x200B;을(를) 지정합니다. **[!UICONTROL Next]**&#x200B;을(를) 누릅니다.
+1. **[!UICONTROL Create Form Data Model]** 마법사에서 양식 데이터 모델의 이름으로 **workflow_submit**&#x200B;을(를) 지정합니다. **[!UICONTROL Next]**&#x200B;을 누릅니다.
 
 1. 이전 섹션에서 구성한 MYSQL 데이터 원본을 선택하고 **[!UICONTROL Create]**&#x200B;을(를) 누릅니다.
 
@@ -170,7 +176,7 @@ MYSQL을 데이터 소스로 구성했으면 다음 단계를 실행하여 양�
 
    ![샘플 데이터 mysql](assets/fdm_details_workfdlow_submit.png)
 
-1. 오른쪽 창에서 데이터 모델 개체를 선택하고 **[!UICONTROL Edit Properties]**&#x200B;을(를) 누릅니다. **[!UICONTROL get]** 및 **[!UICONTROL insert]** 드롭다운 목록에서 **[!UICONTROL Read Service]** 및 **[!UICONTROL Write Service]** 선택 읽기 서비스의 인수를 지정하고 **[!UICONTROL Done]**&#x200B;을(를) 누릅니다.
+1. 오른쪽 창에서 데이터 모델 개체를 선택하고 **[!UICONTROL Edit Properties]**&#x200B;을(를) 누릅니다. **[!UICONTROL Read Service]** 및 **[!UICONTROL Write Service]** 드롭다운 목록에서 **[!UICONTROL get]** 및 **[!UICONTROL insert]** 선택 읽기 서비스의 인수를 지정하고 **[!UICONTROL Done]**&#x200B;을(를) 누릅니다.
 
 1. **[!UICONTROL Services]** 탭에서 **[!UICONTROL get]** 서비스를 선택하고 **[!UICONTROL Edit Properties]**&#x200B;을(를) 누릅니다. **[!UICONTROL Output Model Object]**&#x200B;을(를) 선택하고 **[!UICONTROL Return array]** 전환을 사용하지 않도록 설정한 다음 **[!UICONTROL Done]**&#x200B;을(를) 탭합니다.
 
@@ -184,11 +190,11 @@ MYSQL을 데이터 소스로 구성했으면 다음 단계를 실행하여 양�
 
 ## JSON 바인딩을 사용하여 적응형 양식 생성 {#generate-adaptive-forms-with-json-binding}
 
-[AFCS(자동 양식 전환 서비스)를 사용하여 &#x200B;](convert-existing-forms-to-adaptive-forms.md)연락처 양식[을(를) 데이터 바인딩이 있는 적응형 양식으로 변환](#sample-adaptive-form)할 수 있습니다. 적응형 양식을 생성하는 동안 **[!UICONTROL Generate adaptive form(s) without data bindings]** 확인란을 선택하지 마십시오.
+[AFCS(자동 양식 전환 서비스)를 사용하여 [연락처 양식](#sample-adaptive-form)을(를) 데이터 바인딩이 있는 적응형 양식으로 변환](convert-existing-forms-to-adaptive-forms.md)할 수 있습니다. 적응형 양식을 생성하는 동안 **[!UICONTROL Generate adaptive form(s) without data bindings]** 확인란을 선택하지 마십시오.
 
 ![JSON 바인딩이 있는 적응형 양식](assets/generate_af_with_data_bindings.png)
 
-**의** 폴더에서 사용 가능한 전환된 **[!UICONTROL output]**&#x200B;연락처 양식&#x200B;**[!UICONTROL Forms & Documents]**&#x200B;을 선택하고 **[!UICONTROL Edit]**&#x200B;을(를) 누릅니다. **[!UICONTROL Preview]**&#x200B;을(를) 누르고 적응형 양식 필드에 값을 입력한 다음 **[!UICONTROL Submit]**&#x200B;을(를) 누릅니다.
+**[!UICONTROL Forms & Documents]**&#x200B;의 **[!UICONTROL output]** 폴더에서 사용 가능한 전환된 **연락처 양식**&#x200B;을 선택하고 **[!UICONTROL Edit]**&#x200B;을(를) 누릅니다. **[!UICONTROL Preview]**&#x200B;을(를) 누르고 적응형 양식 필드에 값을 입력한 다음 **[!UICONTROL Submit]**&#x200B;을(를) 누릅니다.
 
 **crx-repository**&#x200B;에 로그온한 다음 */content/forms/fp/admin/submit/data*(으)로 이동하여 JSON 형식으로 제출된 값을 확인합니다. 다음은 변환된 **연락처** 적응형 양식을 제출할 때 JSON 형식의 샘플 데이터입니다.
 
@@ -233,9 +239,9 @@ MYSQL을 데이터 소스로 구성했으면 다음 단계를 실행하여 양�
 
 1. **[!UICONTROL Invoke Form Data Model Service]** 단계를 누르고 ![구성](assets/configure_icon.png)을 누릅니다.
 
-1. **[!UICONTROL Form Data Model]** 탭에서 **[!UICONTROL Form Data Model path]** 필드에서 만든 양식 데이터 모델을 선택하고 **[!UICONTROL insert]** 드롭다운 목록에서 **[!UICONTROL Service]**&#x200B;을(를) 선택합니다.
+1. **[!UICONTROL Form Data Model]** 탭에서 **[!UICONTROL Form Data Model path]** 필드에서 만든 양식 데이터 모델을 선택하고 **[!UICONTROL Service]** 드롭다운 목록에서 **[!UICONTROL insert]**&#x200B;을(를) 선택합니다.
 
-1. **[!UICONTROL Input for Service]** 탭의 드롭다운 목록에서 **[!UICONTROL Provide input data using literal, variable, or a workflow metadata, and a JSON file]**&#x200B;을(를) 선택하고 **[!UICONTROL Map input fields from input JSON]** 확인란을 선택한 다음 **[!UICONTROL Relative to payload]**&#x200B;을(를) 선택하고 **필드의 값으로** data.xml **[!UICONTROL Select input JSON document using]**&#x200B;을(를) 제공합니다.
+1. **[!UICONTROL Input for Service]** 탭의 드롭다운 목록에서 **[!UICONTROL Provide input data using literal, variable, or a workflow metadata, and a JSON file]**&#x200B;을(를) 선택하고 **[!UICONTROL Map input fields from input JSON]** 확인란을 선택한 다음 **[!UICONTROL Relative to payload]**&#x200B;을(를) 선택하고 **[!UICONTROL Select input JSON document using]** 필드의 값으로 **data.xml**&#x200B;을(를) 제공합니다.
 
 1. **[!UICONTROL Service Arguments]** 섹션에서 양식 데이터 모델 인수에 대해 다음 값을 제공합니다.
 
@@ -247,11 +253,11 @@ MYSQL을 데이터 소스로 구성했으면 다음 단계를 실행하여 양�
 
 다음 단계를 실행하여 적응형 양식을 이전 섹션에서 만든 워크플로우 모델에 제출합니다.
 
-1. **[!UICONTROL output]**&#x200B;의 **[!UICONTROL Forms & Documents]** 폴더에서 사용할 수 있는 전환된 연락처 양식을 선택하고 **[!UICONTROL Edit]**&#x200B;을(를) 누릅니다.
+1. **[!UICONTROL Forms & Documents]**&#x200B;의 **[!UICONTROL output]** 폴더에서 사용할 수 있는 전환된 연락처 양식을 선택하고 **[!UICONTROL Edit]**&#x200B;을(를) 누릅니다.
 
 1. **[!UICONTROL Form Container]**&#x200B;을(를) 탭한 다음 ![구성](assets/configure_icon.png)을(를) 탭하여 적응형 양식 속성을 엽니다.
 
-1. **[!UICONTROL Submission]** 섹션의 **[!UICONTROL Invoke an AEM workflow]** 드롭다운 목록에서 **[!UICONTROL Submit Action]**&#x200B;을(를) 선택하고 이전 섹션에서 만든 워크플로 모델을 선택한 다음 **필드에** data.xml **[!UICONTROL Data File Path]**&#x200B;을(를) 지정합니다.
+1. **[!UICONTROL Submission]** 섹션의 **[!UICONTROL Submit Action]** 드롭다운 목록에서 **[!UICONTROL Invoke an AEM workflow]**&#x200B;을(를) 선택하고 이전 섹션에서 만든 워크플로 모델을 선택한 다음 **[!UICONTROL Data File Path]** 필드에 **data.xml**&#x200B;을(를) 지정합니다.
 
 1. ![저장](assets/save_icon.png)을 탭하여 변경 내용을 저장합니다.
 
@@ -263,11 +269,11 @@ MYSQL을 데이터 소스로 구성했으면 다음 단계를 실행하여 양�
 
 1. 적응형 양식에서 **전자 메일** 필드를 탭하고 ![규칙 편집](assets/edit-rules.png)을 탭합니다.
 
-1. **[!UICONTROL Create]**&#x200B;을(를) 탭하고 **[!UICONTROL is changed]** 섹션의 **[!UICONTROL Select State]** 드롭다운 목록에서 **[!UICONTROL When]**&#x200B;을(를) 선택합니다.
+1. **[!UICONTROL Create]**&#x200B;을(를) 탭하고 **[!UICONTROL When]** 섹션의 **[!UICONTROL Select State]** 드롭다운 목록에서 **[!UICONTROL is changed]**&#x200B;을(를) 선택합니다.
 
 1. **[!UICONTROL Then]** 섹션에서 이 문서의 이전 섹션에서 만든 양식 데이터 모델에 대한 서비스로 **[!UICONTROL Invoke Service]** 및 **get**&#x200B;을(를) 선택합니다.
 
-1. **섹션에서**&#x200B;전자 메일&#x200B;**[!UICONTROL Input]**&#x200B;을(를) 선택하고 **섹션에서 양식 데이터 모델의 나머지 세 필드,**&#x200B;이름&#x200B;**,**&#x200B;전화 번호&#x200B;**및**&#x200B;문제 설명&#x200B;**[!UICONTROL Output]**&#x200B;을(를) 선택하십시오. 설정을 저장하려면 **[!UICONTROL Done]**&#x200B;을(를) 탭하세요.
+1. **[!UICONTROL Input]** 섹션에서 **전자 메일**&#x200B;을(를) 선택하고 **[!UICONTROL Output]** 섹션에서 양식 데이터 모델의 나머지 세 필드, **이름**, **전화 번호** 및 **문제 설명**&#x200B;을(를) 선택하십시오. 설정을 저장하려면 **[!UICONTROL Done]**&#x200B;을(를) 탭하세요.
 
    ![전자 메일 미리 채우기 설정 구성](assets/email_prefill_settings.png)
 

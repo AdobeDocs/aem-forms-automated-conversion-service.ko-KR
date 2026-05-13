@@ -10,9 +10,15 @@ level: Beginner, Intermediate
 page-status-flag: never-activated
 contentOwner: khsingh
 exl-id: c24313cd-2b9b-4209-9505-a8e14d8dc530
-source-git-commit: c2392932d1e29876f7a11bd856e770b8f7ce3181
+TQID: https://experienceleague.adobe.com/ImCKo49r-l9Iq0uOVa16bzA1ga9e-n-Q6Eo4MvB9SB4
+product_v2: id: e8f6de9b-cf88-4405-8d10-15efa08c230eid: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+feature_v2: id: d49d6117-dd89-469c-a774-cc96b7eee433
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2: id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+source-git-commit: 0be767cc3d09331ea7a61c114a11bb0354b5f4ad
 workflow-type: tm+mt
-source-wordcount: '856'
+source-wordcount: 884
 ht-degree: 0%
 
 ---
@@ -24,9 +30,9 @@ DoR은 기본 템플릿을 사용하여 레이아웃을 정의합니다. 기본 
 
 ![생성된 기록 문서](assets/document_of_record.gif)
 
-DoR 생성에 대한 자세한 내용은 [적응형 양식에 대한 기록 문서 생성](https://helpx.adobe.com/kr/experience-manager/6-5/forms/using/generate-document-of-record-for-non-xfa-based-adaptive-forms.html)을 참조하십시오.
+DoR 생성에 대한 자세한 내용은 [적응형 양식에 대한 기록 문서 생성](https://helpx.adobe.com/experience-manager/6-5/forms/using/generate-document-of-record-for-non-xfa-based-adaptive-forms.html)을 참조하십시오.
 
-[AFCS(Automated forms conversion 서비스)](/help/using/introduction.md)이(가) 다음 원본 양식을 적응형 양식으로 전환합니다.
+[AFCS(자동 양식 전환 서비스)](/help/using/introduction.md)은(는) 다음 소스 양식을 적응형 양식으로 전환합니다.
 
 * 비대화형 PDF forms
 * 아크로 Forms
@@ -87,7 +93,7 @@ DoR 생성에 대한 자세한 내용은 [적응형 양식에 대한 기록 문�
 
 ## 비대화형 PDF forms에 대한 기록 문서 생성 {#generate-document-of-record-non-interactive-pdf}
 
-비대화형 PDF 양식을 Automated forms conversion 서비스(AFCS)의 소스 양식으로 사용하는 경우 다음을 수행할 수 있습니다.
+비대화형 PDF 양식을 AFCS(Automated Forms Conversion Service)의 소스 양식으로 사용하는 경우, 다음을 수행할 수 있습니다.
 
 * 적응형 양식 변환 전에 DoR 생성을 활성화하여 기본 템플릿을 사용하여 DoR을 생성합니다.
 * 또는 적응형 양식 전환 후 적응형 양식 속성을 편집하여 기본 또는 기타 양식 템플릿을 사용한 DoR 생성 가능
@@ -121,7 +127,7 @@ DoR 생성에 대한 자세한 내용은 [적응형 양식에 대한 기록 문�
 
 ## Acro Forms 또는 XFA 기반 PDF forms에 대한 기록 문서 생성 {#generate-document-of-record-acroform-xfaform}
 
-Acro 양식 또는 XFA 기반 PDF 양식을 AFCS(Automated forms conversion 서비스)의 소스 양식으로 사용하는 경우 다음을 수행할 수 있습니다.
+Acro 양식 또는 XFA 기반 PDF 양식을 AFCS(자동 양식 전환 서비스)의 소스 양식으로 사용하는 경우 다음을 수행할 수 있습니다.
 
 * 적응형 양식 변환 전에 DoR 생성을 활성화하여 소스 양식을 템플릿으로 사용하는 DoR을 생성합니다.
 
@@ -147,7 +153,7 @@ Acro 양식 또는 XFA 기반 PDF 양식을 AFCS(Automated forms conversion 서�
 
 1. **[!UICONTROL output]** 폴더에서 적응형 양식을 선택하고 **[!UICONTROL Properties]**&#x200B;을(를) 누릅니다.
 
-1. **[!UICONTROL Form Model]** 탭에서 **[!UICONTROL Document of Record Template Configuration]** 섹션을 확장하고 **[!UICONTROL Generate Document of Record]**&#x200B;을(를) 선택하여 기본 템플릿을 사용하여 DoR 생성을 사용하도록 설정합니다.
+1. **[!UICONTROL Form Model]** 탭에서 **[!UICONTROL Document of Record Template Configuration]** 섹션을 확장하고 **[!UICONTROL Generate Document of Record]**을(를) 선택하여 기본 템플릿을 사용하여 DoR 생성을 사용하도록 설정합니다.
 **[!UICONTROL Associate form template as the Document of Record template]** 옵션을 선택하고 템플릿을 선택하여 소스 양식 템플릿 또는 다른 양식 템플릿을 사용하여 DoR 생성을 활성화할 수도 있습니다.
 
 1. 설정을 저장하려면 **[!UICONTROL Save & Close]**&#x200B;을(를) 탭하세요.

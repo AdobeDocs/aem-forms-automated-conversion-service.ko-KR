@@ -8,10 +8,16 @@ topic-tags: forms
 role: Admin, Developer
 level: Beginner, Intermediate
 exl-id: edabeac8-cd66-48ca-a99f-9643a1c184cf
-source-git-commit: 23d441d19dea63382f0a0024b4682d5bd0eaa63c
+TQID: https://experienceleague.adobe.com/stoZAgMJGYjT1IKCcXBAe2JxWAvPJfwq0znNs757b0U
+product_v2: id: e8f6de9b-cf88-4405-8d10-15efa08c230eid: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+feature_v2: id: d49d6117-dd89-469c-a774-cc96b7eee433
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2: id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+source-git-commit: 0be767cc3d09331ea7a61c114a11bb0354b5f4ad
 workflow-type: tm+mt
-source-wordcount: '739'
-ht-degree: 53%
+source-wordcount: 769
+ht-degree: 57%
 
 ---
 
@@ -25,7 +31,7 @@ AFCS(자동 양식 전환 서비스)는 PDF forms을 적응형 양식으로 자�
 * 일반적으로 발생하는 필드를 재사용 가능한 양식 조각으로 그룹화
 * 전환 중 Adobe Analytics 사용
 
-![간단합니다. 소스 양식을 제공하고 모든 것을 우리에게 맡기십시오. 멋진 적응형 양식을 제공합니다. 언제든지 원하는 대로 결과물을 수정하실 수 있습니다. &#x200B;](assets/pdf-to-adaptive-form-gitx50.gif)
+![간단합니다. 소스 양식을 제공하고 모든 것을 우리에게 맡기십시오. 멋진 적응형 양식을 제공합니다. 언제든지 원하는 대로 결과물을 수정하실 수 있습니다. ](assets/pdf-to-adaptive-form-gitx50.gif)
 
 ## 온보딩 {#onboarding}
 
@@ -39,7 +45,7 @@ Adobe는 조직에 대한 액세스 권한을 활성화하고 조직의 책임�
 
 이 서비스는 Adobe Sign이 활성화된 PDF forms도 지원합니다. 소스 PDF form에 Adobe Sign 텍스트 태그가 포함된 경우 서비스는 전환 중에 모든 Adobe Sign 관련 정보를 유지하고 소스 PDF의 서명자 정보를 해당 적응형 양식 필드와 연결합니다. 이 기능은 AcroForms에서만 사용할 수 있습니다.
 
-이 서비스는 영어, 프랑스어, 독일어, 스페인어, 이탈리아어 및 포르투갈어 언어 양식을 적응형 양식으로 전환할 수 있습니다. [AEM 번역 워크플로](https://helpx.adobe.com/kr/experience-manager/6-5/forms/using/using-aem-translation-workflow-to-localize-adaptive-forms.html)를 사용하여 생성된 적응형 양식을 다른 언어로 번역할 수도 있습니다.
+이 서비스는 영어, 프랑스어, 독일어, 스페인어, 이탈리아어 및 포르투갈어 언어 양식을 적응형 양식으로 전환할 수 있습니다. [AEM 번역 워크플로](https://helpx.adobe.com/experience-manager/6-5/forms/using/using-aem-translation-workflow-to-localize-adaptive-forms.html)를 사용하여 생성된 적응형 양식을 다른 언어로 번역할 수도 있습니다.
 
 ## 전환 워크플로우  {#conversion-workflow}
 
@@ -49,7 +55,7 @@ AFCS(자동 양식 전환 서비스)는 Adobe Cloud에서 실행됩니다. AEM �
 
 ### &#x200B;1. 환경 설정 {#set-up-the-environment}
 
-AFCS(자동 양식 전환 서비스)는 Adobe Cloud에서 실행됩니다. [조직의 Adobe I/O 계정을 구성하고 로컬 AEM 인스턴스를 Adobe Cloud에서 실행되는 전환 서비스에 연결합니다](configure-service.md). AEM 6.5 및 AEM 6.5 LTS의 경우 핵심 구성 요소 기반 템플릿 및 테마를 사용하는 경우 적응형 양식 핵심 구성 요소를 활성화해야 합니다. [서비스 구성](configure-service.md#referencepackage)을 참조하십시오.
+AFCS(자동 양식 전환 서비스)는 Adobe Cloud에서 실행됩니다. [조직의 Adobe I/O 계정을 구성하고 로컬 AEM 인스턴스](configure-service.md)를 Adobe Cloud에서 실행되는 전환 서비스에 연결합니다. AEM 6.5 및 AEM 6.5 LTS의 경우 핵심 구성 요소 기반 템플릿 및 테마를 사용하는 경우 적응형 양식 핵심 구성 요소를 활성화해야 합니다. [서비스 구성](configure-service.md#referencepackage)을 참조하십시오.
 
 ### &#x200B;2. PDF forms을 적응형 양식으로 전환 {#use-the-conversion-service}
 
@@ -58,7 +64,7 @@ AEM Forms 환경이 구성된 후 PDF 양식을 적응형 양식으로 전환하
 * 보안 양식을 업로드하지 마십시오. 이 서비스는 암호로 보호되거나 암호화된 양식을 전환하지 않습니다.
 * 스캔, 컬러, 채워진 양식 및 영어, 프랑스어, 독일어, 스페인어, 이탈리아어 및 포르투갈어가 아닌 다른 언어로 양식을 업로드하지 마십시오. 이러한 양식은 지원되지 않습니다.
 * 파일 이름에 공백이 있는 PDF 양식을 업로드하지 마십시오.
-* [PDF 포트폴리오](https://helpx.adobe.com/kr/acrobat/using/overview-pdf-portfolios.html)를 업로드하지 마십시오. 이 서비스는 PDF Portfolio을 적응형 양식으로 전환하지 않습니다.
+* [PDF 포트폴리오](https://helpx.adobe.com/acrobat/using/overview-pdf-portfolios.html)를 업로드하지 마십시오. 이 서비스는 PDF Portfolio을 적응형 양식으로 전환하지 않습니다.
 * [모범 사례 및 고려 사항](styles-and-pattern-considerations-and-best-practices.md) 문서에 설명된 제안 변경 사항을 PDF 양식에 적용하십시오.
 * [알려진 문제](known-issues.md) 문서를 참조하여 문제를 방지하십시오.
 
