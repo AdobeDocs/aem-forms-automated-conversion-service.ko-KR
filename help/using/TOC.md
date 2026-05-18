@@ -13,7 +13,7 @@ user-guide-description: PDF Forms를 반응형 및 모바일용 HTML Forms로 �
 breadcrumb-title: Forms 자동 전환 안내서
 feature: Adaptive Forms
 role: User
-source-git-commit: 7761622ea90a4d5e144e14ff4014f271d78c2f06
+source-git-commit: 5ab30094bb9f1d4a343088fdd3a523925544fbc8
 workflow-type: tm+mt
 source-wordcount: 90
 ht-degree: 40%
