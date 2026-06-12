@@ -6,8 +6,8 @@ topic-tags: forms
 discoiquuid: cad72699-4a4b-4c52-88a5-217298490a7c
 source-git-commit: 23d441d19dea63382f0a0024b4682d5bd0eaa63c
 workflow-type: tm+mt
-source-wordcount: '1159'
-ht-degree: 1%
+source-wordcount: '1188'
+ht-degree: 2%
 
 ---
 
@@ -269,7 +269,7 @@ AEM 인스턴스와 MYSQL 데이터베이스 간에 연결을 만들려면 다�
 
 1. 다음 **aem-fp-db-integration-sample-pkg-6.1.2.zip** 패키지를 파일 시스템에 다운로드합니다.
 
-[파일 가져오기](assets/aem-fp-db-integration-sample-pkg-6.1.2.zip)
+   [파일 가져오기](assets/aem-fp-db-integration-sample-pkg-6.1.2.zip)
 
 1. *http://[host]:[port]/crx/packmgr/*&#x200B;의 AEM 패키지 관리자로 이동합니다.
 1. **[!UICONTROL Upload Package]**&#x200B;를 클릭합니다.
@@ -282,7 +282,7 @@ Forms 포털 페이지를 사용하여 적응형 양식 제출을 활성화하�
 1. [변환을 실행](convert-existing-forms-to-adaptive-forms.md#start-the-conversion-process)하여 원본 양식을 적응형 양식으로 전환합니다.
 1. 편집 모드에서 적응형 양식을 엽니다.
 1. 양식 컨테이너를 누르고 ![적응형 양식 구성](assets/configure-adaptive-form.png)을 선택합니다.
-1. **[!UICONTROL Submission]** 섹션의 **[!UICONTROL Forms Portal Submit Action]** 드롭다운 목록에서 **[!UICONTROL Submit Action]**&#x200B;을(를) 선택합니다.
+1. **[!UICONTROL Submission]** 섹션의 **[!UICONTROL Submit Action]** 드롭다운 목록에서 **[!UICONTROL Forms Portal Submit Action]**&#x200B;을(를) 선택합니다.
 1. 설정을 저장하려면 ![템플릿 정책 저장](assets/edit_template_done.png)을 탭하세요.
 
 ## Forms 포털 페이지 만들기 및 구성 {#create-configure-forms-portal-page}

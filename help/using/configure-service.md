@@ -30,8 +30,8 @@ topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
 source-git-commit: cb6b167400093c85e8929eb147e2a0be256772a6
 workflow-type: tm+mt
-source-wordcount: 2663
-ht-degree: 6%
+source-wordcount: 2448
+ht-degree: 7%
 
 ---
 
@@ -209,7 +209,7 @@ Adobe Developer Console에서 자동 양식 전환 서비스 API를 구성하려
 
    ![새 API 프로젝트 만들기](/help/using/assets/create-new-api-project.png)
 
-1. **[!UICONTROL Add API]**&#x200B;를 클릭합니다. 계정에 대해 활성화된 모든 API 목록이 포함된 화면이 나타납니다.
+1. **[!UICONTROL Add API]**&#x200B;을(를) 클릭합니다. 계정에 대해 활성화된 모든 API 목록이 포함된 화면이 나타납니다.
    ![API 추가](/help/using/assets/add-api.png)
 
 1. **[!UICONTROL Automated Forms Conversion service]**&#x200B;을(를) 선택하고 **[!UICONTROL Next]**&#x200B;을(를) 클릭합니다. API 구성 화면이 나타납니다.
