@@ -9,20 +9,11 @@ role: Admin, Developer
 level: Beginner, Intermediate
 exl-id: f679059c-18aa-4cb5-8368-ed27e96c20de
 TQID: https://experienceleague.adobe.com/ehU-0CYTjc3aRDnkecBH7uiaO2QLvpDc9d7oxezCVaU
-product_v2:
-  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
-  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
-feature_v2:
-  - id: d49d6117-dd89-469c-a774-cc96b7eee433
-role_v2:
-  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
-  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
-level_v2:
-  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
-  - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-topic_v2:
-  - id: cc72dcf1-72e1-48cc-b434-e7c27d62d67c
-  - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
+product_v2: id: e8f6de9b-cf88-4405-8d10-15efa08c230eid: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+feature_v2: id: d49d6117-dd89-469c-a774-cc96b7eee433
+role_v2: id: c66ffd68-0f65-42bb-aa23-b4020f12e0bdid: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+topic_v2: id: cc72dcf1-72e1-48cc-b434-e7c27d62d67cid: eddd9b14-83bd-4ff4-9072-54a4a484abb7
 source-git-commit: 0be767cc3d09331ea7a61c114a11bb0354b5f4ad
 workflow-type: tm+mt
 source-wordcount: 2659
@@ -216,7 +207,7 @@ AFCS(자동 양식 전환 서비스)는 전환 중에 소스 양식에서 키워
   </tr>
   <td><p>jcr:title</p></td> 
    <td> 
-    <p>제목 JSON 스키마 속성이 있는 jcr:title 속성을 사용하면 전환 후 적응형 양식 필드의 레이블을 수정할 수 있습니다.<br>자세한 내용은 <a href="#custommetamodelexamples">사용자 지정 메타 모델 예제에서 <strong>양식 필드의 레이블 수정</strong>을 참조하십시오.</a><br>JSON 스키마를 사용하여 적응형 양식 필드에 적용할 수 있는 추가 속성에 대한 자세한 내용은 <a href="https://helpx.adobe.com/kr/experience-manager/6-5/forms/using/adaptive-form-json-schema-form-model.html" target="_blank">JSON 스키마를 사용하여 적응형 양식 만들기</a>를 참조하십시오.</p>
+    <p>제목 JSON 스키마 속성이 있는 jcr:title 속성을 사용하면 전환 후 적응형 양식 필드의 레이블을 수정할 수 있습니다.<br>자세한 내용은 <a href="#custommetamodelexamples">사용자 지정 메타 모델 예제에서 <strong>양식 필드의 레이블 수정</strong>을 참조하십시오.</a><br>JSON 스키마를 사용하여 적응형 양식 필드에 적용할 수 있는 추가 속성에 대한 자세한 내용은 <a href="https://helpx.adobe.com/experience-manager/6-5/forms/using/adaptive-form-json-schema-form-model.html" target="_blank">JSON 스키마를 사용하여 적응형 양식 만들기</a>를 참조하십시오.</p>
     <p></p></td> 
   </tr>
   <td><p>sling:resourceType 및 guideNodeClass</p></td> 
