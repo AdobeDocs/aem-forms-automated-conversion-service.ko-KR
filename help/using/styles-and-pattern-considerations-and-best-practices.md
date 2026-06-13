@@ -48,7 +48,7 @@ ht-degree: 4%
 * 페이지 수를 15개 이하의 양식으로 유지합니다.
 * 소스 문서를 8~15개 문서 묶음으로 구성합니다. 소스 양식을 일반적인 적응형 양식 조각과 함께 단일 배치로 유지합니다.
 * 보호된 양식을 업로드하지 마십시오. 이 서비스는 암호로 보호되고 보안이 설정된 양식을 전환하지 않습니다.
-* [PDF 포트폴리오](https://helpx.adobe.com/acrobat/using/overview-pdf-portfolios.html)를 업로드하지 마십시오. 이 서비스는 PDF Portfolio을 적응형 양식으로 전환하지 않습니다.
+* [PDF 포트폴리오](https://helpx.adobe.com/kr/acrobat/using/overview-pdf-portfolios.html)를 업로드하지 마십시오. 이 서비스는 PDF Portfolio을 적응형 양식으로 전환하지 않습니다.
 * 파일 이름에 공백이 있는 소스 양식을 업로드하지 마십시오. 양식을 업로드하기 전에 파일 이름에서 공백을 제거합니다.
 * 스캔, 채우기 및 영어, 프랑스어, 독일어, 스페인어, 이탈리아어 및 포르투갈어가 아닌 다른 언어로 양식을 업로드하지 마십시오. 이러한 양식은 지원되지 않습니다.
 
@@ -56,7 +56,7 @@ ht-degree: 4%
 
 * XDP 양식을 분석하고 시각적 문제를 해결합니다. 소스 문서에서 의도된 컨트롤과 구조를 사용하는지 확인합니다. 예를 들어 소스 양식에는 단일 선택을 위한 라디오 단추 대신 확인란이 있을 수 있습니다. 의도한 구성 요소가 있는 적응형 양식을 만들려면 확인란을 라디오 단추로 변경하십시오.
 * 전환을 시작하기 전에 [XDP 양식에 바인딩을 추가](http://www.adobe.com/go/learn_aemforms_designer_65_kr)합니다. 소스 XDP 양식에서 바인딩을 사용할 수 있는 경우 변환 중에 서비스가 바인딩을 해당 적응형 양식 필드에 자동으로 적용합니다. 이렇게 하면 바인딩을 수동으로 적용하는 데 필요한 시간이 절약됩니다.
-* XDP 파일에 [Adobe Sign 태그를 추가](https://helpx.adobe.com/sign/using/text-tag.html)합니다. 이 서비스는 Adobe Sign 태그를 해당 적응형 양식 필드로 자동 변환합니다. 적응형 Forms은 제한된 수의 Adobe Sign 필드를 지원합니다. 지원되는 전체 필드 목록에 대해서는 [적응형 양식에서 Adobe Sign 사용](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/working-with-adobe-sign.html?lang=ko) 설명서를 참조하십시오.
+* XDP 파일에 [Adobe Sign 태그를 추가](https://helpx.adobe.com/kr/sign/using/text-tag.html)합니다. 이 서비스는 Adobe Sign 태그를 해당 적응형 양식 필드로 자동 변환합니다. 적응형 Forms은 제한된 수의 Adobe Sign 필드를 지원합니다. 지원되는 전체 필드 목록에 대해서는 [적응형 양식에서 Adobe Sign 사용](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/working-with-adobe-sign.html?lang=ko) 설명서를 참조하십시오.
 * 가능하면 XDP 문서의 복잡한 표를 간단한 표로 변환합니다. 표 셀, 크기가 균일하지 않은 셀, 행 또는 열에 걸쳐 있는 셀, 병합된 셀, 부분 테두리 또는 보이는 테두리가 없는 표의 양식 필드가 있는 표는 복잡한 표로 간주됩니다. 위에서 언급한 항목 중 하나가 포함된 표는 복합 표로 간주됩니다.
 <!-- * Use sub-forms in XDP documents to create panels in adaptive forms. Service converts each sub-form to one or more adaptive form panels during conversion. -->
 
