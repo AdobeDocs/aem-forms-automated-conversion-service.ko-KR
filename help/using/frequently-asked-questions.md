@@ -8,32 +8,44 @@ topic-tags: introduction
 role: Admin, Developer
 level: Beginner, Intermediate
 exl-id: 3a29f8d4-8ea0-49eb-bfe0-0eab5f0c52c7
-TQID: https://experienceleague.adobe.com/yp0Kt5IApys-pqUHzqYJlzY9zhMg7z26v-bB0Fp9fjI
+TQID: 'https://experienceleague.adobe.com/yp0Kt5IApys-pqUHzqYJlzY9zhMg7z26v-bB0Fp9fjI'
 product_v2:
   - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
   - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
 feature_v2:
   - id: d49d6117-dd89-469c-a774-cc96b7eee433
+    internal-label: Administration
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
 topic_v2:
   - id: cc72dcf1-72e1-48cc-b434-e7c27d62d67c
+    internal-label: Accessibility
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: 0be767cc3d09331ea7a61c114a11bb0354b5f4ad
+    internal-label: Administration
+source-git-commit: e40aeabffdc79dbf5d42a89b8e37c298e016cb90
 workflow-type: tm+mt
-source-wordcount: 1918
+source-wordcount: '1917'
 ht-degree: 4%
-
 ---
-
 # 자주 묻는 질문{#frequently-asked-questions}
 
 1. **AFCS(자동 양식 전환 서비스)가 지원하는 AEM Forms 버전은 무엇입니까?**
-   <p>AFCS(자동 양식 전환 서비스)는 AEM 6.5 Forms, AEM 6.5 LTS Forms 및 AEM Forms as a Cloud Service을 지원합니다. OSGi의 AEM Forms과 JEE의 AEM Forms에서 모두 작동합니다. AEM 6.5 및 AEM 6.5 LTS의 경우 AEM 작성자 인스턴스 상단에 최신 AEM Forms 추가 기능 패키지가 필요하며, 핵심 구성 요소 기반 템플릿 및 테마를 사용하려면 <a href="https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-core-components/enable-adaptive-forms-core-components.html?lang=ko">적응형 양식 핵심 구성 요소를 활성화</a>해야 합니다. 자세한 지침은 <a href="configure-service.md">자동 양식 전환 구성</a> 서비스를 참조하십시오.</p> 
+   <p>AFCS(자동 양식 전환 서비스)는 AEM 6.5 Forms, AEM 6.5 LTS Forms 및 AEM Forms as a Cloud Service을 지원합니다. OSGi의 AEM Forms과 JEE의 AEM Forms에서 모두 작동합니다. AEM 6.5 및 AEM 6.5 LTS의 경우 AEM 작성자 인스턴스 상단에 최신 AEM Forms 추가 기능 패키지가 필요하며, 핵심 구성 요소 기반 템플릿 및 테마를 사용하려면 <a href="https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-core-components/enable-adaptive-forms-core-components.html">적응형 양식 핵심 구성 요소를 활성화</a>해야 합니다. 자세한 지침은 <a href="configure-service.md">자동 양식 전환 구성</a> 서비스를 참조하십시오.</p> 
     <br>
 
 1. **서비스를 온-프레미스에 설치할 수 있습니까?**
@@ -44,7 +56,7 @@ ht-degree: 4%
    <p>이 서비스는 비대화형 PDF forms, XFA 기반 XDP와 PDF forms, AcroForms를 적응형 양식으로 전환할 수 있습니다. 이 서비스는 스캔되거나 채워진 양식을 지원하지 않습니다. 다른 제한 사항에 대해서는 <a href="known-issues.md">알려진 문제</a> 문서를 참조하십시오.<br /> </p> 
     <p>다른 소스 유형에 대한 지원을 정기적으로 추가하고 있습니다. 새로 추가된 기능에 대한 정기적인 업데이트를 위해 감시 목록에 <a href="introduction.md">supportedPDF forms</a> 섹션을 보관하십시오.</p>
 
-   이 서비스는 영어, 프랑스어, 독일어, 스페인어, 이탈리아어 및 포르투갈어 언어 양식만 적응형 양식으로 전환할 수 있습니다. [AEM 번역 워크플로를 사용하여 생성된 적응형 양식을 다른 언어로 번역할 수 있습니다.](https://helpx.adobe.com/kr/experience-manager/6-5/forms/using/using-aem-translation-workflow-to-localize-adaptive-forms.html)</br> </br>
+   이 서비스는 영어, 프랑스어, 독일어, 스페인어, 이탈리아어 및 포르투갈어 언어 양식만 적응형 양식으로 전환할 수 있습니다. [AEM 번역 워크플로를 사용하여 생성된 적응형 양식을 다른 언어로 번역할 수 있습니다.](https://helpx.adobe.com/experience-manager/6-5/forms/using/using-aem-translation-workflow-to-localize-adaptive-forms.html)</br> </br>
 
 1. **서비스에서 적응형 양식 대신 XDP를 생성할 수 있습니까?**
    <p>서비스가 XDP 출력을 생성하지 않습니다. 우리는 정기적으로 기능에 및 서비스를 추가하고 있습니다. 새로 추가된 기능에 대한 정기적인 업데이트를 보려면 감시 목록에 <a href="introduction.md">지원되는 언어 및 PDF forms</a> 섹션을 유지하십시오.</p> <br>
@@ -58,8 +70,8 @@ ht-degree: 4%
 1. **서비스에서 Microsoft Word 양식을 적응형 양식으로 변환할 수 있습니까?**
    <p>아니요. 이 서비스는 Microsoft Word 양식을 적응형 양식으로 전환하지 않습니다. Microsoft Word 양식을 PDF 양식으로 저장하고 PDF 양식을 적응형 양식으로 변환할 수 있습니다. 전체 프로세스는 다음과 같습니다 </p> <br>
 
-   1. Adobe Acrobat을 사용하여 [Word 문서를 비대화형 PDF으로 변환](https://helpx.adobe.com/kr/acrobat/how-to/create-pdf-files-word-excel-website.html)할 수 있습니다.
-   1. Adobe Acrobat을 사용하여 [생성된 PDF forms을 입력 가능한 PDF 양식으로 변환](https://helpx.adobe.com/kr/acrobat/how-to/convert-word-excel-paper-pdf-forms.html)합니다.
+   1. Adobe Acrobat을 사용하여 [Word 문서를 비대화형 PDF으로 변환](https://helpx.adobe.com/acrobat/how-to/create-pdf-files-word-excel-website.html)할 수 있습니다.
+   1. Adobe Acrobat을 사용하여 [생성된 PDF forms을 입력 가능한 PDF 양식으로 변환](https://helpx.adobe.com/acrobat/how-to/convert-word-excel-paper-pdf-forms.html)합니다.
    1. Adobe Acrobat을 사용하여 양식 필드를 수동으로 업데이트하고 수정합니다.
    1. PDF 양식을 저장합니다. 이제 전환 서비스와 함께 양식을 사용하여 적응형 양식을 생성할 수 있습니다. 이 양식을 기록 문서 템플릿으로 사용할 수도 있습니다.
 
@@ -68,7 +80,7 @@ ht-degree: 4%
    <p>이 서비스는 컬러 PDF forms을 적응형 양식으로 전환할 수 있습니다. 이 서비스는 스캔되거나 채워진 양식을 지원하지 않습니다. 다른 제한 사항에 대해서는 <a href="known-issues.md">알려진 문제</a> 문서를 참조하십시오.</p> <br>
 
 1. **서비스가 스캔한 양식이나 양식의 이미지만 적응형 양식으로 전환할 수 있습니까?**
-   <p>이 서비스는 스캔한 양식이나 양식의 이미지를 즉시 사용 가능한 적응형 양식으로 전환하는 것을 지원하지 않습니다. 그러나 Adobe Acrobat을 사용하면 양식의 이미지를 PDF 양식으로 전환할 수 있습니다. 그런 다음 이 서비스를 사용하여 PDF 양식을 적응형 양식으로 전환합니다. Acrobat에서 전환하려면 항상 고품질 양식 이미지를 사용하십시오. 전환 품질이 향상됩니다.</p> <br>
+   <p>이 서비스는 스캔한 양식이나 양식의 이미지를 즉시 사용 가능한 적응형 양식으로 전환하는 것을 지원하지 않습니다. 그러나 Adobe Acrobat을 사용하면 양식의 이미지를 PDF 양식으로 전환할 수 있습니다. 그런 다음 이 서비스를 사용하여 PDF 양식을 적응형 양식으로 변환합니다. Acrobat에서 전환하려면 항상 고품질 양식 이미지를 사용하십시오. 전환 품질이 향상됩니다.</p> <br>
 
 1. **일부 XDP 기반 양식에서 양식 단편을 사용하는데 이러한 양식 단편을 업로드해야 하는 위치**
    <p class="MsoNormal">양식 조각을 전환 폴더에 업로드하고 원래 폴더 구조를 유지합니다. XDP 기반 양식 및 양식 조각에 사용된 상대 경로를 보존하는 데 도움이 됩니다.</p> <br>
@@ -83,8 +95,8 @@ ht-degree: 4%
    * Source PDF에는 실제 양식 대신 양식 이미지가 있습니다.
    * 서비스가 잘못 구성되었거나 서비스 URL이 제공되지 않았거나 제공된 서비스 URL이 잘못되었습니다. **[!UICONTROL AEM]** > **[!UICONTROL Tools]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL Automated Forms Conversion configuration]**&#x200B;에서 [서비스 구성](configure-service.md#configure-the-cloud-service)을(를) 확인하십시오.
    * IMS 구성이 제대로 구성되지 않았습니다. IMS 구성이 제대로 작동하는지 확인하려면 상태 검사를 수행하십시오. IMS 구성이 올바른지 확인하려면:
-      1. `http://[servername]:[port]/libs/cq/adobeims-configuration/content/configurations.html`(으)로 이동
-      2. 구성을 선택합니다. 헤더에서 **[!UICONTROL Check Health]**&#x200B;을(를) 클릭하고 **[!UICONTROL Check]**&#x200B;을(를) 클릭합니다. 성공하면 **[!UICONTROL Token retrieved successfully!]**&#x200B;개의 메시지가 표시됩니다. <br> <br>
+     1. `http://[servername]:[port]/libs/cq/adobeims-configuration/content/configurations.html`(으)로 이동
+     2. 구성을 선택합니다. 헤더에서 **[!UICONTROL Check Health]**&#x200B;을(를) 클릭하고 **[!UICONTROL Check]**&#x200B;을(를) 클릭합니다. 성공하면 **[!UICONTROL Token retrieved successfully!]**&#x200B;개의 메시지가 표시됩니다. <br> <br>
 
 1. **사용자 지정 글꼴을 사용하는 것이 전환에 영향을 줍니까?**
    <p>비대화형 PDF 양식을 적응형 양식으로 전환하면 전환 품질을 향상시킬 수 있고, 해당 글꼴이 PDF 양식에 포함됩니다. 글꼴 임베드 지원은 비대화형 PDF forms으로 제한됩니다. AcroForm 및 XFA 기반 PDF forms의 변환을 최적화하기 위해 대체 글꼴이 사용됩니다.</p> 
@@ -92,10 +104,10 @@ ht-degree: 4%
     <p> </p> <br>
 
 1. **서비스가 출력 적응형 양식에서 소스 PDF의 글꼴을 식별하고 사용합니까?**
-   <p>반응형 HTML 양식의 스타일 및 레이아웃은 일반적으로 PDF 또는 종이 기반 양식과 다릅니다. 조직 전체에서 일관된 레이아웃 및 스타일을 지원하기 위해 적응형 양식은 <a href="https://helpx.adobe.com/kr/experience-manager/6-5/forms/using/themes.html">테마를 사용하여 양식 스타일을 지정</a>합니다. 변환 서비스는 변환 중에 적용된 테마에 지정된 글꼴과 글꼴 스타일을 사용합니다. 테마의 글꼴과 글꼴 스타일을 변경하여 적응형 양식의 구성 요소에 뚜렷한 모양과 느낌을 제공할 수 있습니다.</p> <br>
+   <p>반응형 HTML 양식의 스타일 및 레이아웃은 일반적으로 PDF 또는 종이 기반 양식과 다릅니다. 조직 전체에서 일관된 레이아웃 및 스타일을 지원하기 위해 적응형 양식은 <a href="https://helpx.adobe.com/experience-manager/6-5/forms/using/themes.html">테마를 사용하여 양식 스타일을 지정</a>합니다. 변환 서비스는 변환 중에 적용된 테마에 지정된 글꼴과 글꼴 스타일을 사용합니다. 테마의 글꼴과 글꼴 스타일을 변경하여 적응형 양식의 구성 요소에 뚜렷한 모양과 느낌을 제공할 수 있습니다.</p> <br>
 
 1. **서비스가 XDP 기반 양식에서 JavaScript을 자동으로 추출하여 해당 적응형 양식에 적용합니까?**
-   <p>이 서비스는 XFA 기반 양식 또는 Acro Forms의 스크립트를 해당 적응형 양식 규칙으로 자동 전환하지 않습니다. <a href="https://helpx.adobe.com/kr/experience-manager/6-5/forms/using/rule-editor.html">규칙 편집기</a>를 사용하여 적응형 양식에 대화형 기능을 추가할 수 있습니다.</p> <br>
+   <p>이 서비스는 XFA 기반 양식 또는 Acro Forms의 스크립트를 해당 적응형 양식 규칙으로 자동 전환하지 않습니다. <a href="https://helpx.adobe.com/experience-manager/6-5/forms/using/rule-editor.html">규칙 편집기</a>를 사용하여 적응형 양식에 대화형 기능을 추가할 수 있습니다.</p> <br>
 
 1. **일부 양식 개체가 적응형 양식 구성 요소로 올바르게 변환되지 않았습니다. 문제를 해결하는 방법**
    <p>AFCS(자동 양식 전환 서비스)는 다양한 양식 세트에서 교육됩니다. 그러나 AI/ML 기반 애플리케이션은 교육 데이터와 패턴에 따라 제한됩니다. 인간의 인식에는 식별이 가능하지만 자동화된 인식에는 어려운 필드 유형, 레이아웃, 패턴 및 컨텍스트가 여러 개 존재할 수 있다. 서비스는 이러한 객체를 식별하지 못하거나 잘못 인식할 수 있습니다. <a href="review-correct-ui-edited.md" target="_blank">검토 및 수정</a> 편집기를 사용하여 입력 양식의 친숙한 용지 양식 기반 레이아웃에서 필요한 수정 작업을 수행할 수 있습니다.</p> <br/>
@@ -116,8 +128,8 @@ ht-degree: 4%
    <p>시간은 입력 양식의 크기 및 복잡성과 요청 수에 따라 다릅니다. 이 서비스는 PDF forms을 적응형 양식으로 전환함으로써 양식을 수동으로 전환하는 프로세스에 비해 훨씬 빠른 속도로 가치 실현 시간을 크게 단축하고자 합니다. </p> <br />
 
 1. **RSA 라이브러리 관련 오류가 발생하면 어떻게 해야 합니까? 오류 메시지는 아래에 언급된 메시지와 유사합니다.** <br/>
-   `*ERROR* [0:0:0:0:0:0:0:1 [1565757652491] POST /content/dam/formsanddocuments/demo004.affBatchProcessor.html HTTP/1.1] org.apache.sling.engine.impl.SlingRequestProcessorImpl service: Uncaught Throwable java.lang.NoClassDefFoundError: Could not initialize class com.rsa.cryptoj.o.dl at com.rsa.jsafe.JSAFE_SecureRandom.getInstance(Unknown Source) at com.adobe.internal.pdfm.util.Util.appendRandomNumberToPrefix(Util.java: 169) [com.adobe.aemfd.adobe-aemfd-assembler:6.0.34] at com.adobe.internal.pdfm.logging.JobLog.&lt;init&gt;(JobLog.java:126) [com.adobe.aemfd.adobe-aemfd-assembler:6.0.34]` <br>
-앞서 언급한 오류는 RSA/BouncyCastle 라이브러리에 대해 부팅 위임이 구성되지 않은 경우 발생합니다. 아래 단계를 수행하여 문제를 해결하십시오.
+   `*ERROR* [0:0:0:0:0:0:0:1 [1565757652491] POST /content/dam/formsanddocuments/demo004.affBatchProcessor.html HTTP/1.1] org.apache.sling.engine.impl.SlingRequestProcessorImpl service: Uncaught Throwable java.lang.NoClassDefFoundError: Could not initialize class com.rsa.cryptoj.o.dl at com.rsa.jsafe.JSAFE_SecureRandom.getInstance(Unknown Source) at com.adobe.internal.pdfm.util.Util.appendRandomNumberToPrefix(Util.java: 169) [com.adobe.aemfd.adobe-aemfd-assembler:6.0.34] at com.adobe.internal.pdfm.logging.JobLog.&amp;lt;init&amp;gt;(JobLog.java:126) [com.adobe.aemfd.adobe-aemfd-assembler:6.0.34]` <br>
+   앞서 언급한 오류는 RSA/BouncyCastle 라이브러리에 대해 부팅 위임이 구성되지 않은 경우 발생합니다. 아래 단계를 수행하여 문제를 해결하십시오.
    <p> </p>
 
    1. AEM 인스턴스를 중지합니다. `[AEM installation directory]\crx-quickstart\conf\` 폴더로 이동합니다. 편집할 sling.properties 파일을 엽니다. `[AEM installation directory]\crx-quickstart\bin\start.bat`을(를) 사용하여 AEM 인스턴스를 시작하는 경우 `[AEM_root]\crx-quickstart\`에 있는 sling.properties를 편집하십시오.
@@ -135,5 +147,5 @@ ht-degree: 4%
 1. **Adobe Sign이 활성화된 PDF 양식을 만드는 방법**
    </p>Adobe Sign이 활성화된 PDF 양식을 만들려면 다음 작업을 수행하십시오.</p>
 
-   필드 이름에 [Adobe Sign 텍스트 태그](https://helpx.adobe.com/kr/sign/using/text-tag.html)를 추가하거나 [Adobe Sign 양식으로 변환](https://helpx.adobe.com/kr/sign/using/create-forms-with-acrobat.html) 옵션을 사용하십시오.
+   필드 이름에 [Adobe Sign 텍스트 태그](https://helpx.adobe.com/sign/using/text-tag.html)를 추가하거나 [Adobe Sign 양식으로 변환](https://helpx.adobe.com/sign/using/create-forms-with-acrobat.html) 옵션을 사용하십시오.
 

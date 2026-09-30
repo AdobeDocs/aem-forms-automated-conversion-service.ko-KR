@@ -8,33 +8,50 @@ topic-tags: forms
 role: Admin, Developer, User
 level: Beginner, Intermediate
 exl-id: 8f21560f-157f-41cb-ba6f-12a4d6e18555
-TQID: https://experienceleague.adobe.com/xxFiHKgzZsDqk1rjtsBOEa-gaEi5S7iRY-Ela1T6eL8
+TQID: 'https://experienceleague.adobe.com/xxFiHKgzZsDqk1rjtsBOEa-gaEi5S7iRY-Ela1T6eL8'
 product_v2:
   - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
   - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
 feature_v2:
   - id: a01bfd36-4ab8-4bf8-9dc0-5b45b890552e
+    internal-label: APIs
   - id: a1df6763-63b5-45b4-8c8a-155a692a2b3e
+    internal-label: Integrations
   - id: ae478996-b206-4712-9b0c-dc78a2644453
+    internal-label: Integrations
   - id: d49d6117-dd89-469c-a774-cc96b7eee433
+    internal-label: Administration
   - id: f013e6ab-27b8-4645-b5a7-31ffa474d04f
+    internal-label: APIs
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
 topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
+    internal-label: Security
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: cb6b167400093c85e8929eb147e2a0be256772a6
+    internal-label: Administration
+source-git-commit: e40aeabffdc79dbf5d42a89b8e37c298e016cb90
 workflow-type: tm+mt
-source-wordcount: 2448
-ht-degree: 7%
-
+source-wordcount: '2660'
+ht-degree: 6%
 ---
-
 # AFCS(자동 양식 전환 서비스) 구성 {#about-this-help}
 
 이 문서에서는 AEM 관리자가 PDF forms을 적응형 Forms으로 자동 전환하도록 AFCS(자동 양식 전환 서비스)를 구성하는 방법에 대해 설명합니다. 이 문서는 조직의 IT 및 AEM 관리자를 위한 것입니다. 제공된 정보는 이 문서를 읽는 모든 사람이 다음 기술에 익숙하다고 가정합니다.
@@ -84,20 +101,20 @@ AFCS(자동 양식 전환 서비스)는 AEM 작성자 인스턴스에서 실행�
 
 * AEM 6.5 또는 AEM 6.5 LTS가 설치되어 있지 않다면 아래 위치에서 다운로드하십시오. AEM을 다운로드한 후 AEM 작성자 인스턴스를 설정하는 방법은 [배포 및 유지 관리](https://helpx.adobe.com/kr/experience-manager/6-5/sites/deploying/using/deploy.html#defaultlocalinstall)를 참조하십시오.
 
-   * 기존 AEM 고객인 경우 [Adobe 라이선스 웹 사이트](http://licensing.adobe.com)에서 AEM 6.5 또는 AEM 6.5 LTS를 다운로드하십시오.
+  * 기존 AEM 고객인 경우 [Adobe 라이선스 웹 사이트](http://licensing.adobe.com)에서 AEM 6.5 또는 AEM 6.5 LTS를 다운로드하십시오.
 
-   * Adobe 파트너인 경우 [Adobe 파트너 교육 프로그램](https://adobe.allegiancetech.com/cgi-bin/qwebcorporate.dll?idx=82357Q)을 사용하여 AEM 6.5 또는 AEM 6.5 LTS를 요청하십시오.
+  * Adobe 파트너인 경우 [Adobe 파트너 교육 프로그램](https://adobe.allegiancetech.com/cgi-bin/qwebcorporate.dll?idx=82357Q)을 사용하여 AEM 6.5 또는 AEM 6.5 LTS를 요청하십시오.
 
-* AEM Forms as a Cloud Service을 사용하는 경우 [AEM Forms as a Cloud Service에 온보딩](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/setup-environment/setup-forms-cloud-service.html?lang=ko#setup-environment) 및 [로컬 개발 환경 설정](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/setup-environment/setup-local-development-environment.html?lang=ko#setup-environment)을 참조하십시오.
+* AEM Forms as a Cloud Service을 사용하는 경우 [AEM Forms as a Cloud Service에 온보딩](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/setup-environment/setup-forms-cloud-service.html?lang=en#setup-environment) 및 [로컬 개발 환경 설정](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/setup-environment/setup-local-development-environment.html?lang=en#setup-environment)을 참조하십시오.
 
 
 ### (AEM 6.5 및 AEM 6.5 LTS만 해당) AEM 최신 서비스 팩 다운로드 및 설치 {#servicepack}
 
-최신 AEM 서비스 팩을 다운로드하여 설치합니다. 자세한 지침은 [AEM 6.5 서비스 팩 릴리스 정보](https://helpx.adobe.com/kr/experience-manager/6-5/release-notes/sp-release-notes.html)를 참조하세요.
+최신 AEM 서비스 팩을 다운로드하여 설치합니다. 자세한 지침은 [AEM 6.5 서비스 팩 릴리스 정보](https://helpx.adobe.com/experience-manager/6-5/release-notes/sp-release-notes.html)를 참조하세요.
 
 ### (AEM 6.5 및 AEM 6.5 LTS만 해당) AEM Forms 추가 기능 패키지 다운로드 및 설치  {#downloadaemformsaddon}
 
-AEM 인스턴스에는 기본 양식 기능이 포함되어 있습니다. 전환 서비스에는 AEM Forms의 모든 기능이 필요합니다. AEM Forms의 모든 기능을 사용하려면 AEM Forms 추가 기능 패키지를 다운로드하여 설치하십시오. 변환 서비스를 설정하고 실행하려면 패키지가 필요합니다. 자세한 지침은 [데이터 캡처 기능 설치 및 구성](https://experienceleague.adobe.com/ko/docs/experience-manager-65/content/forms/install-aem-forms/osgi-installation/installing-configuring-aem-forms-osgi)을 참조하세요.
+AEM 인스턴스에는 기본 양식 기능이 포함되어 있습니다. 전환 서비스에는 AEM Forms의 모든 기능이 필요합니다. AEM Forms의 모든 기능을 사용하려면 AEM Forms 추가 기능 패키지를 다운로드하여 설치하십시오. 변환 서비스를 설정하고 실행하려면 패키지가 필요합니다. 자세한 지침은 [데이터 캡처 기능 설치 및 구성](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/install-aem-forms/osgi-installation/installing-configuring-aem-forms-osgi)을 참조하세요.
 
 >[!NOTE]
 > 추가 기능 패키지를 설치한 후 필수 사후 설치 구성을 수행해야 합니다.
@@ -114,7 +131,7 @@ The connector package provides early access to the [Auto-detect logical sections
 
 **AEM Forms as a Cloud Service:** 기본 제공 템플릿을 사용하거나 사용자 지정 템플릿을 만들고 [서비스 구성](#configure-the-cloud-service)을 지정할 수 있습니다.
 
-**(AEM 6.5 및 AEM 6.5 LTS만 해당)** AFCS(자동 양식 전환 서비스)를 사용하려면 PDF 양식을 적응형 양식으로 전환하기 위한 하나 이상의 테마와 템플릿이 필요합니다. 핵심 구성 요소 기반 템플릿 및 테마를 사용하려면 [적응형 양식 핵심 구성 요소를 활성화](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-core-components/enable-adaptive-forms-core-components.html?lang=ko)해야 합니다. 지침이 문서화되어 있습니다. [프로덕션 모드](https://helpx.adobe.com/kr/experience-manager/6-5/sites/administering/using/production-ready.html)&#x200B;(nosamplecontent 실행 모드)에서 AEM 6.5 또는 AEM 6.5 LTS를 시작하면 참조 패키지가 설치되지 않습니다. 자신만의 사용자 지정 테마 및 템플릿을 만들거나 작성자 인스턴스에 [AEM Forms 참조 Assets](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html) 패키지를 다운로드하여 설치하여 참조 테마 및 템플릿을 가져옵니다. 서비스를 사용하기 전에 템플릿과 테마를 사용하도록 [서비스 구성](#configure-the-cloud-service)을 가리킵니다.
+**(AEM 6.5 및 AEM 6.5 LTS만 해당)** AFCS(자동 양식 전환 서비스)를 사용하려면 PDF 양식을 적응형 양식으로 전환하기 위한 하나 이상의 테마와 템플릿이 필요합니다. 핵심 구성 요소 기반 템플릿 및 테마를 사용하려면 [적응형 양식 핵심 구성 요소를 활성화](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-core-components/enable-adaptive-forms-core-components.html)해야 합니다. 지침이 문서화되어 있습니다. [프로덕션 모드](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/production-ready.html)&#x200B;(nosamplecontent 실행 모드)에서 AEM 6.5 또는 AEM 6.5 LTS를 시작하면 참조 패키지가 설치되지 않습니다. 자신만의 사용자 지정 테마 및 템플릿을 만들거나 작성자 인스턴스에 [AEM Forms 참조 Assets](https://experience.adobe.com/#/downloads/content/software-distribution/en/aemcloud.html) 패키지를 다운로드하여 설치하여 참조 테마 및 템플릿을 가져옵니다. 서비스를 사용하기 전에 템플릿과 테마를 사용하도록 [서비스 구성](#configure-the-cloud-service)을 가리킵니다.
 
 ## 액세스 및 권한 구성
 
@@ -166,7 +183,7 @@ Automated Forms Conversion service (AFCS) uses the Day CQ mail service to send e
 
    3. Open the **[!UICONTROL Day CQ Link Externalizer]** configuration. In the **[!UICONTROL Domains]** field, specify the actual host name or IP address and port number for local, author, and publish instances. Click **[!UICONTROL Save]**.
 
-* For AEM Forms as a Cloud Service, [log a support ticket to enable the email service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/development-guidelines.html?lang=ko#sending-email).
+* For AEM Forms as a Cloud Service, [log a support ticket to enable the email service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/development-guidelines.html?lang=en#sending-email).
 -->
 
 ### forms-users 그룹에 사용자 추가 {#adduserstousergroup}
@@ -209,24 +226,24 @@ Adobe Developer Console에서 자동 양식 전환 서비스 API를 구성하려
 
    ![새 API 프로젝트 만들기](/help/using/assets/create-new-api-project.png)
 
-1. **[!UICONTROL Add API]**&#x200B;을(를) 클릭합니다. 계정에 대해 활성화된 모든 API 목록이 포함된 화면이 나타납니다.
+1. **[!UICONTROL Add API]**를 클릭합니다. 계정에 대해 활성화된 모든 API 목록이 포함된 화면이 나타납니다.
    ![API 추가](/help/using/assets/add-api.png)
 
-1. **[!UICONTROL Automated Forms Conversion service]**&#x200B;을(를) 선택하고 **[!UICONTROL Next]**&#x200B;을(를) 클릭합니다. API 구성 화면이 나타납니다.
+1. **[!UICONTROL Automated Forms Conversion service]**&#x200B;을(를) 선택하고 **[!UICONTROL Next]**을(를) 클릭합니다. API 구성 화면이 나타납니다.
    ![AFCS API 선택](/help/using/assets/select-afcs-api.png)
 
 1. **OAuth 서버 간** 인증 방법을 선택하십시오.
-1. **[!UICONTROL Credential Name]**&#x200B;을(를) 지정하고 **[!UICONTROL Next]**&#x200B;을(를) 클릭합니다.
+1. **[!UICONTROL Credential Name]**&#x200B;을(를) 지정하고 **[!UICONTROL Next]**을(를) 클릭합니다.
    ![자격 증명 이름 지정](/help/using/assets/specify-credential-name.png)
 1. **제품 프로필**&#x200B;을 선택하세요. 예를 들어 프로필을 **AFC_Flamingo_Test_Dev**(으)로 선택합니다.
-1. **[!UICONTROL Save configured API]**&#x200B;를 클릭합니다.
+1. **[!UICONTROL Save configured API]**를 클릭합니다.
    ![프로필 선택](/help/using/assets/select-profile.png)
 
    >[!NOTE]
    >
    > 조직의 개발자에게 액세스 권한을 부여하는 동안 생성된 프로필을 선택합니다. 선택할 프로필을 모르는 경우 관리자에게 문의하십시오.
 
-1. AEM 인스턴스를 AFCS(자동 양식 전환 서비스)에 연결하는 데 필요한 API 키, 클라이언트 암호 및 기타 정보를 보려면 **[!UICONTROL OAuth Server-to-Server]**&#x200B;을(를) 클릭하십시오.
+1. AEM 인스턴스를 AFCS(자동 양식 전환 서비스)에 연결하는 데 필요한 API 키, 클라이언트 암호 및 기타 정보를 보려면 **[!UICONTROL OAuth Server-to-Server]**을(를) 클릭하십시오.
    ![Oath 자격 증명 선택](/help/using/assets/select-oauth-credential.png)
 
    [AEM 작성자 인스턴스에서 IMS 기술 구성 만들기](#2-create-ims-technical-configuration-on-aem-author-instance) 섹션에 설명된 대로 페이지의 정보를 사용하여 IMS 구성을 만듭니다.
@@ -252,10 +269,10 @@ Adobe Developer Console에서 자동 양식 전환 서비스 API를 구성하려
    * **제목**: 제목을 지정합니다.
    * **인증 서버**: [https://ims-na1.adobelogin.com](https://ims-na1.adobelogin.com)
    * [Adobe Developer Console에서 서비스 API 구성](#1-configure-the-service-apis-on-adobe-developer-console) 섹션에서 다음을 검색하십시오.
-      * **클라이언트 ID**: **API 키(클라이언트 ID)**&#x200B;를 복사하여 붙여 넣습니다.
-      * **클라이언트 암호**: **클라이언트 암호**&#x200B;을(를) 복사하여 붙여 넣습니다.
-      * **범위**: **범위**&#x200B;를 복사하여 붙여 넣습니다.
-      * **조직 ID**: **조직 ID**&#x200B;을(를) 복사하여 붙여 넣습니다.
+     * **클라이언트 ID**: **API 키(클라이언트 ID)**&#x200B;를 복사하여 붙여 넣습니다.
+     * **클라이언트 암호**: **클라이언트 암호**&#x200B;을(를) 복사하여 붙여 넣습니다.
+     * **범위**: **범위**&#x200B;를 복사하여 붙여 넣습니다.
+     * **조직 ID**: **조직 ID**&#x200B;을(를) 복사하여 붙여 넣습니다.
 
      ![IMS Adobe 구성 만들기](/help/using/assets/save-ims-configuration.png)
 
@@ -265,7 +282,7 @@ Adobe Developer Console에서 자동 양식 전환 서비스 API를 구성하려
    >
    > IMS 구성을 하나만 만듭니다. IMS 구성을 두 개 이상 만들지 마십시오.
 
-1. **Adobe IMS 구성**&#x200B;을(를) 선택하고 **[!UICONTROL Check Health]**&#x200B;을(를) 클릭합니다. 대화 상자가 나타납니다.
+1. **Adobe IMS 구성**&#x200B;을(를) 선택하고 **[!UICONTROL Check Health]**을(를) 클릭합니다. 대화 상자가 나타납니다.
    ![상태 확인](/help/using/assets/check-health.png)
 
    **확인** 대화 상자가 나타납니다.
@@ -276,7 +293,7 @@ Adobe Developer Console에서 자동 양식 전환 서비스 API를 구성하려
 
    연결에 성공하면 *토큰이 검색되었습니다*&#x200B;라는 메시지가 나타납니다.
 
-   ![연결이 성공하면 토큰이 검색되었습니다. 메시지가 나타납니다. &#x200B;](/help/using/assets/healthy-dialog.png)
+   ![연결이 성공하면 토큰이 검색되었습니다. 메시지가 나타납니다. ](/help/using/assets/healthy-dialog.png)
 
 1. **닫기**&#x200B;를 클릭합니다.
 
@@ -286,7 +303,7 @@ AEM 인스턴스를 전환 서비스에 연결하려면 자동 양식 전환 구
 예를 들어 판매 부서 양식에 대해 별도의 구성을 가지고 고객 지원 양식에 대해 별도의 구성을 가질 수 있습니다. 클라우드 서비스 구성을 만들려면 다음 단계를 수행하십시오.
 
 1. AEM Forms 인스턴스에서 **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Tools]**> **[!UICONTROL Cloud Services]** > **[!UICONTROL Automate Forms Conversion Configuration]**&#x200B;을(를) 클릭합니다.
-1. **[!UICONTROL Global]** 폴더를 선택하고 **[!UICONTROL Create]**&#x200B;을(를) 클릭합니다.
+1. **[!UICONTROL Global]** 폴더를 선택하고 **[!UICONTROL Create]**을(를) 클릭합니다.
 **자동 양식 전환 구성 만들기** 페이지가 나타납니다. 구성이 **전역** 폴더에 만들어집니다. 존재하는 다른 폴더에 구성을 만들거나 구성에 대한 폴더를 만들 수도 있습니다.
    ![전역 폴더 선택](/help/using/assets/create-afcs-cloud-conf.png)
 1. **[!UICONTROL Create Automated Forms Conversion Configuration]** 페이지에서 다음 필드에 대한 값을 지정하고 **[!UICONTROL Next]**&#x200B;을(를) 클릭합니다.

@@ -8,27 +8,40 @@ topic-tags: forms
 role: Admin, Developer
 level: Beginner, Intermediate
 exl-id: 64330fa2-aa9d-4ba4-96df-b75deed3e693
-TQID: https://experienceleague.adobe.com/r--F0l84gNKh6jvpjo7cCV4NS-i3hM7zcK3kl0h3YX8
+TQID: 'https://experienceleague.adobe.com/r--F0l84gNKh6jvpjo7cCV4NS-i3hM7zcK3kl0h3YX8'
 product_v2:
   - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
   - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
 feature_v2:
   - id: d49d6117-dd89-469c-a774-cc96b7eee433
+    internal-label: Administration
+  - id: 7da902b6-fe94-5180-8e7c-f6d1e38d01d5
+    internal-label: Foundation Components
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: 0be767cc3d09331ea7a61c114a11bb0354b5f4ad
+    internal-label: Administration
+source-git-commit: e40aeabffdc79dbf5d42a89b8e37c298e016cb90
 workflow-type: tm+mt
-source-wordcount: 2548
+source-wordcount: '2548'
 ht-degree: 0%
-
 ---
-
 # 전환된 양식 검토 및 수정{#review-and-correct-converted-forms}
 
 AEM Forms AFCS(자동 양식 전환 서비스)는 입력 PDF 문서의 필드, 컨텐츠 및 레이아웃을 식별하고 PDF 문서를 적응형 양식으로 전환합니다. 출력 적응형 양식에 누락되거나 잘못 변환된 필드가 있을 수 있습니다. 검토 및 수정 편집기를 사용하여 식별된 필드를 개선하고 적응형 양식을 재생성하여 원하는 경험에 가까운 출력을 얻을 수 있습니다. 첫 번째 변환 후 편집기에서 입력 PDF 문서를 열어 다음을 수행할 수 있습니다.
@@ -77,7 +90,7 @@ AEM Forms AFCS(자동 양식 전환 서비스)는 입력 PDF 문서의 필드, �
 
 ### 시작하기 전 {#before-you-start}
 
-* 검토 및 수정 편집기는 조각을 지원하지 않습니다. 전환 중에 **조각 추출** 옵션이 활성화된 전환을 검토하는 데 편집기를 사용하지 마십시오. 이러한 전환에는 [적응형 양식 편집기](https://helpx.adobe.com/kr/experience-manager/6-5/forms/using/introduction-forms-authoring.html)를 사용할 수 있습니다.
+* 검토 및 수정 편집기는 조각을 지원하지 않습니다. 전환 중에 **조각 추출** 옵션이 활성화된 전환을 검토하는 데 편집기를 사용하지 마십시오. 이러한 전환에는 [적응형 양식 편집기](https://helpx.adobe.com/experience-manager/6-5/forms/using/introduction-forms-authoring.html)를 사용할 수 있습니다.
 
 * 검토 및 수정 편집기에 실행 취소 작업이 없습니다. 저장 단추는 변경 사항을 영구적으로 저장하는 경우에만 사용합니다.
 
@@ -99,7 +112,7 @@ AEM Forms AFCS(자동 양식 전환 서비스)는 입력 PDF 문서의 필드, �
 
    * 패널을 삭제하려면 패널을 선택하고 도구 모음에서 ![](assets/delete-icon.png) 삭제 아이콘을 탭합니다. 확인 대화 상자에서 **[!UICONTROL Confirm]**&#x200B;을 누릅니다. 변경 내용을 저장하려면 **[!UICONTROL Save]**&#x200B;을(를) 탭하세요.
 
-   * 패널을 그룹 해제하려면 패널을 선택하고 도구 모음에서 그룹 해제 아이콘을 탭합니다. 패널이 그룹 해제되고 그룹 해제된 패널의 하위 필드가 상위 필드로 조정됩니다. **[!UICONTROL Save]**&#x200B;을 눌러 변경 내용을 저장합니다.
+   * 패널을 그룹 해제하려면 패널을 선택하고 도구 모음에서 그룹 해제 아이콘을 탭합니다. 패널이 그룹 해제되고 그룹 해제된 패널의 하위 필드가 상위 필드로 조정됩니다. **[!UICONTROL Save]**을 눌러 변경 내용을 저장합니다.
 
 1. **텍스트 논리 그룹을 만듭니다**: 식별된 텍스트의 완전성과 정확성을 확인합니다. 또한 텍스트를 논리적으로 올바른 패널이나 그룹에 배치합니다. 예를 들어 다중 열 레이아웃에서 한 논리 그룹과 다른 그룹에 있는 텍스트를 예로 들 수 있습니다.
 
@@ -201,7 +214,7 @@ AEM Forms AFCS(자동 양식 전환 서비스)는 입력 PDF 문서의 필드, �
 
 검토 및 수정 편집기에서 필요한 모든 변경 작업을 수행한 후에는 전환을 위해 양식을 다시 보낼 수 있습니다. 전환을 위해 양식을 보내려면 **[!UICONTROL Save & Convert]**&#x200B;을(를) 누릅니다. **[!UICONTROL Sent for conversion label]**&#x200B;은(는) 원본 문서가 포함된 폴더에 적용되며 업데이트된 원본 양식은 Adobe I/O에서 실행 중인 전환 서비스에 업로드됩니다.
 
-양식의 복잡성에 따라 변환 서비스에서 양식을 변환하는 데 시간이 걸릴 수 있습니다. 전환이 완료되면 변환된 적응형 양식 및 관련 에셋이 컴퓨터에 다운로드됩니다. 필요한 경우 변환이 완료된 후 편집기에서 양식을 검토하고 [적응형 양식 편집기](https://helpx.adobe.com/kr/experience-manager/6-5/forms/using/introduction-forms-authoring.html)에서 적응형 양식을 열어 최종 수정 사항을 볼 수 있습니다.
+양식의 복잡성에 따라 변환 서비스에서 양식을 변환하는 데 시간이 걸릴 수 있습니다. 전환이 완료되면 변환된 적응형 양식 및 관련 에셋이 컴퓨터에 다운로드됩니다. 필요한 경우 변환이 완료된 후 편집기에서 양식을 검토하고 [적응형 양식 편집기](https://helpx.adobe.com/experience-manager/6-5/forms/using/introduction-forms-authoring.html)에서 적응형 양식을 열어 최종 수정 사항을 볼 수 있습니다.
 
 적응형 양식 편집기에서 양식을 업데이트한 후 전환을 위해 양식을 다시 보내면 적응형 양식에서 수행된 모든 변경 사항이 손실됩니다. 성공적으로 전환한 후에만 검토 및 수정 편집기에서 양식을 열 수 있습니다.
 
