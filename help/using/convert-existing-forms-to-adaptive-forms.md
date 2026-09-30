@@ -7,23 +7,33 @@ role: Admin, Developer
 topic-tags: forms
 feature: Adaptive Forms
 exl-id: 415e05b5-5a90-490c-bf7c-d3365ce95e24
-TQID: https://experienceleague.adobe.com/t3Ng0VnihUMkisnaGzTBaw2QIR93l-fSHApCaOvz0r0
+TQID: 'https://experienceleague.adobe.com/t3Ng0VnihUMkisnaGzTBaw2QIR93l-fSHApCaOvz0r0'
 product_v2:
   - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
   - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
-source-git-commit: 0be767cc3d09331ea7a61c114a11bb0354b5f4ad
+    internal-label: Beginner
+source-git-commit: e40aeabffdc79dbf5d42a89b8e37c298e016cb90
 workflow-type: tm+mt
-source-wordcount: 1905
+source-wordcount: '1937'
 ht-degree: 8%
-
 ---
-
 # PDF forms을 적응형 양식으로 전환 {#convert-print-forms-to-adaptive-forms}
 
 Adobe Sensei에서 제공하는 AEM Forms AFCS(Automated Forms Conversion Service)는 PDF forms을 장치 친화적이고 반응형 적응형 양식<!--foundation and [core components](https://experienceleague.adobe.com/ko/docs/experience-manager-core-components/using/adaptive-forms/introduction)-->(으)로 자동으로 변환합니다. 비대화형 PDF forms, Acro Forms 또는 XFA 기반 PDF forms을 사용하는 경우 AFCS(자동화된 양식 변환 서비스)는 이러한 양식을 적응형 양식으로 쉽게 변환할 수 있습니다. 기능, 전환 워크플로우 및 온보딩 정보에 대한 자세한 내용은 [자동 양식 전환](introduction.md) 서비스를 참조하십시오.
@@ -33,8 +43,8 @@ Adobe Sensei에서 제공하는 AEM Forms AFCS(Automated Forms Conversion Servic
 * [**전환 서비스 구성**](configure-service.md)
 
 * **전환된 양식의 템플릿 및 테마:**
-   * **AEM Forms as a Cloud Service:** 기본 템플릿과 테마를 사용할 수 있습니다. 변환에 사용하거나 사용자 지정 템플릿을 준비할 수 있습니다.
-   * **AEM 6.5 및 AEM 6.5 LTS:** [템플릿](https://helpx.adobe.com/kr/experience-manager/6-5/forms/using/template-editor.html) 및 [테마](https://helpx.adobe.com/kr/experience-manager/6-5/forms/using/themes.html)를 전환된 양식에 적용할 준비를 하십시오. 핵심 구성 요소 기반 템플릿 및 테마를 사용하려면 [적응형 양식 핵심 구성 요소를 사용](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-core-components/enable-adaptive-forms-core-components.html?lang=ko)해야 합니다([서비스 구성](configure-service.md#referencepackage) 참조). 템플릿을 사용하면 일관된 브랜딩을 적용할 수 있습니다. AFCS는 소스 PDF에서 머리글과 바닥글을 추출하지 않으므로 적응형 양식 템플릿에 지정하십시오. 테마를 사용하면 여러 양식에서 일관된 스타일이 적용됩니다. 서식 파일에 대한 폴더를 만들 때 모든 사용자에 대한 **[!UICONTROL Browse configurations]** 옵션을 선택하십시오.
+  * **AEM Forms as a Cloud Service:** 기본 템플릿과 테마를 사용할 수 있습니다. 변환에 사용하거나 사용자 지정 템플릿을 준비할 수 있습니다.
+  * **AEM 6.5 및 AEM 6.5 LTS:** [템플릿](https://helpx.adobe.com/kr/experience-manager/6-5/forms/using/template-editor.html) 및 [테마](https://helpx.adobe.com/kr/experience-manager/6-5/forms/using/themes.html)를 전환된 양식에 적용할 준비를 하십시오. 핵심 구성 요소 기반 템플릿 및 테마를 사용하려면 [적응형 양식 핵심 구성 요소를 사용](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-core-components/enable-adaptive-forms-core-components.html?lang=ko)해야 합니다([서비스 구성](configure-service.md#referencepackage) 참조). 템플릿을 사용하면 일관된 브랜딩을 적용할 수 있습니다. AFCS는 소스 PDF에서 머리글과 바닥글을 추출하지 않으므로 적응형 양식 템플릿에 지정하십시오. 테마를 사용하면 여러 양식에서 일관된 스타일이 적용됩니다. 서식 파일에 대한 폴더를 만들 때 모든 사용자에 대한 **[!UICONTROL Browse configurations]** 옵션을 선택하십시오.
 
 * **(선택 사항)** [**소스 PDF forms을 Adobe Sign 양식으로 변환**](frequently-asked-questions.md)
 
@@ -80,8 +90,8 @@ AEM Forms 인스턴스의 폴더로 변환할 양식을 업로드하려면 다�
    * **[!UICONTROL Select a cloud configuration]**. 구성을 선택하면 기본 템플릿과 테마가 이미 지정되었습니다. 필요한 경우 다른 템플릿 또는 테마를 지정할 수 있습니다.
    * 생성된 적응형 양식 및 해당 스키마를 저장할 위치를 지정하십시오. 기본 경로를 사용하거나 사용자 지정 경로를 지정할 수 있습니다.
    * 데이터 모델 바인딩이 있거나 없는 적응형 양식을 생성하려면 **데이터 모델 바인딩이 없는 적응형 양식 생성** 옵션을 사용하여 선택하십시오.
-이 옵션을 선택하지 않으면 전환 서비스는 적응형 양식을 JSON 스키마와 자동으로 연결하고 적응형 양식에서 사용할 수 있는 필드와 JSON 스키마 사이에 데이터 바인딩을 만듭니다. **[!UICONTROL Save generated data model schema at]** 필드에 생성된 JSON 스키마를 저장할 기본 위치가 표시됩니다. 생성된 스키마를 저장하도록 위치를 사용자 지정할 수도 있습니다.
-이 옵션을 선택하면 전환 서비스가 데이터 모델 바인딩 없이 적응형 양식을 생성합니다. 성공적으로 전환하면 적응형 양식을 양식 데이터 모델, XML 스키마 또는 JSON 스키마와 연결할 수 있습니다. 자세한 내용은 [적응형 양식 만들기](https://helpx.adobe.com/kr/experience-manager/6-5/forms/using/creating-adaptive-form.html)를 참조하십시오.
+     이 옵션을 선택하지 않으면 전환 서비스는 적응형 양식을 JSON 스키마와 자동으로 연결하고 적응형 양식에서 사용할 수 있는 필드와 JSON 스키마 사이에 데이터 바인딩을 만듭니다. **[!UICONTROL Save generated data model schema at]** 필드에 생성된 JSON 스키마를 저장할 기본 위치가 표시됩니다. 생성된 스키마를 저장하도록 위치를 사용자 지정할 수도 있습니다.
+     이 옵션을 선택하면 전환 서비스가 데이터 모델 바인딩 없이 적응형 양식을 생성합니다. 성공적으로 전환하면 적응형 양식을 양식 데이터 모델, XML 스키마 또는 JSON 스키마와 연결할 수 있습니다. 자세한 내용은 [적응형 양식 만들기](https://helpx.adobe.com/kr/experience-manager/6-5/forms/using/creating-adaptive-form.html)를 참조하십시오.
 
    <!--
 
@@ -129,12 +139,12 @@ AEM Forms 인스턴스의 폴더로 변환할 양식을 업로드하려면 다�
    >
 
    * 데스크톱이나 노트북과 같은 대형 화면에 대해 원본 양식의 레이아웃을 유지하려면 **[!UICONTROL Auto-detect multi-column layout of input forms]** 옵션을 선택하십시오. 이 옵션은 소스 양식의 다중 열 레이아웃을 유지하는 데 유용합니다. 예를 들어 소스 PDF에 2열 레이아웃이 있는 경우 이 서비스는 대형 화면 디스플레이를 위한 2열 레이아웃과 휴대폰과 같은 소형 화면 장치를 위한 1열 레이아웃이 포함된 출력 적응형 양식을 생성합니다. 기능에 데이터 소스 스키마 구조와 관련된 몇 가지 알려진 문제가 있습니다. 자세한 내용은 [알려진 문제](known-issues.md) 문서를 참조하십시오.
-   * 기본적으로 이 서비스를 통해 PDF 양식의 각 페이지마다 별도의 최상위 패널을 만들 수 있습니다. 이제 **[!UICONTROL Auto-detect logical sections]** 옵션을 사용하여 페이지 수준 패널(페이지 번호 기반 패널)을 만들지 않고 논리 패널만 만들 수 있습니다. 또한 이전 논리 섹션이 포함된 어떤 섹션에도 속하지 않는 필드와 두 장의 인접한 페이지에 걸쳐 있는 논리 섹션의 필드를 단일 논리 섹션으로 병합할 수 있습니다. 예를 들어, 논리 섹션의 일부 필드가 1페이지의 끝에 있고 일부는 2페이지의 시작에 있는 경우 그러한 모든 필드는 단일 논리 섹션으로 병합됩니다.
+   * 기본적으로 이 서비스는 PDF 양식의 각 페이지마다 별도의 최상위 패널을 만듭니다. 이제 **[!UICONTROL Auto-detect logical sections]** 옵션을 사용하여 페이지 수준 패널(페이지 번호 기반 패널)을 만들지 않고 논리 패널만 만들 수 있습니다. 또한 이전 논리 섹션이 포함된 어떤 섹션에도 속하지 않는 필드와 두 장의 인접한 페이지에 걸쳐 있는 논리 섹션의 필드를 단일 논리 섹션으로 병합할 수 있습니다. 예를 들어, 논리 섹션의 일부 필드가 1페이지의 끝에 있고 일부는 2페이지의 시작에 있는 경우 그러한 모든 필드는 단일 논리 섹션으로 병합됩니다.
 
      >[!NOTE]
      > **[!UICONTROL Auto-detect logical sections]** 기능을 사용하려면 커넥터 패키지 1.1.38 이상이 필요합니다.
 
-* (AEM Forms as a Cloud Service만 해당) [섹션을 조각으로 자동 변환] 옵션은 15페이지가 넘는 PDF forms에 적용됩니다. 감지된 최상위 섹션을 조각으로 변환합니다. 또한 생성된 모든 조각에 대해 지연 로드를 활성화합니다. 이를 사용하여 변환된 양식의 레더링 속도를 개선하고 적응형 양식 편집기에서 보다 쉽게 대용량 양식을 로드할 수 있습니다.
+* (AEM Forms as a Cloud Service만 해당) [섹션을 조각으로 자동 변환] 옵션은 15페이지가 넘는 PDF forms에 적용됩니다. 감지된 최상위 섹션을 조각으로 변환합니다. 또한 생성된 모든 조각에 대해 지연 로드를 활성화합니다. 이를 사용하여 변환된 양식의 렌더링 속도를 개선하고 적응형 양식 편집기에서 보다 쉽게 대용량 양식을 로드할 수 있습니다.
 
   >[!NOTE]
   > 섹션을 조각으로 자동 변환 옵션을 사용하는 동안 응답형 레이아웃 템플릿을 사용하지 마십시오.

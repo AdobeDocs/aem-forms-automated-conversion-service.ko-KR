@@ -8,33 +8,50 @@ topic-tags: forms
 role: Admin, Developer, User
 level: Beginner, Intermediate
 exl-id: 8f21560f-157f-41cb-ba6f-12a4d6e18555
-TQID: https://experienceleague.adobe.com/xxFiHKgzZsDqk1rjtsBOEa-gaEi5S7iRY-Ela1T6eL8
+TQID: 'https://experienceleague.adobe.com/xxFiHKgzZsDqk1rjtsBOEa-gaEi5S7iRY-Ela1T6eL8'
 product_v2:
   - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
   - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
 feature_v2:
   - id: a01bfd36-4ab8-4bf8-9dc0-5b45b890552e
+    internal-label: APIs
   - id: a1df6763-63b5-45b4-8c8a-155a692a2b3e
+    internal-label: Integrations
   - id: ae478996-b206-4712-9b0c-dc78a2644453
+    internal-label: Integrations
   - id: d49d6117-dd89-469c-a774-cc96b7eee433
+    internal-label: Administration
   - id: f013e6ab-27b8-4645-b5a7-31ffa474d04f
+    internal-label: APIs
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
 topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
+    internal-label: Security
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: cb6b167400093c85e8929eb147e2a0be256772a6
+    internal-label: Administration
+source-git-commit: e40aeabffdc79dbf5d42a89b8e37c298e016cb90
 workflow-type: tm+mt
-source-wordcount: 2448
-ht-degree: 7%
-
+source-wordcount: '2660'
+ht-degree: 6%
 ---
-
 # AFCS(자동 양식 전환 서비스) 구성 {#about-this-help}
 
 이 문서에서는 AEM 관리자가 PDF forms을 적응형 Forms으로 자동 전환하도록 AFCS(자동 양식 전환 서비스)를 구성하는 방법에 대해 설명합니다. 이 문서는 조직의 IT 및 AEM 관리자를 위한 것입니다. 제공된 정보는 이 문서를 읽는 모든 사람이 다음 기술에 익숙하다고 가정합니다.
@@ -84,9 +101,9 @@ AFCS(자동 양식 전환 서비스)는 AEM 작성자 인스턴스에서 실행�
 
 * AEM 6.5 또는 AEM 6.5 LTS가 설치되어 있지 않다면 아래 위치에서 다운로드하십시오. AEM을 다운로드한 후 AEM 작성자 인스턴스를 설정하는 방법은 [배포 및 유지 관리](https://helpx.adobe.com/kr/experience-manager/6-5/sites/deploying/using/deploy.html#defaultlocalinstall)를 참조하십시오.
 
-   * 기존 AEM 고객인 경우 [Adobe 라이선스 웹 사이트](http://licensing.adobe.com)에서 AEM 6.5 또는 AEM 6.5 LTS를 다운로드하십시오.
+  * 기존 AEM 고객인 경우 [Adobe 라이선스 웹 사이트](http://licensing.adobe.com)에서 AEM 6.5 또는 AEM 6.5 LTS를 다운로드하십시오.
 
-   * Adobe 파트너인 경우 [Adobe 파트너 교육 프로그램](https://adobe.allegiancetech.com/cgi-bin/qwebcorporate.dll?idx=82357Q)을 사용하여 AEM 6.5 또는 AEM 6.5 LTS를 요청하십시오.
+  * Adobe 파트너인 경우 [Adobe 파트너 교육 프로그램](https://adobe.allegiancetech.com/cgi-bin/qwebcorporate.dll?idx=82357Q)을 사용하여 AEM 6.5 또는 AEM 6.5 LTS를 요청하십시오.
 
 * AEM Forms as a Cloud Service을 사용하는 경우 [AEM Forms as a Cloud Service에 온보딩](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/setup-environment/setup-forms-cloud-service.html?lang=ko#setup-environment) 및 [로컬 개발 환경 설정](https://experienceleague.adobe.com/docs/experience-manager-forms-cloud-service/forms/setup-environment/setup-local-development-environment.html?lang=ko#setup-environment)을 참조하십시오.
 
@@ -209,7 +226,7 @@ Adobe Developer Console에서 자동 양식 전환 서비스 API를 구성하려
 
    ![새 API 프로젝트 만들기](/help/using/assets/create-new-api-project.png)
 
-1. **[!UICONTROL Add API]**&#x200B;을(를) 클릭합니다. 계정에 대해 활성화된 모든 API 목록이 포함된 화면이 나타납니다.
+1. **[!UICONTROL Add API]**&#x200B;를 클릭합니다. 계정에 대해 활성화된 모든 API 목록이 포함된 화면이 나타납니다.
    ![API 추가](/help/using/assets/add-api.png)
 
 1. **[!UICONTROL Automated Forms Conversion service]**&#x200B;을(를) 선택하고 **[!UICONTROL Next]**&#x200B;을(를) 클릭합니다. API 구성 화면이 나타납니다.
@@ -252,10 +269,10 @@ Adobe Developer Console에서 자동 양식 전환 서비스 API를 구성하려
    * **제목**: 제목을 지정합니다.
    * **인증 서버**: [https://ims-na1.adobelogin.com](https://ims-na1.adobelogin.com)
    * [Adobe Developer Console에서 서비스 API 구성](#1-configure-the-service-apis-on-adobe-developer-console) 섹션에서 다음을 검색하십시오.
-      * **클라이언트 ID**: **API 키(클라이언트 ID)**&#x200B;를 복사하여 붙여 넣습니다.
-      * **클라이언트 암호**: **클라이언트 암호**&#x200B;을(를) 복사하여 붙여 넣습니다.
-      * **범위**: **범위**&#x200B;를 복사하여 붙여 넣습니다.
-      * **조직 ID**: **조직 ID**&#x200B;을(를) 복사하여 붙여 넣습니다.
+     * **클라이언트 ID**: **API 키(클라이언트 ID)**&#x200B;를 복사하여 붙여 넣습니다.
+     * **클라이언트 암호**: **클라이언트 암호**&#x200B;을(를) 복사하여 붙여 넣습니다.
+     * **범위**: **범위**&#x200B;를 복사하여 붙여 넣습니다.
+     * **조직 ID**: **조직 ID**&#x200B;을(를) 복사하여 붙여 넣습니다.
 
      ![IMS Adobe 구성 만들기](/help/using/assets/save-ims-configuration.png)
 

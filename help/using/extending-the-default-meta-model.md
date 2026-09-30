@@ -8,28 +8,40 @@ topic-tags: forms
 role: Admin, Developer
 level: Beginner, Intermediate
 exl-id: f679059c-18aa-4cb5-8368-ed27e96c20de
-TQID: https://experienceleague.adobe.com/ehU-0CYTjc3aRDnkecBH7uiaO2QLvpDc9d7oxezCVaU
+TQID: 'https://experienceleague.adobe.com/ehU-0CYTjc3aRDnkecBH7uiaO2QLvpDc9d7oxezCVaU'
 product_v2:
   - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
   - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
 feature_v2:
   - id: d49d6117-dd89-469c-a774-cc96b7eee433
+    internal-label: Administration
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
 topic_v2:
   - id: cc72dcf1-72e1-48cc-b434-e7c27d62d67c
+    internal-label: Accessibility
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: 0be767cc3d09331ea7a61c114a11bb0354b5f4ad
+    internal-label: Administration
+source-git-commit: e40aeabffdc79dbf5d42a89b8e37c298e016cb90
 workflow-type: tm+mt
-source-wordcount: 2659
+source-wordcount: '2659'
 ht-degree: 1%
-
 ---
-
 # 기본 메타 모델 확장 {#extend-the-default-meta-model}
 
 AFCS(자동화된 양식 변환 서비스)는 소스 양식에서 양식 개체를 식별하고 추출합니다. 시맨틱 매퍼는 추출된 객체가 적응형 양식으로 표현되는 방식을 서비스가 결정할 수 있도록 도와줍니다. 예를 들어 소스 양식에는 날짜에 대한 다양한 표현 유형이 있을 수 있습니다. 시맨틱 매퍼는 소스 양식의 모든 날짜 양식 개체 표현을 적응형 양식의 날짜 구성 요소와 매핑하는 데 도움이 됩니다. 또한 Semantic Mapper를 사용하여 변환 중에 서비스가 유효성 검사, 규칙, 데이터 패턴, 도움말 텍스트 및 접근성 속성을 미리 구성하고 적응형 양식 구성 요소에 적용할 수 있습니다.
@@ -256,12 +268,12 @@ AFCS(자동 양식 전환 서비스)는 전환 중에 소스 양식에서 키워
 * 모든 키의 이름이 영어로 되어 있는지 확인합니다. 예를 들어 emailAddress입니다.
 * 모든 엔티티 참조와 모든 ID 키의 사전 정의된 값이 ASCII 문자로만 구성되는지 확인합니다. 예를 들어 &quot;id&quot;: &quot;ContactPoint&quot; / &quot;$ref&quot;: &quot;#ContactPoint&quot;입니다.
 * 다음 키에 해당하는 모든 값이 지정된 메타 모델 언어로 되어 있는지 확인합니다.
-   * aem:affKeyword
-   * 제목
-   * 설명
-   * enumNames
-   * 간단한 설명
-   * validatePictureSectionMessage
+  * aem:affKeyword
+  * 제목
+  * 설명
+  * enumNames
+  * 간단한 설명
+  * validatePictureSectionMessage
 
   예를 들어 메타 모델의 언어가 프랑스어(&quot;aem:Language&quot;: &quot;fr&quot;)인 경우 모든 설명 및 메시지가 프랑스어인지 확인하십시오.
 

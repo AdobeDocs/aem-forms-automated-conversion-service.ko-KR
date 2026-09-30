@@ -8,27 +8,38 @@ topic-tags: introduction
 role: Admin, Developer
 level: Beginner, Intermediate
 exl-id: 35f59e02-e38e-473a-94c8-123e0a85ac8e
-TQID: https://experienceleague.adobe.com/XEYLeElx7-hqEHX4g-Zx8IjjfX9BlFeuLYPSRHbBtTA
+TQID: 'https://experienceleague.adobe.com/XEYLeElx7-hqEHX4g-Zx8IjjfX9BlFeuLYPSRHbBtTA'
 product_v2:
   - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
   - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
 feature_v2:
   - id: d49d6117-dd89-469c-a774-cc96b7eee433
+    internal-label: Administration
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
   - id: e8ccd51f-da0d-4e3b-939b-e30d5ebb1ea5
+    internal-label: Beginner
 topic_v2:
   - id: eddd9b14-83bd-4ff4-9072-54a4a484abb7
-source-git-commit: 0be767cc3d09331ea7a61c114a11bb0354b5f4ad
+    internal-label: Administration
+source-git-commit: e40aeabffdc79dbf5d42a89b8e37c298e016cb90
 workflow-type: tm+mt
-source-wordcount: 871
+source-wordcount: '871'
 ht-degree: 2%
-
 ---
-
 # 알려진 문제 및 제한 사항 {#known-issues-limitations}
 
 AEM Forms AFCS(자동 양식 전환 서비스) 사용을 시작하기 전에 다음과 같은 알려진 문제 및 제한 사항을 검토하십시오.
@@ -39,19 +50,19 @@ AEM Forms AFCS(자동 양식 전환 서비스) 사용을 시작하기 전에 다
 * 일부 양식 개체는 사람의 눈에 쉽게 표시되지만 [서비스에 대해 식별하기가 어려움](styles-and-pattern-considerations-and-best-practices.md)입니다. [편집기 검토 및 수정](review-correct-ui-edited.md)을(를) 사용하여 이러한 양식 개체를 식별하고 변환합니다.
 * 검토 및 수정 편집기:
 
-   * 실행 취소 작업이 없습니다. 저장 버튼을 누르면 변경 사항이 영구적으로 저장됩니다.
-   * XFA 기반 양식에 대해 반복 가능한 패널을 지원하지 않습니다.
-   * 검토 및 수정 편집기를 사용하여 테이블의 목록을 수정하는 경우 행 너비가 자동으로 조정되지 않고 텍스트가 테이블의 다음 행으로 넘칠 수 있습니다.
-   * **[!UICONTROL Auto-detect multi-column layout from input forms]** 기능은 검토 및 수정 편집기 및 양식 조각에서 작동하지 않습니다.
-   * 검토 및 수정 편집기로 만든 스크리블 서명이 게시된 적응형 양식에 대해 로드되지 않습니다.
+  * 실행 취소 작업이 없습니다. 저장 버튼을 누르면 변경 사항이 영구적으로 저장됩니다.
+  * XFA 기반 양식에 대해 반복 가능한 패널을 지원하지 않습니다.
+  * 검토 및 수정 편집기를 사용하여 테이블의 목록을 수정하는 경우 행 너비가 자동으로 조정되지 않고 텍스트가 테이블의 다음 행으로 넘칠 수 있습니다.
+  * **[!UICONTROL Auto-detect multi-column layout from input forms]** 기능은 검토 및 수정 편집기 및 양식 조각에서 작동하지 않습니다.
+  * 검토 및 수정 편집기로 만든 스크리블 서명이 게시된 적응형 양식에 대해 로드되지 않습니다.
 
 
 * XFA 기반 양식의 경우:
-   * XFA 기반 양식에서 조각 추출은 지원되지 않습니다.
-   * XFA 스크립트는 지원되지 않습니다. 예를 들어 드롭다운 구성 요소에 대한 값을 자동으로 생성하는 스크립트입니다.
-   * Meta 모델이 choice 그룹에 대해 작동하지 않음
-   * 단일 문자가 있는 선택 그룹 옵션이 식별되지 않음
-   * 원본 문서가 동적 XFA(.XDP)이고 [적응형 양식에서 XFA 속성의 동작을 정의](https://helpx.adobe.com/kr/experience-manager/6-5/forms/using/xfa-api-supported-in-adaptive-form.html#supportedxfaelementsandtheirmappinginadaptiveformsbr)하면 원본 문서의 현재 상태 속성이 적용되지 않습니다. 예를 들어 소스 문서의 필드는 숨겨진 것으로 표시되고 스크립트는 필드를 표시하게 하지만 필드는 출력 적응형 양식에 계속 표시됩니다.
+  * XFA 기반 양식에서 조각 추출은 지원되지 않습니다.
+  * XFA 스크립트는 지원되지 않습니다. 예를 들어 드롭다운 구성 요소에 대한 값을 자동으로 생성하는 스크립트입니다.
+  * Meta 모델이 choice 그룹에 대해 작동하지 않음
+  * 단일 문자가 있는 선택 그룹 옵션이 식별되지 않음
+  * 원본 문서가 동적 XFA(.XDP)이고 [적응형 양식에서 XFA 속성의 동작을 정의](https://helpx.adobe.com/kr/experience-manager/6-5/forms/using/xfa-api-supported-in-adaptive-form.html#supportedxfaelementsandtheirmappinginadaptiveformsbr)하면 원본 문서의 현재 상태 속성이 적용되지 않습니다. 예를 들어 소스 문서의 필드는 숨겨진 것으로 표시되고 스크립트는 필드를 표시하게 하지만 필드는 출력 적응형 양식에 계속 표시됩니다.
 
 * **생성된 적응형 양식에 대해 입력 AcroForm을 기록 문서(DoR)로 사용** 옵션을 사용하는 경우 다음 사항을 고려하십시오.
 
