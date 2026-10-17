@@ -3,7 +3,9 @@ cloud: Experience Cloud
 solution: Experience Manager, Experience Manager Forms
 product_v2:
   - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: "Experience Manager"
   - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: "Experience Manager Forms"
 usetq: true
 type: Documentation
 mini-toc-levels: 2
@@ -13,11 +15,9 @@ feature-set: Experience Manager Forms
 recommendations: noDisplay
 source-git-commit: d3ee235cef30cf36a529e2d5d4872bb25d9e3b5c
 workflow-type: tm+mt
-source-wordcount: 151
+source-wordcount: '143'
 ht-degree: 1%
-
 ---
-
 
 # 내부 사용을 위한 메타데이터
 
